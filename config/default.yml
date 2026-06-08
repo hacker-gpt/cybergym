@@ -5,7 +5,7 @@ server:
 application:
   domain: juice-sh.op # for pre-loaded email users
   name: 'CyberGym'
-  logo: CyberGym_Logo.svg
+  logo: CyberGym_Logo.png
   favicon: favicon_cybergym.ico
   theme: cybergym-dark # Custom yellow-on-dark CyberGym theme
   showVersionNumber: true
