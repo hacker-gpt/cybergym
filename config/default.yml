@@ -93,125 +93,125 @@ hackingInstructor:
   hintPlaybackSpeed: normal # Options: faster fast normal slow slower
 products:
   -
-    name: 'Apple Juice (1000ml)'
+    name: 'Recon Energy Drink (1000ml)'
     price: 1.99
     deluxePrice: 0.99
     limitPerUser: 5
-    description: 'The all-time classic.'
+    description: 'The all-time classic fuel for late-night recon sessions.'
     image: apple_juice.jpg
     reviews:
       - { text: 'One of my favorites!', author: admin }
   -
-    name: 'Orange Juice (1000ml)'
-    description: 'Made from oranges hand-picked by Uncle Dittmeyer.'
+    name: 'Brute-Force Booster (1000ml)'
+    description: 'Crafted to power through every password list, hand-curated by Uncle Dittmeyer.'
     price: 2.99
     deluxePrice: 2.49
     image: orange_juice.jpg
     reviews:
       - { text: 'y0ur f1r3wall needs m0r3 musc13', author: uvogin }
   -
-    name: 'Eggfruit Juice (500ml)'
-    description: 'Now with even more exotic flavour.'
+    name: 'Payload Punch (500ml)'
+    description: 'Now with even more exotic attack vectors.'
     price: 8.99
     image: eggfruit_juice.jpg
     reviews:
       - { text: 'I bought it, would buy again. 5/7', author: admin }
   -
-    name: 'Raspberry Juice (1000ml)'
-    description: 'Made from blended Raspberry Pi, water and sugar.'
+    name: 'Pi Overclock Cola (1000ml)'
+    description: 'Made from blended Raspberry Pi, water and sugar. Overclocked for maximum throughput.'
     price: 4.99
     image: raspberry_juice.jpg
   -
-    name: 'Lemon Juice (500ml)'
-    description: 'Sour but full of vitamins.'
+    name: 'Zero-Day Zest (500ml)'
+    description: 'Sour but full of undisclosed exploits.'
     price: 2.99
     deluxePrice: 1.99
     limitPerUser: 5
     image: lemon_juice.jpg
   -
-    name: 'Banana Juice (1000ml)'
-    description: 'Monkeys love it the most.'
+    name: 'Script-Kiddie Smoothie (1000ml)'
+    description: 'Even script kiddies love it the most.'
     price: 1.99
     image: banana_juice.jpg
     reviews:
       - { text: 'Fry liked it too.', author: bender }
   -
-    name: 'OWASP Juice Shop T-Shirt'
-    description: 'Real fans wear it 24/7!'
+    name: 'CyberGym T-Shirt'
+    description: 'Real CyberGym hackers wear it 24/7!'
     price: 22.49
     limitPerUser: 5
     image: fan_shirt.jpg
   -
-    name: 'OWASP Juice Shop CTF Girlie-Shirt'
-    description: 'For serious Capture-the-Flag heroines only!'
+    name: 'CyberGym CTF Girlie-Shirt'
+    description: 'For serious CyberGym Capture-the-Flag heroines only!'
     price: 22.49
     image: fan_girlie.jpg
   -
-    name: 'OWASP SSL Advanced Forensic Tool (O-Saft)'
+    name: 'SSL Advanced Forensic Tool (O-Saft)'
     description: 'O-Saft is an easy to use tool to show information about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.'
     price: 0.01
     image: orange_juice.jpg
     urlForProductTamperingChallenge: 'https://www.owasp.org/index.php/O-Saft'
   -
-    name: 'Christmas Super-Surprise-Box (2014 Edition)'
-    description: 'Contains a random selection of 10 bottles (each 500ml) of our tastiest juices and an extra fan shirt for an unbeatable price!'
+    name: 'CyberGym Christmas Super-Surprise-Box (2014 Edition)'
+    description: 'Contains a random selection of 10 CyberGym energy cans (each 500ml) and an extra CyberGym fan shirt for an unbeatable price!'
     price: 29.99
     image: undefined.jpg
     useForChristmasSpecialChallenge: true
   -
-    name: 'Rippertuer Special Juice'
-    description: 'Contains a magical collection of the rarest fruits gathered from all around the world, like Cherymoya Annona cherimola, Jabuticaba Myrciaria cauliflora, Bael Aegle marmelos... and others, at an unbelievable price! <br/><span style="color:red;">This item has been made unavailable because of lack of safety standards.</span>'
+    name: 'Rippertuer Special Brew'
+    description: 'Contains a magical collection of the rarest exploits gathered from all around the internet, like zero-days, RCEs, buffer overflows... and others, at an unbelievable price! <br/><span style="color:red;">This item has been made unavailable because of lack of safety standards.</span>'
     price: 16.99
     image: undefined.jpg
     keywordsForPastebinDataLeakChallenge:
       - hueteroneel
       - eurogium edule
   -
-    name: 'OWASP Juice Shop Sticker (2015/2016 design)'
-    description: 'Die-cut sticker with the official 2015/2016 logo. By now this is a rare collectors item. <em>Out of stock!</em>'
+    name: 'CyberGym Sticker (2015/2016 design)'
+    description: 'Die-cut sticker with the official CyberGym 2015/2016 logo. By now this is a rare collectors item. <em>Out of stock!</em>'
     price: 999.99
     image: sticker.png
     deletedDate: '2017-04-28'
   -
-    name: 'OWASP Juice Shop Iron-Ons (16pcs)'
-    description: 'Upgrade your clothes with washer safe <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">iron-ons</a> of the OWASP Juice Shop or CTF Extension logo!'
+    name: 'CyberGym Iron-Ons (16pcs)'
+    description: 'Upgrade your clothes with washer safe <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">iron-ons</a> of the CyberGym or CTF Extension logo!'
     price: 14.99
     image: iron-on.jpg
   -
-    name: 'OWASP Juice Shop Magnets (16pcs)'
-    description: 'Your fridge will be even cooler with these OWASP Juice Shop or CTF Extension logo <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">magnets</a>!'
+    name: 'CyberGym Magnets (16pcs)'
+    description: 'Your fridge will be even cooler with these CyberGym or CTF Extension logo <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">magnets</a>!'
     price: 15.99
     image: magnets.jpg
   -
-    name: 'OWASP Juice Shop Sticker Page'
-    description: 'Massive decoration opportunities with these OWASP Juice Shop or CTF Extension <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">sticker pages</a>! Each page has 16 stickers on it.'
+    name: 'CyberGym Sticker Page'
+    description: 'Massive decoration opportunities with these CyberGym or CTF Extension <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">sticker pages</a>! Each page has 16 stickers on it.'
     price: 9.99
     image: sticker_page.jpg
   -
-    name: 'OWASP Juice Shop Sticker Single'
-    description: 'Super high-quality vinyl <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">sticker single</a> with the OWASP Juice Shop or CTF Extension logo! The ultimate laptop decal!'
+    name: 'CyberGym Sticker Single'
+    description: 'Super high-quality vinyl <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">sticker single</a> with the CyberGym or CTF Extension logo! The ultimate laptop decal!'
     price: 4.99
     image: sticker_single.jpg
   -
-    name: 'OWASP Juice Shop Temporary Tattoos (16pcs)'
-    description: 'Get one of these <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">temporary tattoos</a> to proudly wear the OWASP Juice Shop or CTF Extension logo on your skin! If you tweet a photo of yourself with the tattoo, you get a couple of our stickers for free! Please mention <a href="https://twitter.com/owasp_juiceshop" target="_blank"><code>@owasp_juiceshop</code></a> in your tweet!'
+    name: 'CyberGym Temporary Tattoos (16pcs)'
+    description: 'Get one of these <a href="https://www.stickeryou.com/products/owasp-juice-shop/794" target="_blank">temporary tattoos</a> to proudly wear the CyberGym or CTF Extension logo on your skin! If you tweet a photo of yourself with the tattoo, you get a couple of our stickers for free! Please mention <a href="https://twitter.com/owasp_juiceshop" target="_blank"><code>@owasp_juiceshop</code></a> in your tweet!'
     price: 14.99
     image: tattoo.jpg
     reviews:
       - { text: 'I straight-up gots nuff props fo''these tattoos!', author: rapper }
   -
-    name: 'OWASP Juice Shop Mug'
-    description: 'Black mug with regular logo on one side and CTF logo on the other! Your colleagues will envy you!'
+    name: 'CyberGym Mug'
+    description: 'Black mug with CyberGym logo on one side and CTF logo on the other! Your colleagues will envy you!'
     price: 21.99
     image: fan_mug.jpg
   -
-    name: 'OWASP Juice Shop Hoodie'
-    description: 'Mr. Robot-style apparel. But in black. And with logo.'
+    name: 'CyberGym Hoodie'
+    description: 'Mr. Robot-style apparel with CyberGym logo. But in black. And with attitude.'
     price: 49.99
     image: fan_hoodie.jpg
   -
-    name: 'OWASP Juice Shop-CTF Velcro Patch'
-    description: '4x3.5" embroidered patch with velcro backside. The ultimate decal for every tactical bag or backpack!'
+    name: 'CyberGym CTF Velcro Patch'
+    description: '4x3.5" embroidered CyberGym patch with velcro backside. The ultimate decal for every tactical bag or backpack!'
     price: 2.92
     quantity: 5
     limitPerUser: 5
@@ -220,89 +220,89 @@ products:
       - { text: 'This thang would look phat on Bobby''s jacked fur coat!', author: rapper }
       - { text: 'Looks so much better on my uniform than the boring Starfleet symbol.', author: jim }
   -
-    name: 'Woodruff Syrup "Forest Master X-Treme"'
-    description: 'Harvested and manufactured in the Black Forest, Germany. Can cause hyperactive behavior in children. Can cause permanent green tongue when consumed undiluted.'
+    name: 'Overflow Syrup "Forest Master X-Treme"'
+    description: 'Synthesized in the Black Forest server farm, Germany. Can cause hyperactive packet injection in routers. Can cause permanent stack overflow when consumed undiluted.'
     price: 6.99
     image: woodruff_syrup.jpg
   -
-    name: 'Green Smoothie'
-    description: 'Looks poisonous but is actually very good for your health! Made from green cabbage, spinach, kiwi and grass.'
+    name: 'Green-Hat Smoothie'
+    description: 'Looks like malware but is actually very good for your training! Blended from open-source tools, green tea, spinach, and raw terminal output.'
     price: 1.99
     image: green_smoothie.jpg
     reviews:
       - { text: 'Fresh out of a replicator.', author: jim }
   -
-    name: 'Quince Juice (1000ml)'
-    description: 'Juice of the <em>Cydonia oblonga</em> fruit. Not exactly sweet but rich in Vitamin C.'
+    name: 'Quantum Quince Fuel (1000ml)'
+    description: 'Extract of the <em>Cydonia oblonga</em> algorithm. Not exactly sweet but rich in quantum entropy.'
     price: 4.99
     image: quince.jpg
   -
-    name: 'Apple Pomace'
-    description: 'Finest pressings of apples. Allergy disclaimer: Might contain traces of worms. Can be <a href="/#recycle">sent back to us</a> for recycling.'
+    name: 'Compiled Pomace'
+    description: 'Finest compiled remnants of training exercises. Allergy disclaimer: Might contain traces of shellcode. Can be <a href="/#recycle">sent back to us</a> for recycling.'
     price: 0.89
     limitPerUser: 5
     image: apple_pressings.jpg
   -
-    name: 'Fruit Press'
-    description: 'Fruits go in. Juice comes out. Pomace you can send back to us for recycling purposes.'
+    name: 'Data Press'
+    description: 'Raw data goes in. Insights come out. Compiled pomace you can send back to us for recycling purposes.'
     price: 89.99
     image: fruit_press.jpg
   -
-    name: 'OWASP Juice Shop Logo (3D-printed)'
-    description: 'This rare item was designed and handcrafted in Sweden. This is why it is so incredibly expensive despite its complete lack of purpose.'
+    name: 'CyberGym Logo (3D-printed)'
+    description: 'This rare collectible was designed and handcrafted in Sweden. This is why it is so incredibly expensive despite its complete lack of purpose beyond elite bragging rights.'
     price: 99.99
     image: 3d_keychain.jpg # Exif metadata contains "OpenSCAD" as subtle hint...
     fileForRetrieveBlueprintChallenge: JuiceShop.stl # ...to blueprint file type
     exifForBlueprintChallenge:
       - OpenSCAD
   -
-    name: 'Juice Shop Artwork'
-    description: 'Unique masterpiece painted with different kinds of juice on 90g/m² lined paper.'
+    name: 'CyberGym Artwork'
+    description: 'Unique masterpiece painted with different kinds of terminal output on 90g/m² lined paper.'
     price: 278.74
     quantity: 0
     image: artwork.jpg
     deletedDate: '2020-12-24'
   -
-    name: 'Global OWASP WASPY Award 2017 Nomination'
-    description: 'Your chance to nominate up to three quiet pillars of the OWASP community ends 2017-06-30! <a href="https://www.owasp.org/index.php/WASPY_Awards_2017">Nominate now!</a>'
+    name: 'Global AppSec Award 2017 Nomination'
+    description: 'Your chance to nominate up to three quiet pillars of the AppSec community ends 2017-06-30! <a href="https://www.owasp.org/index.php/WASPY_Awards_2017">Nominate now!</a>'
     price: 0.03
     image: waspy.png
     deletedDate: '2017-07-01'
   -
-    name: 'Strawberry Juice (500ml)'
-    description: 'Sweet & tasty!'
+    name: 'SQL-Berry Shot (500ml)'
+    description: 'Sweet injection & tasty exploit!'
     price: 3.99
     image: strawberry_juice.jpeg
   -
-    name: 'Carrot Juice (1000ml)'
-    description: 'As the old German saying goes: "Carrots are good for the eyes. Or has anyone ever seen a rabbit with glasses?"'
+    name: 'Root-Access Carrot Fuel (1000ml)'
+    description: 'As the old sysadmin saying goes: "Root access is good for the system. Or has anyone ever seen a rabbit with sudo privileges?"'
     price: 2.99
     image: carrot_juice.jpeg
     reviews:
       - { text: '0 st4rs f0r 7h3 h0rr1bl3 s3cur17y', author: uvogin }
   -
-    name: 'OWASP Juice Shop Sweden Tour 2017 Sticker Sheet (Special Edition)'
-    description: '10 sheets of Sweden-themed stickers with 15 stickers on each.'
+    name: 'CyberGym Sweden Tour 2017 Sticker Sheet (Special Edition)'
+    description: '10 sheets of Sweden-themed CyberGym stickers with 15 stickers on each.'
     price: 19.1
     image: stickersheet_se.png
     deletedDate: '2017-09-20'
   -
-    name: 'Pwning OWASP Juice Shop'
+    name: 'Pwning CyberGym'
     description: '<em>The official Companion Guide</em> by Björn Kimminich available <a href="https://leanpub.com/juice-shop">for free on LeanPub</a> and also <a href="https://pwning.owasp-juice.shop">readable online</a>!'
     price: 5.99
     image: cover_small.jpg
     reviews:
       - { text: 'Even more interesting than watching Interdimensional Cable!', author: morty }
   -
-    name: 'Melon Bike (Comeback-Product 2018 Edition)'
-    description: 'The wheels of this bicycle are made from real water melons. You might not want to ride it up/down the curb too hard.'
+    name: 'Mainframe Melon Bike (Comeback-Product 2018 Edition)'
+    description: 'The wheels of this bicycle are made from real mainframe components. You might not want to ride it up/down the curb too hard.'
     price: 2999
     quantity: 3
     limitPerUser: 1
     image: melon_bike.jpeg
   -
-    name: 'OWASP Juice Shop Coaster (10pcs)'
-    description: 'Our 95mm circle coasters are printed in full color and made from thick, premium coaster board.'
+    name: 'CyberGym Coaster (10pcs)'
+    description: 'Our 95mm circle CyberGym coasters are printed in full color and made from thick, premium coaster board.'
     price: 19.99
     quantity: 0
     image: coaster.jpg
@@ -323,8 +323,8 @@ products:
     reviews:
       - { text: "Here yo' learn how tha fuck ta not show yo' goddamn phone on camera!", author: rapper }
   -
-    name: 'OWASP Juice Shop Holographic Sticker'
-    description: "Die-cut holographic sticker. Stand out from those 08/15-sticker-covered laptops with this shiny beacon of 80's coolness!"
+    name: 'CyberGym Holographic Sticker'
+    description: "Die-cut holographic CyberGym sticker. Stand out from those 08/15-sticker-covered laptops with this shiny beacon of 80's coolness!"
     price: 2.00
     quantity: 0
     image: holo_sticker.png
@@ -333,8 +333,8 @@ products:
       - { text: "Looks spacy on Bones' new tricorder!", author: jim }
       - { text: "Will put one on the Planet Express ship's bumper!", author: bender }
   -
-    name: 'OWASP Juice Shop "King of the Hill" Facemask'
-    description: "Facemask with compartment for filter from 50% cotton and 50% polyester."
+    name: 'CyberGym "King of the Hill" Facemask'
+    description: "CyberGym facemask with compartment for filter from 50% cotton and 50% polyester."
     price: 13.49
     quantity: 0
     limitPerUser: 1
@@ -343,8 +343,8 @@ products:
       - { text: "K33p5 y0ur ju1cy 5plu773r 70 y0ur53lf!", author: uvogin }
       - { text: "Puny mask for puny human weaklings!", author: bender }
   -
-    name: 'Juice Shop Adversary Trading Card (Common)'
-    description: 'Common rarity "Juice Shop" card for the <a href="https://docs.google.com/forms/d/e/1FAIpQLSecLEakawSQ56lBe2JOSbFwFYrKDCIN7Yd3iHFdQc5z8ApwdQ/viewform">Adversary Trading Cards</a> CCG.'
+    name: 'CyberGym Adversary Trading Card (Common)'
+    description: 'Common rarity "CyberGym" card for the <a href="https://docs.google.com/forms/d/e/1FAIpQLSecLEakawSQ56lBe2JOSbFwFYrKDCIN7Yd3iHFdQc5z8ApwdQ/viewform">Adversary Trading Cards</a> CCG.'
     price: 2.99
     deluxePrice: 0.99
     deletedDate: '2020-11-30'
@@ -353,8 +353,8 @@ products:
     reviews:
       - { text: "Ooooh, puny human playing Mau Mau, now?", author: bender }
   -
-    name: 'Juice Shop Adversary Trading Card (Super Rare)'
-    description: 'Super rare "Juice Shop" card with holographic foil-coating for the <a href="https://docs.google.com/forms/d/e/1FAIpQLSecLEakawSQ56lBe2JOSbFwFYrKDCIN7Yd3iHFdQc5z8ApwdQ/viewform">Adversary Trading Cards</a> CCG.'
+    name: 'CyberGym Adversary Trading Card (Super Rare)'
+    description: 'Super rare "CyberGym" card with holographic foil-coating for the <a href="https://docs.google.com/forms/d/e/1FAIpQLSecLEakawSQ56lBe2JOSbFwFYrKDCIN7Yd3iHFdQc5z8ApwdQ/viewform">Adversary Trading Cards</a> CCG.'
     price: 99.99
     deluxePrice: 69.99
     deletedDate: '2020-11-30'
@@ -364,8 +364,8 @@ products:
     reviews:
       - { text: "Mau Mau with bling-bling? Humans are so pathetic!", author: bender }
   -
-    name: 'Juice Shop "Permafrost" 2020 Edition'
-    description: 'Exact version of <a href="https://github.com/juice-shop/juice-shop/releases/tag/v9.3.1-PERMAFROST">OWASP Juice Shop that was archived on 02/02/2020</a> by the GitHub Archive Program and ultimately went into the <a href="https://github.blog/2020-07-16-github-archive-program-the-journey-of-the-worlds-open-source-code-to-the-arctic">Arctic Code Vault</a> on July 8. 2020 where it will be safely stored for at least 1000 years.'
+    name: 'CyberGym "Permafrost" 2020 Edition'
+    description: 'Exact version of <a href="https://github.com/juice-shop/juice-shop/releases/tag/v9.3.1-PERMAFROST">OWASP Juice Shop that was archived on 02/02/2020</a> by the GitHub Archive Program and ultimately went into the <a href="https://github.blog/2020-07-16-github-archive-program-the-journey-of-the-worlds-open-source-code-to-the-arctic">Arctic Code Vault</a> on July 8. 2020 where it will be safely stored for at least 1000 years. The CyberGym edition commemorates this frozen moment in AppSec history.'
     price: 9999.99
     quantity: 1
     limitPerUser: 1
@@ -373,8 +373,8 @@ products:
     reviews:
       - { text: "🧊 Let it go, let it go 🎶 Can't hold it back anymore 🎶 Let it go, let it go 🎶 Turn away and slam the door ❄️", author: rapper }
   -
-    name: 'Best Juice Shop Salesman Artwork'
-    description: 'Unique digital painting depicting Stan, our most qualified and almost profitable salesman. He made a succesful carreer in selling used ships, coffins, krypts, crosses, real estate, life insurance, restaurant supplies, voodoo enhanced asbestos and courtroom souvenirs before <em>finally</em> adding his expertise to the Juice Shop marketing team.'
+    name: 'Best CyberGym Salesman Artwork'
+    description: 'Unique digital painting depicting Stan, our most qualified and almost profitable salesman. He made a succesful carreer in selling used ships, coffins, krypts, crosses, real estate, life insurance, restaurant supplies, voodoo enhanced asbestos and courtroom souvenirs before <em>finally</em> adding his expertise to the CyberGym marketing team.'
     price: 5000
     quantity: 1
     image: artwork2.jpg
@@ -382,8 +382,8 @@ products:
       - { text: "I'd stand on my head to make you a deal for this piece of art.", author: stan }
       - { text: "Just when my opinion of humans couldn't get any lower, along comes Stan...", author: bender }
   -
-    name: 'OWASP Juice Shop Card (non-foil)'
-    description: 'Mythic rare <small><em>(obviously...)</em></small> card "OWASP Juice Shop" with three distinctly useful abilities. Alpha printing, mint condition. A true collectors piece to own!'
+    name: 'CyberGym Card (non-foil)'
+    description: 'Mythic rare <small><em>(obviously...)</em></small> card "CyberGym" with three distinctly useful abilities. Alpha printing, mint condition. A true collectors piece to own!'
     price: 1000
     quantity: 3
     limitPerUser: 1
@@ -400,8 +400,8 @@ products:
     reviews:
       - { text: "I'll be there! Will you, too?", author: bjoernOwasp }
   -
-    name: 'OWASP Juice Shop LEGO™ Tower'
-    description: 'Want to host a Juice Shop CTF in style? Build <a href="https://github.com/OWASP/owasp-swag/blob/master/projects/juice-shop/lego/OWASP%20JuiceShop%20Pi-server%201.2.pdf" target="_blank">your own LEGO™ tower</a> which holds four Raspberry Pi 4 models with PoE HAT modules <a href="https://github.com/juice-shop/multi-juicer/blob/main/guides/raspberry-pi/raspberry-pi.md" target="_blank">running a MultiJuicer Kubernetes cluster</a>! Wire to a switch and connect to your network to have an out-of-the-box ready CTF up in no time!'
+    name: 'CyberGym LEGO™ Tower'
+    description: 'Want to host a CyberGym CTF in style? Build <a href="https://github.com/OWASP/owasp-swag/blob/master/projects/juice-shop/lego/OWASP%20JuiceShop%20Pi-server%201.2.pdf" target="_blank">your own LEGO™ tower</a> which holds four Raspberry Pi 4 models with PoE HAT modules <a href="https://github.com/juice-shop/multi-juicer/blob/main/guides/raspberry-pi/raspberry-pi.md" target="_blank">running a MultiJuicer Kubernetes cluster</a>! Wire to a switch and connect to your network to have an out-of-the-box ready CTF up in no time!'
     price: 799
     quantity: 3
     limitPerUser: 1
@@ -409,8 +409,8 @@ products:
     reviews:
       - { text: 'Check out the /#/photo-wall for some impressions of the assembly process!', author: bjoernOwasp }
   -
-    name: 'DSOMM & Juice Shop User Day Ticket'
-    description: 'You are going to the OWASP Global AppSec San Francisco 2024? <a href="https://www.eventbrite.com/e/owasp-global-appsec-san-francisco-2024-tickets-723699172707" target="_blank">Get a ticket<sup>*</sup></a> for this amazing side event as well! Check the juice-packed agenda <a href="https://owasp.org/www-project-juice-shop/#div-userday2024" target="_blank">here</a> for all the details!<br><br><small><small><sup>*</sup>=scroll down to <strong>Elevate: DSOMM and Juice Shop User Day (Sept. 25)</strong> after clicking <em>Get Tickets</em> on Eventbrite. Ticket price set to only covers fees for room, AV, and catering throughout the day.</small></small>'
+    name: 'DSOMM & CyberGym User Day Ticket'
+    description: 'You are going to the OWASP Global AppSec San Francisco 2024? <a href="https://www.eventbrite.com/e/owasp-global-appsec-san-francisco-2024-tickets-723699172707" target="_blank">Get a ticket<sup>*</sup></a> for this amazing side event as well! Check the action-packed agenda <a href="https://owasp.org/www-project-juice-shop/#div-userday2024" target="_blank">here</a> for all the details!<br><br><small><small><sup>*</sup>=scroll down to <strong>Elevate: DSOMM and CyberGym User Day (Sept. 25)</strong> after clicking <em>Get Tickets</em> on Eventbrite. Ticket price set to only covers fees for room, AV, and catering throughout the day.</small></small>'
     price: 55.20
     deletedDate: '2024-09-26'
     limitPerUser: 1
