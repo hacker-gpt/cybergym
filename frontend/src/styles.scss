@@ -319,25 +319,27 @@ div.mdc-card {
   background-color: #15171c;
 }
 
-// Rounded, modern cards
-div.mdc-card {
-  border-radius: 14px;
-}
+.cybergym-dark-theme {
+  // Rounded, modern cards
+  div.mdc-card {
+    border-radius: 14px;
+  }
 
-// Pill-style buttons with a touch more weight
-.mat-mdc-raised-button,
-.mat-mdc-unelevated-button,
-.mat-mdc-outlined-button,
-.mat-mdc-button {
-  border-radius: 24px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
+  // Pill-style buttons with a touch more weight
+  .mat-mdc-raised-button,
+  .mat-mdc-unelevated-button,
+  .mat-mdc-outlined-button,
+  .mat-mdc-button {
+    border-radius: 24px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
 
-// Consistent primary-action placement: right-align dialog/card actions with even spacing
-.mat-mdc-dialog-actions,
-.mat-mdc-card-actions {
-  gap: 8px;
-  justify-content: flex-end;
-  padding: 8px 16px 16px;
+  // Consistent primary-action placement: right-align dialog/card actions with even spacing
+  .mat-mdc-dialog-actions,
+  .mat-mdc-card-actions {
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 8px 16px 16px;
+  }
 }
