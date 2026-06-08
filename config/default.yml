@@ -4,19 +4,19 @@ server:
   baseUrl: 'http://localhost:3000' # used for CSAF, e.g. https://example.com
 application:
   domain: juice-sh.op # for pre-loaded email users
-  name: 'OWASP Juice Shop'
-  logo: JuiceShop_Logo.png
-  favicon: favicon_js.ico
-  theme: bluegrey-lightgreen # Options: bluegrey-lightgreen blue-lightblue deeppurple-amber indigo-pink pink-bluegrey purple-green deeporange-indigo
+  name: 'CyberGym'
+  logo: CyberGym_Logo.svg
+  favicon: favicon_cybergym.ico
+  theme: cybergym-dark # Custom yellow-on-dark CyberGym theme
   showVersionNumber: true
   showGitHubLinks: true
   localBackupEnabled: true
   numberOfRandomFakeUsers: 0
-  altcoinName: Juicycoin
+  altcoinName: CyberCoin
   privacyContactEmail: donotreply@owasp-juice.shop
   customMetricsPrefix: juiceshop
   chatBot:
-    name: 'Juicy'
+    name: 'Spotter'
     greeting: "Nice to meet you <customer-name>, I'm <bot-name>"
     trainingData: 'botDefaultTrainingData.json'
     defaultResponse: "Sorry I couldn't understand what you were trying to say"
@@ -36,13 +36,13 @@ application:
     bottomProductImage: apple_pressings.jpg
   welcomeBanner:
     showOnFirstStart: true
-    title: 'Welcome to OWASP Juice Shop!'
-    message: "<p>Being a web application with a vast number of intended security vulnerabilities, the <strong>OWASP Juice Shop</strong> is supposed to be the opposite of a best practice or template application for web developers: It is an awareness, training, demonstration and exercise tool for security risks in modern web applications. The <strong>OWASP Juice Shop</strong> is an open-source project hosted by the non-profit <a href='https://owasp.org' target='_blank'>Open Worldwide Application Security Project (OWASP)</a> and is developed and maintained by volunteers. Check out the link below for more information and documentation on the project.</p><h1><a href='https://owasp-juice.shop' target='_blank'>https://owasp-juice.shop</a></h1>"
+    title: 'Welcome to CyberGym!'
+    message: "<p><strong>CyberGym</strong> is a deliberately insecure web application packed with a vast number of intended security vulnerabilities. It is an awareness, training, demonstration and CTF arena for security risks in modern web applications. Hunt the flaws, capture the flags, and track everything you solve on the <a href='/#/score-board'>Score Board</a>.</p>"
   cookieConsent:
-    message: 'This website uses fruit cookies to ensure you get the juiciest tracking experience.'
-    dismissText: 'Me want it!'
-    linkText: 'But me wait!'
-    linkUrl: 'https://www.youtube.com/watch?v=9PnbKL3wuH4'
+    message: 'This site uses cookies to give you the most exploitable browsing experience.'
+    dismissText: 'Got it!'
+    linkText: 'Learn more'
+    linkUrl: '/#/score-board'
   securityTxt:
     contact: 'mailto:donotreply@owasp-juice.shop'
     encryption: 'https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda'
