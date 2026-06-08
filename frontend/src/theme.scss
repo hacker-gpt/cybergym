@@ -108,3 +108,17 @@ $lime-green-theme: mat.m2-define-dark-theme((
 
 .lime-green-theme {
   @include mat.all-component-colors($lime-green-theme); }
+
+$cybergym-dark-primary: mat.m2-define-palette(mat.$m2-amber-palette, 500, 300, 700);
+$cybergym-dark-accent: mat.m2-define-palette(mat.$m2-amber-palette, A400, A200, A700);
+$cybergym-dark-warn: mat.m2-define-palette(mat.$m2-red-palette);
+$cybergym-dark-theme: mat.m2-define-dark-theme((
+  color: (
+    primary: $cybergym-dark-primary,
+    accent: $cybergym-dark-accent,
+    warn: $cybergym-dark-warn,
+  ),
+));
+
+.cybergym-dark-theme {
+  @include mat.all-component-colors($cybergym-dark-theme); }

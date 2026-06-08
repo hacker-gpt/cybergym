@@ -59,5 +59,12 @@ export const themes = {
     navColor: '#cddc39',
     primLight: '#ddee48',
     primDark: '#97a621'
+  },
+  'cybergym-dark': {
+    bgColor: '#1a1c20',
+    textColor: '#FFFFFF',
+    navColor: '#26282D',
+    primLight: '#FFD54F',
+    primDark: '#FFA000'
   }
 } as const

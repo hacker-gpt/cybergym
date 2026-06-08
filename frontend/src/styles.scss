@@ -237,6 +237,11 @@ $bg-hacking-instructor: rgba(0, 0, 0, 0.3);
   @include css-vars($lime-green-theme);
 }
 
+.cybergym-dark-theme {
+  @include custom-components-theme($cybergym-dark-theme);
+  @include css-vars($cybergym-dark-theme);
+}
+
 .close-dialog {
   float: right;
   width: fit-content;
