@@ -118,9 +118,9 @@ $lime-green-theme: mat.m2-define-dark-theme((
 // (see css-vars() in styles.scss). These replace Material's default greys
 // (#303030 page / #424242 cards).
 $cybergym-bg-toolbar: #0b0c0f; // top toolbar / app-bar (was Material #212121)
-$cybergym-bg-page:    #0e0f13; // page / app background (was Material #303030)
+$cybergym-bg-page: #0e0f13; // page / app background (was Material #303030)
 $cybergym-bg-surface: #16181e; // cards & raised surfaces (was Material #424242)
-$cybergym-bg-dialog:  #1c1f26; // modal dialogs (slightly lifted above surfaces)
+$cybergym-bg-dialog: #1c1f26; // modal dialogs (slightly lifted above surfaces)
 
 // Darkened legacy background palette. In Material 20 this only feeds our own
 // --theme-background* CSS variables (css-vars() in styles.scss reads the `card`
@@ -164,10 +164,8 @@ $cybergym-dark-system: (
   surface-container-highest: $cybergym-bg-surface,
   surface-variant: $cybergym-bg-dialog,
 );
-$cybergym-dark-theme: map.set(
-  $cybergym-dark-theme, _mat-system,
-  map.merge(map.get($cybergym-dark-theme, _mat-system), $cybergym-dark-system)
-);
+$cybergym-dark-theme: map.set($cybergym-dark-theme, _mat-system,
+map.merge(map.get($cybergym-dark-theme, _mat-system), $cybergym-dark-system));
 
 .cybergym-dark-theme {
   @include mat.all-component-colors($cybergym-dark-theme); }
