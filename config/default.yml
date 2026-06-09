@@ -37,16 +37,16 @@ application:
   welcomeBanner:
     showOnFirstStart: true
     title: 'Welcome to CyberGym!'
-    message: "<p><strong>CyberGym</strong> is a deliberately insecure web application packed with a vast number of intended security vulnerabilities. It is an awareness, training, demonstration and CTF arena for security risks in modern web applications. Hunt the flaws, capture the flags, and track everything you solve on the <a href='/#/score-board'>Score Board</a>.</p>"
+    message: "<p><strong>CyberGym</strong> is a deliberately insecure web application packed with a vast number of intended security vulnerabilities. It is an awareness, training, demonstration and CTF arena for security risks in modern web applications. Hunt the flaws, capture the flags, and track everything you solve on the <a href='/#/scores'>Score Board</a>.</p>"
   cookieConsent:
     message: 'This site uses cookies to give you the most exploitable browsing experience.'
     dismissText: 'Got it!'
     linkText: 'Learn more'
-    linkUrl: '/#/score-board'
+    linkUrl: '/#/scores'
   securityTxt:
     contact: 'mailto:donotreply@owasp-juice.shop'
     encryption: 'https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda'
-    acknowledgements: '/#/score-board'
+    acknowledgements: '/#/scores'
     hiring: '/#/jobs'
     csaf: '/.well-known/csaf/provider-metadata.json' # scheme,host,port taken from baseUrl
   promotion:
