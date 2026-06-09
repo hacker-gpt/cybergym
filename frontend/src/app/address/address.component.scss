@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-
 .btn-new-address {
   display: block;
   margin-left: 0;
@@ -22,7 +21,6 @@ mat-header-row {
 }
 
 .heading {
-  background: rgba(0, 0, 0, 0.2);
   font-size: x-large;
 }
 
@@ -58,10 +56,21 @@ svg {
   width: 100%;
 }
 
-.mat-column-Selection { width: 20%; }
-.mat-column-Name { width: 20%; }
-.mat-column-Address { width: 40%; }
-.mat-column-Country { width: 20%; }
+.mat-column-Selection {
+  width: 20%;
+}
+
+.mat-column-Name {
+  width: 20%;
+}
+
+.mat-column-Address {
+  width: 40%;
+}
+
+.mat-column-Country {
+  width: 20%;
+}
 
 .mat-column-Edit,
 .mat-column-Remove {

@@ -42,13 +42,13 @@ describe('Server', () => {
   xit('GET a restricted file directly from file system path on server via Directory Traversal attack loads index.html instead', () => {
     return frisby.get(URL + '/public/images/../../ftp/eastere.gg')
       .expect('status', 200)
-      .expect('bodyContains', '<meta name="description" content="Probably the most modern and sophisticated insecure web application">')
+      .expect('bodyContains', '<meta name="description" content="CyberGym')
   })
 
   it('GET a restricted file directly from file system path on server via URL-encoded Directory Traversal attack loads index.html instead', () => {
     return frisby.get(URL + '/public/images/%2e%2e%2f%2e%2e%2fftp/eastere.gg')
       .expect('status', 200)
-      .expect('bodyContains', '<meta name="description" content="Probably the most modern and sophisticated insecure web application">')
+      .expect('bodyContains', '<meta name="description" content="CyberGym')
   })
 
   it('GET serves a security.txt file', () => {

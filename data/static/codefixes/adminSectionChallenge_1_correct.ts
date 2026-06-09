@@ -114,7 +114,7 @@ const routes: Routes = [
     component: SearchResultComponent
   },
   {
-    path: 'score-board',
+    path: 'scores',
     component: ScoreBoardComponent
   },
   {

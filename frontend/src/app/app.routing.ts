@@ -171,7 +171,7 @@ const routes: Routes = [
     component: SearchResultComponent
   },
   { // vuln-code-snippet neutral-line scoreBoardChallenge
-    path: 'score-board', // vuln-code-snippet vuln-line scoreBoardChallenge
+    path: 'scores', // vuln-code-snippet vuln-line scoreBoardChallenge
     component: ScoreBoardComponent // vuln-code-snippet neutral-line scoreBoardChallenge
   }, // vuln-code-snippet neutral-line scoreBoardChallenge
   {

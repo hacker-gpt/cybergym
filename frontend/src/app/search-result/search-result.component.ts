@@ -27,7 +27,6 @@ import { MatDivider } from '@angular/material/divider'
 import { MatButtonModule } from '@angular/material/button'
 import { MatTooltip } from '@angular/material/tooltip'
 import { MatCardModule, MatCardImage, MatCardTitle, MatCardContent } from '@angular/material/card'
-import { MatGridList, MatGridTile } from '@angular/material/grid-list'
 import { AsyncPipe } from '@angular/common'
 
 library.add(faEye, faCartPlus)
@@ -46,7 +45,7 @@ interface TableEntry {
   selector: 'app-search-result',
   templateUrl: './search-result.component.html',
   styleUrls: ['./search-result.component.scss'],
-  imports: [MatGridList, MatGridTile, MatCardModule, TranslateModule, MatTooltip, MatCardImage, MatButtonModule, MatCardTitle, MatCardContent, MatDivider, MatPaginator, AsyncPipe]
+  imports: [MatCardModule, TranslateModule, MatTooltip, MatCardImage, MatButtonModule, MatCardTitle, MatCardContent, MatDivider, MatPaginator, AsyncPipe]
 })
 export class SearchResultComponent implements OnDestroy, AfterViewInit {
   private readonly deluxeGuard = inject(DeluxeGuard);

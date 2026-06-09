@@ -59,5 +59,15 @@ export const themes = {
     navColor: '#cddc39',
     primLight: '#ddee48',
     primDark: '#97a621'
+  },
+  // Backgrounds here mirror the single source of truth in
+  // frontend/src/theme.scss ($cybergym-bg-page / $cybergym-bg-toolbar) so the
+  // server-rendered user-profile page matches the Angular app.
+  'cybergym-dark': {
+    bgColor: '#0e0f13',
+    textColor: '#FFFFFF',
+    navColor: '#0b0c0f',
+    primLight: '#FFD54F',
+    primDark: '#FFA000'
   }
 } as const

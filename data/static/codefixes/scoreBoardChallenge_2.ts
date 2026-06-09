@@ -111,7 +111,7 @@ const routes: Routes = [
     component: SearchResultComponent
   },
   {
-    path: atob('c2NvcmUtYm9hcmQ='),
+    path: atob('c2NvcmVz'),
     component: ScoreBoardComponent
   },
   {

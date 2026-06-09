@@ -11,12 +11,11 @@ mat-card {
 
 .mdc-table {
   align-self: center;
-  margin: 0 auto;           /* center the table block */
+  margin: 0 auto; /* center the table block */
   width: 90%;
 }
 
 .heading {
-  background: rgba(0, 0, 0, 0.2);
   height: 35px;
   justify-content: center;
   padding: 0 20px;
@@ -61,5 +60,7 @@ mat-card {
   }
 }
 @media (max-width: 959.98px) {
-  .mat-column-price { display: none; }
+  .mat-column-price {
+    display: none;
+  }
 }

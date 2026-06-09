@@ -41,7 +41,7 @@ export const ScoreBoardInstruction: ChallengeInstruction = {
         "Look through the client-side JavaScript in the _Sources_ tab for clues. Or just start URL guessing. It's up to you!",
       fixture: 'app-navbar',
       unskippable: true,
-      resolved: waitForAngularRouteToBeVisited('score-board')
+      resolved: waitForAngularRouteToBeVisited('scores')
     },
     {
       text: '🎉 Congratulations! You found the _Score Board_! Good luck and happy hacking!',

@@ -1,8 +1,8 @@
-describe('/#/score-board', () => {
+describe('/#/scores', () => {
   describe('challenge "scoreBoard"', () => {
     it('should be possible to access score board', () => {
-      cy.visit('/#/score-board')
-      cy.url().should('match', /\/score-board/)
+      cy.visit('/#/scores')
+      cy.url().should('match', /\/scores/)
       cy.expectChallengeSolved({ challenge: 'Score Board' })
     })
   })
@@ -21,7 +21,7 @@ describe('/#/score-board', () => {
           }
         )
       })
-      cy.visit('/#/score-board')
+      cy.visit('/#/scores')
       cy.expectChallengeSolved({ challenge: 'Imaginary Challenge' })
     })
   })

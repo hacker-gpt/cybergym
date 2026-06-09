@@ -237,6 +237,11 @@ $bg-hacking-instructor: rgba(0, 0, 0, 0.3);
   @include css-vars($lime-green-theme);
 }
 
+.cybergym-dark-theme {
+  @include custom-components-theme($cybergym-dark-theme);
+  @include css-vars($cybergym-dark-theme);
+}
+
 .close-dialog {
   float: right;
   width: fit-content;
@@ -305,4 +310,54 @@ div.mdc-card {
 /* override Angular Material tooltip max-height for score-board hints */
 .mat-mdc-tooltip-surface {
   max-height: none !important;
+}
+
+/* ---- CyberGym modern polish ---- */
+
+// Deeper charcoal app background for the CyberGym theme.
+// Driven by the single source of truth in theme.scss (the body element carries
+// both classes, which mat.all-component-colors' descendant selector can't reach).
+.cybergym-dark-theme.mat-app-background {
+  background-color: $cybergym-bg-page;
+}
+
+.cybergym-dark-theme {
+  // Distinct, darker top toolbar (sits below the page so the bar reads as a
+  // header). Driven by the single source of truth in theme.scss.
+  --mat-toolbar-container-background-color: #{$cybergym-bg-toolbar};
+
+  // Rounded, modern cards
+  div.mdc-card {
+    border-radius: 14px;
+  }
+
+  // Pill-style buttons with a touch more weight
+  .mat-mdc-raised-button,
+  .mat-mdc-unelevated-button,
+  .mat-mdc-outlined-button,
+  .mat-mdc-button {
+    border-radius: 24px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+
+  // Consistent primary-action placement: right-align dialog/card actions with even spacing
+  .mat-mdc-dialog-actions,
+  .mat-mdc-card-actions {
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 8px 16px 16px;
+  }
+
+  // Modal dialogs: darker surface + pronounced lift shadow across the app.
+  // Surface colour comes from the single source of truth in theme.scss.
+  .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: #{$cybergym-bg-dialog};
+  }
+
+  .mat-mdc-dialog-surface {
+    box-shadow:
+      0 24px 60px rgba(0, 0, 0, 0.55),
+      0 8px 22px rgba(0, 0, 0, 0.45);
+  }
 }
