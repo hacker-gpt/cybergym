@@ -14,11 +14,21 @@ mat-table {
   width: 100%;
 }
 
-.mat-column-Selection { width: 15%; }
-.mat-column-Number { width: 35%; }
-.mat-column-Name { width: 30%; }
-.mat-column-Expiry { width: 20%; }
-.mat-column-Remove { width: 15%; }
+.mat-column-Selection {
+  width: 15%;
+}
+.mat-column-Number {
+  width: 35%;
+}
+.mat-column-Name {
+  width: 30%;
+}
+.mat-column-Expiry {
+  width: 20%;
+}
+.mat-column-Remove {
+  width: 15%;
+}
 
 .half-field {
   margin-right: 10%;
@@ -36,7 +46,6 @@ mat-table {
 }
 
 .heading {
-  background: rgba(0, 0, 0, 0.2);
   font-size: x-large;
   justify-content: center;
   padding: 12px 20px;

@@ -3,8 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-$bg-heading: rgba(0, 0, 0, 0.13);
-
 .container {
   align-items: stretch;
   display: flex;
@@ -14,17 +12,19 @@ $bg-heading: rgba(0, 0, 0, 0.13);
 }
 
 @media (max-width: 959.98px) {
-  .container { flex-direction: column; }
-  .align-self-lt-md-center { align-self: center; }
+  .container {
+    flex-direction: column;
+  }
+  .align-self-lt-md-center {
+    align-self: center;
+  }
 }
-
 
 .align-self-center {
   align-self: center;
 }
 
 .heading {
-  background: $bg-heading;
   justify-content: center;
   margin-bottom: 10px;
   padding: 12px 20px;
@@ -114,13 +114,19 @@ img {
   width: 10px;
 }
 
-.mdc-card { border: 0; }
+.mdc-card {
+  border: 0;
+}
 
-.offer-container { display: flex;
+.offer-container {
+  display: flex;
   flex-direction: column;
-  gap: 16px; }
+  gap: 16px;
+}
 
-.faq-container { display: flex;
+.faq-container {
+  display: flex;
   flex-direction: column;
   gap: 4px;
-  margin-top: -7px; }
+  margin-top: -7px;
+}

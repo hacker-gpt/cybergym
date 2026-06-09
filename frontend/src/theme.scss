@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 @use '@angular/material' as mat;
+@use 'sass:map';
 
 @include mat.elevation-classes();
 @include mat.app-background();
@@ -109,6 +110,28 @@ $lime-green-theme: mat.m2-define-dark-theme((
 .lime-green-theme {
   @include mat.all-component-colors($lime-green-theme); }
 
+// ============================================================================
+// CyberGym dark backgrounds — SINGLE SOURCE OF TRUTH.
+// Change these four values to darken/lighten EVERY background across the app:
+// the page, cards, dialogs, the toolbar and raised buttons all derive from
+// here, as do the --theme-background* CSS variables used by components
+// (see css-vars() in styles.scss). These replace Material's default greys
+// (#303030 page / #424242 cards).
+$cybergym-bg-toolbar: #0b0c0f; // top toolbar / app-bar (was Material #212121)
+$cybergym-bg-page:    #0e0f13; // page / app background (was Material #303030)
+$cybergym-bg-surface: #16181e; // cards & raised surfaces (was Material #424242)
+$cybergym-bg-dialog:  #1c1f26; // modal dialogs (slightly lifted above surfaces)
+
+// Darkened legacy background palette. In Material 20 this only feeds our own
+// --theme-background* CSS variables (css-vars() in styles.scss reads the `card`
+// key); Material's components read the system map below.
+$cybergym-dark-background: map.merge(mat.$m2-dark-theme-background-palette, (
+  background: $cybergym-bg-page,
+  card: $cybergym-bg-surface,
+  dialog: $cybergym-bg-dialog,
+));
+// ============================================================================
+
 $cybergym-dark-primary: mat.m2-define-palette(mat.$m2-amber-palette, 500, 300, 700);
 $cybergym-dark-accent: mat.m2-define-palette(mat.$m2-amber-palette, A400, A200, A700);
 $cybergym-dark-warn: mat.m2-define-palette(mat.$m2-red-palette);
@@ -119,6 +142,32 @@ $cybergym-dark-theme: mat.m2-define-dark-theme((
     warn: $cybergym-dark-warn,
   ),
 ));
+
+// (1) Point our legacy background palette at the dark values so the
+//     --theme-background* CSS variables (used by component .scss files) follow.
+$cybergym-dark-theme: map.merge($cybergym-dark-theme, (background: $cybergym-dark-background));
+
+// (2) Override the system map — the single source every Material component token
+//     reads (each token does map.get($system, surface | background ...)). This is
+//     what actually darkens cards, dialogs, menus, toolbars, tables, sidenav,
+//     expansion panels, snackbars, FABs, filled/tonal buttons, etc.
+$cybergym-dark-system: (
+  background: $cybergym-bg-page,
+  surface: $cybergym-bg-surface,
+  surface-bright: $cybergym-bg-surface,
+  surface-dim: $cybergym-bg-surface,
+  surface-tint: $cybergym-bg-surface,
+  surface-container: $cybergym-bg-surface,
+  surface-container-low: $cybergym-bg-surface,
+  surface-container-lowest: $cybergym-bg-surface,
+  surface-container-high: $cybergym-bg-surface,
+  surface-container-highest: $cybergym-bg-surface,
+  surface-variant: $cybergym-bg-dialog,
+);
+$cybergym-dark-theme: map.set(
+  $cybergym-dark-theme, _mat-system,
+  map.merge(map.get($cybergym-dark-theme, _mat-system), $cybergym-dark-system)
+);
 
 .cybergym-dark-theme {
   @include mat.all-component-colors($cybergym-dark-theme); }

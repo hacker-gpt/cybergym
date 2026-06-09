@@ -9,9 +9,11 @@
 }
 
 .mat-search_field {
-  // keep a small gap on the right so the pill clears the search/close icon,
-  // and vertically centre the (absolutely positioned) field in the toolbar row
-  padding: 0 6px 0 0;
+  // right-aligned to the toolbar slot; the pill grows leftwards when opened.
+  // overflow:hidden clips the pill while collapsed so the inactive field is
+  // hidden behind the icon instead of leaking past the toolbar edge.
+  overflow: hidden;
+  padding: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -22,7 +24,9 @@
     background: rgba(0, 0, 0, 0.28);
     border: 1px solid rgba(0, 0, 0, 0.18);
     border-radius: 22px;
-    padding: 0 18px;
+    // extra right padding reserves space for the 24px search/close icon that
+    // sits at the pill's right edge, so typed text never runs under it
+    padding: 0 26px 0 18px;
     transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
 

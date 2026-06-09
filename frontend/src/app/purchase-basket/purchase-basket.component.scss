@@ -4,7 +4,6 @@
  */
 
 // Variables
-$bg-heading: rgba(0, 0, 0, 0.2);
 $cell-padding: 5px;
 $border-radius: 4px;
 $transition-speed: 0.2s;
@@ -21,7 +20,6 @@ h1 small {
 }
 
 .heading {
-  background: $bg-heading;
   border-radius: $border-radius;
   font-size: x-large;
   justify-content: center;
@@ -75,11 +73,21 @@ mat-footer-cell:last-of-type {
   padding-right: $cell-padding;
 }
 
-.mat-column-image { width: 20%; }
-.mat-column-product { width: 35%; }
-.mat-column-quantity { width: 16%; }
-.mat-column-price { width: 16%; }
-.mat-column-remove { width: 10%; }
+.mat-column-image {
+  width: 20%;
+}
+.mat-column-product {
+  width: 35%;
+}
+.mat-column-quantity {
+  width: 16%;
+}
+.mat-column-price {
+  width: 16%;
+}
+.mat-column-remove {
+  width: 10%;
+}
 
 @media (max-width: 959.98px) {
   .mat-column-image,
@@ -166,7 +174,6 @@ mat-footer-cell:last-of-type {
     gap: 2px;
     width: 100%;
   }
-
 }
 
 // Delete button
