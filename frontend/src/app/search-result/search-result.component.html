@@ -19,11 +19,10 @@
     </div>
 
     @if (!emptyState) {
-      <div>
-        <mat-grid-list #table (window:resize)="onResize($event)" [cols]="breakpoint" gutterSize="30px">
-          @for (item of gridDataSource | async; track item) {
-            <mat-grid-tile>
-              <mat-card appearance="outlined" [style.width]="'100%'" class="mat-elevation-z6 ribbon-card">
+      <div class="product-grid" (window:resize)="onResize($event)"
+        [style.grid-template-columns]="'repeat(' + breakpoint + ', minmax(0, 1fr))'">
+        @for (item of gridDataSource | async; track item) {
+          <mat-card appearance="outlined" class="mat-elevation-z6 ribbon-card">
                 <div class="mdc-card">
                   @if (item.quantity <= 5 && item.quantity > 0) {
                     <div class="ribbon ribbon-top-left">
@@ -37,10 +36,13 @@
                   }
                   <div class="product" (click)="showDetail(item)" aria-label="Click for more information about the product"
                     matTooltip="Click for more information" matTooltipPosition="above">
-                    <img mat-card-image [src]="'assets/public/images/products/'+item.image" alt={{item.name}}
-                      class="img-responsive img-thumbnail" role="button">
+                    <div class="product-image">
+                      <img mat-card-image [src]="'assets/public/images/products/'+item.image" alt={{item.name}}
+                        class="img-responsive img-thumbnail" role="button">
+                    </div>
                       <div class="info-box">
                         <div class="item-name">{{item.name}}</div>
+                        <div class="item-description" [innerHTML]="item.description"></div>
                         <div class="item-price">
                           @if (!isDeluxe() || item.price === item.deluxePrice) {
                             <span>{{item.price}}&curren;</span>
@@ -62,10 +64,8 @@
                     }
                   </div>
                 </div>
-              </mat-card>
-            </mat-grid-tile>
-          }
-        </mat-grid-list>
+          </mat-card>
+        }
       </div>
     } @else {
       <mat-card appearance="outlined" class="mat-elevation-z6 emptyState">

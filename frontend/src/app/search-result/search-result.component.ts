@@ -27,7 +27,6 @@ import { MatDivider } from '@angular/material/divider'
 import { MatButtonModule } from '@angular/material/button'
 import { MatTooltip } from '@angular/material/tooltip'
 import { MatCardModule, MatCardImage, MatCardTitle, MatCardContent } from '@angular/material/card'
-import { MatGridList, MatGridTile } from '@angular/material/grid-list'
 import { AsyncPipe } from '@angular/common'
 
 library.add(faEye, faCartPlus)
@@ -46,7 +45,7 @@ interface TableEntry {
   selector: 'app-search-result',
   templateUrl: './search-result.component.html',
   styleUrls: ['./search-result.component.scss'],
-  imports: [MatGridList, MatGridTile, MatCardModule, TranslateModule, MatTooltip, MatCardImage, MatButtonModule, MatCardTitle, MatCardContent, MatDivider, MatPaginator, AsyncPipe]
+  imports: [MatCardModule, TranslateModule, MatTooltip, MatCardImage, MatButtonModule, MatCardTitle, MatCardContent, MatDivider, MatPaginator, AsyncPipe]
 })
 export class SearchResultComponent implements OnDestroy, AfterViewInit {
   private readonly deluxeGuard = inject(DeluxeGuard);
@@ -122,13 +121,10 @@ export class SearchResultComponent implements OnDestroy, AfterViewInit {
         } // vuln-code-snippet hide-end
         if (window.innerWidth < 2600) {
           this.breakpoint = 4
-          if (window.innerWidth < 1740) {
-            this.breakpoint = 3
-            if (window.innerWidth < 1280) {
-              this.breakpoint = 2
-              if (window.innerWidth < 850) {
-                this.breakpoint = 1
-              }
+          if (window.innerWidth < 1280) {
+            this.breakpoint = 2
+            if (window.innerWidth < 850) {
+              this.breakpoint = 1
             }
           }
         } else {
@@ -279,13 +275,10 @@ export class SearchResultComponent implements OnDestroy, AfterViewInit {
   onResize (event: any) {
     if (event.target.innerWidth < 2600) {
       this.breakpoint = 4
-      if (event.target.innerWidth < 1740) {
-        this.breakpoint = 3
-        if (event.target.innerWidth < 1280) {
-          this.breakpoint = 2
-          if (event.target.innerWidth < 850) {
-            this.breakpoint = 1
-          }
+      if (event.target.innerWidth < 1280) {
+        this.breakpoint = 2
+        if (event.target.innerWidth < 850) {
+          this.breakpoint = 1
         }
       }
     } else {

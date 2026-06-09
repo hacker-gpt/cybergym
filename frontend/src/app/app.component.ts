@@ -13,6 +13,7 @@ import { ChallengeSolvedNotificationComponent } from './challenge-solved-notific
 import { ServerStartedNotificationComponent } from './server-started-notification/server-started-notification.component'
 import { NavbarComponent } from './navbar/navbar.component'
 import { SidenavComponent } from './sidenav/sidenav.component'
+import { FooterComponent } from './footer/footer.component'
 import { MatSidenavContainer, MatSidenav } from '@angular/material/sidenav'
 
 dom.watch()
@@ -21,7 +22,7 @@ dom.watch()
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [MatSidenavContainer, MatSidenav, SidenavComponent, NavbarComponent, ServerStartedNotificationComponent, ChallengeSolvedNotificationComponent, WelcomeComponent, RouterOutlet]
+  imports: [MatSidenavContainer, MatSidenav, SidenavComponent, NavbarComponent, ServerStartedNotificationComponent, ChallengeSolvedNotificationComponent, WelcomeComponent, RouterOutlet, FooterComponent]
 })
 export class AppComponent {
   private readonly _document = inject<HTMLDocument>(DOCUMENT);

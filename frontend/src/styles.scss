@@ -342,4 +342,15 @@ div.mdc-card {
     justify-content: flex-end;
     padding: 8px 16px 16px;
   }
+
+  // Modal dialogs: darker surface + pronounced lift shadow across the app
+  .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: #1c1f26;
+  }
+
+  .mat-mdc-dialog-surface {
+    box-shadow:
+      0 24px 60px rgba(0, 0, 0, 0.55),
+      0 8px 22px rgba(0, 0, 0, 0.45);
+  }
 }

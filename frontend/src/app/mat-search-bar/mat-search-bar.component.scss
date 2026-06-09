@@ -7,23 +7,64 @@
   position: relative;
   width: 24px;
 }
-  
+
 .mat-search_field {
-  padding: 0 24px 0 0;
+  // keep a small gap on the right so the pill clears the search/close icon,
+  // and vertically centre the (absolutely positioned) field in the toolbar row
+  padding: 0 6px 0 0;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 
+  // ---- rounded "pill" container ----
   ::ng-deep .mat-mdc-text-field-wrapper {
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 22px;
+    padding: 0 18px;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  ::ng-deep .mat-mdc-text-field-wrapper:hover {
+    background: rgba(0, 0, 0, 0.38);
+  }
+
+  // focus: solidify the fill and add a primary-coloured ring
+  ::ng-deep .mat-mdc-text-field-wrapper:focus-within {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: var(--theme-primary-light);
+    box-shadow: 0 0 0 3px var(--theme-primary-fade-30);
+  }
+
+  // vertically centre the text within the pill
+  ::ng-deep .mat-mdc-form-field-infix {
+    align-items: center;
+    display: flex;
+    min-height: 38px;
     padding: 0;
   }
 
-  ::ng-deep .mat-mdc-form-field-infix {
-    align-items: flex-end;
-    display: flex;
-    padding: 0.5em;
+  ::ng-deep input.mat-mdc-input-element {
+    caret-color: var(--theme-primary-light);
+    color: #fff;
+  }
+
+  ::ng-deep input.mat-mdc-input-element::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  // drop Material's default underline and the reserved hint/error space
+  // (the empty subscript row was pushing the input toward the top edge)
+  ::ng-deep .mdc-line-ripple {
+    display: none;
+  }
+
+  ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    display: none;
   }
 }
-  
+
 .mat-search_icons {
   display: block;
   left: 0;

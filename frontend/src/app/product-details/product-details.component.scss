@@ -3,11 +3,40 @@
  * SPDX-License-Identifier: MIT
  */
 
-.img-thumbnail {
+.product-title {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px;
+}
+
+.product-title-text {
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.dialog-close-btn {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.product-detail-image {
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  display: block;
   height: auto;
   max-width: 100%;
+  object-fit: cover;
   padding: 0;
   width: 200px;
+}
+
+.product-info {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 mat-form-field {
@@ -119,13 +148,15 @@ div {
   .details-row {
     flex-direction: column;
   }
-}
 
+  .product-detail-image {
+    width: 100%;
+  }
+}
 
 .no-shrink {
   flex: 0 0 auto;
 }
-
 
 .review-row {
   align-items: flex-start;
