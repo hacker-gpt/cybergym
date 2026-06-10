@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1" serialNumber="urn:uuid:6fc6ca8b-625c-4014-acf6-edd0f56315f5">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1" serialNumber="urn:uuid:19641634-ff99-4e0e-a7be-f02956fb7d63">
   <metadata>
-    <timestamp>2026-06-09T22:22:47.555Z</timestamp>
+    <timestamp>2026-06-10T19:26:50.854Z</timestamp>
     <lifecycles>
       <lifecycle>
         <phase>build</phase>
@@ -74,6 +74,31 @@
     </component>
   </metadata>
   <components>
+    <component type="library" bom-ref="material-icons@0.3.1">
+      <name>material-icons</name>
+      <version>0.3.1</version>
+      <description>Material design icon font and CSS framework for self hosting the icons.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/material-icons@0.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmarella%2Fmaterial-icons.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/marella/material-icons.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://marella.github.io/material-icons/</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/marella/material-icons/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
     <component type="library" bom-ref="flag-icons@6.15.0">
       <author>Panayiotis Lipiridis</author>
       <name>flag-icons</name>
@@ -173,31 +198,6 @@
         </reference>
         <reference type="issue-tracker">
           <url>http://github.com/codemirror/CodeMirror/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="material-icons@0.3.1">
-      <name>material-icons</name>
-      <version>0.3.1</version>
-      <description>Material design icon font and CSS framework for self hosting the icons.</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>Apache-2.0</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/material-icons@0.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmarella%2Fmaterial-icons.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/marella/material-icons.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://marella.github.io/material-icons/</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/marella/material-icons/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -333,32 +333,6 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="ng2-file-upload@9.0.0">
-      <author>Dmitriy Shekhovtsov</author>
-      <name>ng2-file-upload</name>
-      <version>9.0.0</version>
-      <description>Angular file uploader</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/ng2-file-upload@9.0.0?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fvalor-software%2Fng2-file-upload.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+ssh://git@github.com/valor-software/ng2-file-upload.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/valor-software/ng2-file-upload#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/valor-software/ng2-file-upload/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
     <component type="library" bom-ref="@angular/platform-browser@20.3.24">
       <author>angular</author>
       <group>@angular</group>
@@ -382,6 +356,32 @@
         </reference>
         <reference type="issue-tracker">
           <url>https://github.com/angular/angular/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="ng2-file-upload@9.0.0">
+      <author>Dmitriy Shekhovtsov</author>
+      <name>ng2-file-upload</name>
+      <version>9.0.0</version>
+      <description>Angular file uploader</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/ng2-file-upload@9.0.0?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fvalor-software%2Fng2-file-upload.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+ssh://git@github.com/valor-software/ng2-file-upload.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/valor-software/ng2-file-upload#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/valor-software/ng2-file-upload/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -555,32 +555,6 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="rxjs@7.8.2">
-      <author>Ben Lesh</author>
-      <name>rxjs</name>
-      <version>7.8.2</version>
-      <description>Reactive Extensions for modern JavaScript</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>Apache-2.0</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/rxjs@7.8.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Freactivex%2Frxjs.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/reactivex/rxjs.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://rxjs.dev</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/ReactiveX/RxJS/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
     <component type="library" bom-ref="ngx-highlightjs@6.1.3">
       <author>Murhaf Sousli</author>
       <name>ngx-highlightjs</name>
@@ -633,6 +607,32 @@
         </reference>
       </externalReferences>
     </component>
+    <component type="library" bom-ref="rxjs@7.8.2">
+      <author>Ben Lesh</author>
+      <name>rxjs</name>
+      <version>7.8.2</version>
+      <description>Reactive Extensions for modern JavaScript</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/rxjs@7.8.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Freactivex%2Frxjs.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/reactivex/rxjs.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://rxjs.dev</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/ReactiveX/RxJS/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
     <component type="library" bom-ref="@babel/runtime@7.28.3">
       <author>The Babel Team</author>
       <group>@babel</group>
@@ -659,17 +659,6 @@
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
-    </component>
-    <component type="library" bom-ref="@ngx-translate/http-loader@8.0.0">
-      <group>@ngx-translate</group>
-      <name>http-loader</name>
-      <version>8.0.0</version>
-      <licenses>
-        <license acknowledgement="declared">
-          <name>SEE LICENSE IN LICENSE</name>
-        </license>
-      </licenses>
-      <purl>pkg:npm/%40ngx-translate/http-loader@8.0.0</purl>
     </component>
     <component type="library" bom-ref="@angular/animations@20.3.24">
       <author>angular</author>
@@ -698,6 +687,17 @@
         </reference>
       </externalReferences>
     </component>
+    <component type="library" bom-ref="@ngx-translate/http-loader@8.0.0">
+      <group>@ngx-translate</group>
+      <name>http-loader</name>
+      <version>8.0.0</version>
+      <licenses>
+        <license acknowledgement="declared">
+          <name>SEE LICENSE IN LICENSE</name>
+        </license>
+      </licenses>
+      <purl>pkg:npm/%40ngx-translate/http-loader@8.0.0</purl>
+    </component>
     <component type="library" bom-ref="ngx-window-token@6.0.0">
       <author>Sam Lin</author>
       <name>ngx-window-token</name>
@@ -720,33 +720,6 @@
         </reference>
         <reference type="issue-tracker">
           <url>https://github.com/maxisam/ngx-window-token/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="@angular/router@20.3.24">
-      <author>angular</author>
-      <group>@angular</group>
-      <name>router</name>
-      <version>20.3.24</version>
-      <description>Angular - the routing library</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/%40angular/router@20.3.24?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fangular.git%23packages%2Frouter</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/angular/angular.git#packages/router</url>
-          <comment>as detected from PackageJson property "repository.url" and "repository.directory"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/angular/angular/tree/main/packages/router</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/angular/angular/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -802,32 +775,6 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="jwt-decode@2.2.0">
-      <author>Jose F. Romaniello</author>
-      <name>jwt-decode</name>
-      <version>2.2.0</version>
-      <description>Decode JWT tokens, mostly useful for browser applications.</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/jwt-decode@2.2.0?vcs_url=git%3A%2F%2Fgithub.com%2Fauth0%2Fjwt-decode.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git://github.com/auth0/jwt-decode.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/auth0/jwt-decode#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/auth0/jwt-decode/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
     <component type="library" bom-ref="@fortawesome/fontawesome-svg-core@1.2.36">
       <author>Dave Gandy</author>
       <group>@fortawesome</group>
@@ -851,6 +798,59 @@
         </reference>
         <reference type="issue-tracker">
           <url>http://github.com/FortAwesome/Font-Awesome/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="@angular/router@20.3.24">
+      <author>angular</author>
+      <group>@angular</group>
+      <name>router</name>
+      <version>20.3.24</version>
+      <description>Angular - the routing library</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/%40angular/router@20.3.24?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fangular.git%23packages%2Frouter</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/angular/angular.git#packages/router</url>
+          <comment>as detected from PackageJson property "repository.url" and "repository.directory"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/angular/angular/tree/main/packages/router</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/angular/angular/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="jwt-decode@2.2.0">
+      <author>Jose F. Romaniello</author>
+      <name>jwt-decode</name>
+      <version>2.2.0</version>
+      <description>Decode JWT tokens, mostly useful for browser applications.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/jwt-decode@2.2.0?vcs_url=git%3A%2F%2Fgithub.com%2Fauth0%2Fjwt-decode.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git://github.com/auth0/jwt-decode.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/auth0/jwt-decode#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/auth0/jwt-decode/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -880,16 +880,16 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="@fortawesome/free-brands-svg-icons@5.15.4">
+    <component type="library" bom-ref="@fortawesome/free-regular-svg-icons@5.15.4">
       <author>Dave Gandy</author>
       <group>@fortawesome</group>
-      <name>free-brands-svg-icons</name>
+      <name>free-regular-svg-icons</name>
       <version>5.15.4</version>
       <description>The iconic font, CSS, and SVG framework</description>
       <licenses>
         <expression acknowledgement="declared">(CC-BY-4.0 AND MIT)</expression>
       </licenses>
-      <purl>pkg:npm/%40fortawesome/free-brands-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git</purl>
+      <purl>pkg:npm/%40fortawesome/free-regular-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git</purl>
       <externalReferences>
         <reference type="vcs">
           <url>git+https://github.com/FortAwesome/Font-Awesome.git</url>
@@ -905,16 +905,16 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="@fortawesome/free-regular-svg-icons@5.15.4">
+    <component type="library" bom-ref="@fortawesome/free-brands-svg-icons@5.15.4">
       <author>Dave Gandy</author>
       <group>@fortawesome</group>
-      <name>free-regular-svg-icons</name>
+      <name>free-brands-svg-icons</name>
       <version>5.15.4</version>
       <description>The iconic font, CSS, and SVG framework</description>
       <licenses>
         <expression acknowledgement="declared">(CC-BY-4.0 AND MIT)</expression>
       </licenses>
-      <purl>pkg:npm/%40fortawesome/free-regular-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git</purl>
+      <purl>pkg:npm/%40fortawesome/free-brands-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git</purl>
       <externalReferences>
         <reference type="vcs">
           <url>git+https://github.com/FortAwesome/Font-Awesome.git</url>
@@ -974,6 +974,55 @@
         </reference>
       </externalReferences>
     </component>
+    <component type="library" bom-ref="snarkdown@1.2.2">
+      <name>snarkdown</name>
+      <version>1.2.2</version>
+      <description>Transform Markdown into HTML.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/snarkdown@1.2.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fdevelopit%2Fsnarkdown.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/developit/snarkdown.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/developit/snarkdown</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/developit/snarkdown/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="socket.io-client@3.1.3">
+      <name>socket.io-client</name>
+      <version>3.1.3</version>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/socket.io-client@3.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-client.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/socketio/socket.io-client.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/socketio/socket.io-client#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/socketio/socket.io-client/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
     <component type="library" bom-ref="tslib@2.8.1">
       <author>Microsoft Corp.</author>
       <name>tslib</name>
@@ -996,6 +1045,83 @@
         </reference>
         <reference type="issue-tracker">
           <url>https://github.com/Microsoft/TypeScript/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="canvas-confetti@1.9.4">
+      <author>Kiril Vatev</author>
+      <name>canvas-confetti</name>
+      <version>1.9.4</version>
+      <description>performant confetti animation in the browser</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>ISC</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/canvas-confetti@1.9.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fcatdad%2Fcanvas-confetti.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/catdad/canvas-confetti.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/catdad/canvas-confetti#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/catdad/canvas-confetti/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="lodash-es@4.18.1">
+      <author>John-David Dalton</author>
+      <name>lodash-es</name>
+      <version>4.18.1</version>
+      <description>Lodash exported as ES modules.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/lodash-es@4.18.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Flodash%2Flodash.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/lodash/lodash.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://lodash.com/custom-builds</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/lodash/lodash-cli/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="dijkstrajs@1.0.3">
+      <name>dijkstrajs</name>
+      <version>1.0.3</version>
+      <description>A simple JavaScript implementation of Dijkstra's single-source shortest-paths algorithm.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/dijkstrajs@1.0.3?vcs_url=git%3A%2F%2Fgithub.com%2Ftcort%2Fdijkstrajs.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git://github.com/tcort/dijkstrajs.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/tcort/dijkstrajs</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/tcort/dijkstrajs/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -1053,107 +1179,6 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="lodash-es@4.18.1">
-      <author>John-David Dalton</author>
-      <name>lodash-es</name>
-      <version>4.18.1</version>
-      <description>Lodash exported as ES modules.</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/lodash-es@4.18.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Flodash%2Flodash.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/lodash/lodash.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://lodash.com/custom-builds</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/lodash/lodash-cli/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="canvas-confetti@1.9.4">
-      <author>Kiril Vatev</author>
-      <name>canvas-confetti</name>
-      <version>1.9.4</version>
-      <description>performant confetti animation in the browser</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>ISC</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/canvas-confetti@1.9.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fcatdad%2Fcanvas-confetti.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/catdad/canvas-confetti.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/catdad/canvas-confetti#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/catdad/canvas-confetti/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="socket.io-client@3.1.3">
-      <name>socket.io-client</name>
-      <version>3.1.3</version>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/socket.io-client@3.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-client.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/socketio/socket.io-client.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/socketio/socket.io-client#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/socketio/socket.io-client/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="dijkstrajs@1.0.3">
-      <name>dijkstrajs</name>
-      <version>1.0.3</version>
-      <description>A simple JavaScript implementation of Dijkstra's single-source shortest-paths algorithm.</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/dijkstrajs@1.0.3?vcs_url=git%3A%2F%2Fgithub.com%2Ftcort%2Fdijkstrajs.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git://github.com/tcort/dijkstrajs.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/tcort/dijkstrajs</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/tcort/dijkstrajs/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
     <component type="library" bom-ref="solidity-browser-compiler@1.1.0">
       <author>Nikola Bozin</author>
       <name>solidity-browser-compiler</name>
@@ -1180,27 +1205,180 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="snarkdown@1.2.2">
-      <name>snarkdown</name>
-      <version>1.2.2</version>
-      <description>Transform Markdown into HTML.</description>
+    <component type="library" bom-ref="socket.io-parser@4.0.5">
+      <name>socket.io-parser</name>
+      <version>4.0.5</version>
+      <description>socket.io protocol parser</description>
       <licenses>
         <license acknowledgement="declared">
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:npm/snarkdown@1.2.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fdevelopit%2Fsnarkdown.git</purl>
+      <purl>pkg:npm/socket.io-parser@4.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-parser.git</purl>
       <externalReferences>
         <reference type="vcs">
-          <url>git+https://github.com/developit/snarkdown.git</url>
+          <url>git+https://github.com/socketio/socket.io-parser.git</url>
           <comment>as detected from PackageJson property "repository.url"</comment>
         </reference>
         <reference type="website">
-          <url>https://github.com/developit/snarkdown</url>
+          <url>https://github.com/socketio/socket.io-parser#readme</url>
           <comment>as detected from PackageJson property "homepage"</comment>
         </reference>
         <reference type="issue-tracker">
-          <url>https://github.com/developit/snarkdown/issues</url>
+          <url>https://github.com/socketio/socket.io-parser/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="component-emitter@1.3.1">
+      <name>component-emitter</name>
+      <version>1.3.1</version>
+      <description>Event emitter</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/component-emitter@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fcomponent-emitter.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/sindresorhus/component-emitter.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/sindresorhus/component-emitter#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/sindresorhus/component-emitter/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="parseuri@0.0.6">
+      <author>Gal Koren</author>
+      <name>parseuri</name>
+      <version>0.0.6</version>
+      <description>Method that parses a URI and returns an array of its components</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/parseuri@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fparseuri.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/get/parseuri.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/get/parseuri</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/get/parseuri/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="engine.io-client@4.1.4">
+      <name>engine.io-client</name>
+      <version>4.1.4</version>
+      <description>Client for the realtime Engine</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/engine.io-client@4.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fengine.io-client.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/socketio/engine.io-client.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/socketio/engine.io-client</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/socketio/engine.io-client/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="backo2@1.0.2">
+      <name>backo2</name>
+      <version>1.0.2</version>
+      <description>simple backoff based on segmentio/backo</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/backo2@1.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmokesmokes%2Fbacko.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/mokesmokes/backo.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/mokesmokes/backo#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/mokesmokes/backo/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="debug@4.3.7">
+      <author>Josh Junon</author>
+      <name>debug</name>
+      <version>4.3.7</version>
+      <description>Lightweight debugging utility for Node.js and the browser</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/debug@4.3.7?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git://github.com/debug-js/debug.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/debug-js/debug#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/debug-js/debug/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="file-saver@2.0.5">
+      <author>Eli Grey</author>
+      <name>file-saver</name>
+      <version>2.0.5</version>
+      <description>An HTML5 saveAs() FileSaver implementation</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/file-saver@2.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feligrey%2FFileSaver.js.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/eligrey/FileSaver.js.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/eligrey/FileSaver.js#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/eligrey/FileSaver.js/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -1469,31 +1647,6 @@
         </reference>
         <reference type="issue-tracker">
           <url>https://github.com/ethers-io/ethers.js/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="socket.io-parser@4.0.5">
-      <name>socket.io-parser</name>
-      <version>4.0.5</version>
-      <description>socket.io protocol parser</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/socket.io-parser@4.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-parser.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/socketio/socket.io-parser.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/socketio/socket.io-parser#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/socketio/socket.io-parser/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -2011,32 +2164,58 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="component-emitter@1.3.1">
-      <name>component-emitter</name>
-      <version>1.3.1</version>
-      <description>Event emitter</description>
+    <component type="library" bom-ref="engine.io-parser@4.0.3">
+      <name>engine.io-parser</name>
+      <version>4.0.3</version>
+      <description>Parser for the client for the realtime Engine</description>
       <licenses>
         <license acknowledgement="declared">
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:npm/component-emitter@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fcomponent-emitter.git</purl>
+      <purl>pkg:npm/engine.io-parser@4.0.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fsocketio%2Fengine.io-parser.git</purl>
       <externalReferences>
         <reference type="vcs">
-          <url>git+https://github.com/sindresorhus/component-emitter.git</url>
+          <url>git+ssh://git@github.com/socketio/engine.io-parser.git</url>
           <comment>as detected from PackageJson property "repository.url"</comment>
         </reference>
         <reference type="website">
-          <url>https://github.com/sindresorhus/component-emitter#readme</url>
+          <url>https://github.com/socketio/engine.io-parser</url>
           <comment>as detected from PackageJson property "homepage"</comment>
         </reference>
         <reference type="issue-tracker">
-          <url>https://github.com/sindresorhus/component-emitter/issues</url>
+          <url>https://github.com/socketio/engine.io-parser/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="debug@4.3.7">
+    <component type="library" bom-ref="parseqs@0.0.6">
+      <author>Gal Koren</author>
+      <name>parseqs</name>
+      <version>0.0.6</version>
+      <description>Provides methods for parsing a query string into an object, and vice versa.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/parseqs@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fquerystring.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/get/querystring.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/get/querystring</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/get/querystring/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="BomRef.u2u97di82t.h3o0g2iun6o">
       <author>Josh Junon</author>
       <name>debug</name>
       <version>4.3.7</version>
@@ -2058,32 +2237,6 @@
         </reference>
         <reference type="issue-tracker">
           <url>https://github.com/debug-js/debug/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="file-saver@2.0.5">
-      <author>Eli Grey</author>
-      <name>file-saver</name>
-      <version>2.0.5</version>
-      <description>An HTML5 saveAs() FileSaver implementation</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/file-saver@2.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feligrey%2FFileSaver.js.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/eligrey/FileSaver.js.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/eligrey/FileSaver.js#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/eligrey/FileSaver.js/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -2115,6 +2268,83 @@
         </reference>
       </externalReferences>
     </component>
+    <component type="library" bom-ref="ms@2.1.3">
+      <name>ms</name>
+      <version>2.1.3</version>
+      <description>Tiny millisecond conversion utility</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/ms@2.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fvercel%2Fms.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/vercel/ms.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/vercel/ms#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/vercel/ms/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="yeast@0.1.2">
+      <author>Arnout Kazemier</author>
+      <name>yeast</name>
+      <version>0.1.2</version>
+      <description>Tiny but linear growing unique id generator</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/yeast@0.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Funshiftio%2Fyeast.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+https://github.com/unshiftio/yeast.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/unshiftio/yeast</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/unshiftio/yeast/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="has-cors@1.1.0">
+      <author>Nathan Rajlich</author>
+      <name>has-cors</name>
+      <version>1.1.0</version>
+      <description>Detects support for Cross-Origin Resource Sharing</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/has-cors@1.1.0?vcs_url=git%3A%2F%2Fgithub.com%2Fcomponent%2Fhas-cors.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git://github.com/component/has-cors.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/component/has-cors#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/component/has-cors/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
     <component type="library" bom-ref="@ethersproject/networks@5.8.0">
       <author>Richard Moore</author>
       <group>@ethersproject</group>
@@ -2138,133 +2368,6 @@
         </reference>
         <reference type="issue-tracker">
           <url>https://github.com/ethers-io/ethers.js/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="parseuri@0.0.6">
-      <author>Gal Koren</author>
-      <name>parseuri</name>
-      <version>0.0.6</version>
-      <description>Method that parses a URI and returns an array of its components</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/parseuri@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fparseuri.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/get/parseuri.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/get/parseuri</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/get/parseuri/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="backo2@1.0.2">
-      <name>backo2</name>
-      <version>1.0.2</version>
-      <description>simple backoff based on segmentio/backo</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/backo2@1.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmokesmokes%2Fbacko.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/mokesmokes/backo.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/mokesmokes/backo#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/mokesmokes/backo/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="engine.io-client@4.1.4">
-      <name>engine.io-client</name>
-      <version>4.1.4</version>
-      <description>Client for the realtime Engine</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/engine.io-client@4.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fengine.io-client.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/socketio/engine.io-client.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/socketio/engine.io-client</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/socketio/engine.io-client/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="bn.js@5.2.3">
-      <author>Fedor Indutny</author>
-      <name>bn.js</name>
-      <version>5.2.3</version>
-      <description>Big number implementation in pure javascript</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/bn.js@5.2.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Findutny%2Fbn.js.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+ssh://git@github.com/indutny/bn.js.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/indutny/bn.js</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/indutny/bn.js/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="bech32@1.1.4">
-      <name>bech32</name>
-      <version>1.1.4</version>
-      <description>Bech32 encoding / decoding</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/bech32@1.1.4?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fbitcoinjs%2Fbech32.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+ssh://git@github.com/bitcoinjs/bech32.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/bitcoinjs/bech32#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/bitcoinjs/bech32/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -2322,28 +2425,53 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="aes-js@3.0.0">
-      <author>Richard Moore</author>
-      <name>aes-js</name>
-      <version>3.0.0</version>
-      <description>A pure JavaScript implementation of the AES block cipher and all common modes of operation.</description>
+    <component type="library" bom-ref="bn.js@5.2.3">
+      <author>Fedor Indutny</author>
+      <name>bn.js</name>
+      <version>5.2.3</version>
+      <description>Big number implementation in pure javascript</description>
       <licenses>
         <license acknowledgement="declared">
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:npm/aes-js@3.0.0?vcs_url=git%3A%2F%2Fgithub.com%2Fricmoo%2Faes-js.git</purl>
+      <purl>pkg:npm/bn.js@5.2.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Findutny%2Fbn.js.git</purl>
       <externalReferences>
         <reference type="vcs">
-          <url>git://github.com/ricmoo/aes-js.git</url>
+          <url>git+ssh://git@github.com/indutny/bn.js.git</url>
           <comment>as detected from PackageJson property "repository.url"</comment>
         </reference>
         <reference type="website">
-          <url>https://github.com/ricmoo/aes-js#readme</url>
+          <url>https://github.com/indutny/bn.js</url>
           <comment>as detected from PackageJson property "homepage"</comment>
         </reference>
         <reference type="issue-tracker">
-          <url>http://github.com/ricmoo/aes-js/issues</url>
+          <url>https://github.com/indutny/bn.js/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="bech32@1.1.4">
+      <name>bech32</name>
+      <version>1.1.4</version>
+      <description>Bech32 encoding / decoding</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/bech32@1.1.4?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fbitcoinjs%2Fbech32.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git+ssh://git@github.com/bitcoinjs/bech32.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/bitcoinjs/bech32#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/bitcoinjs/bech32/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -2374,6 +2502,32 @@
         </reference>
       </externalReferences>
     </component>
+    <component type="library" bom-ref="aes-js@3.0.0">
+      <author>Richard Moore</author>
+      <name>aes-js</name>
+      <version>3.0.0</version>
+      <description>A pure JavaScript implementation of the AES block cipher and all common modes of operation.</description>
+      <licenses>
+        <license acknowledgement="declared">
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:npm/aes-js@3.0.0?vcs_url=git%3A%2F%2Fgithub.com%2Fricmoo%2Faes-js.git</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>git://github.com/ricmoo/aes-js.git</url>
+          <comment>as detected from PackageJson property "repository.url"</comment>
+        </reference>
+        <reference type="website">
+          <url>https://github.com/ricmoo/aes-js#readme</url>
+          <comment>as detected from PackageJson property "homepage"</comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://github.com/ricmoo/aes-js/issues</url>
+          <comment>as detected from PackageJson property "bugs.url"</comment>
+        </reference>
+      </externalReferences>
+    </component>
     <component type="library" bom-ref="hash.js@1.1.7">
       <author>Fedor Indutny</author>
       <name>hash.js</name>
@@ -2400,181 +2554,29 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="ms@2.1.3">
-      <name>ms</name>
-      <version>2.1.3</version>
-      <description>Tiny millisecond conversion utility</description>
+    <component type="library" bom-ref="base64-arraybuffer@0.1.4">
+      <author>Niklas von Hertzen</author>
+      <name>base64-arraybuffer</name>
+      <version>0.1.4</version>
+      <description>Encode/decode base64 data into ArrayBuffers</description>
       <licenses>
         <license acknowledgement="declared">
           <id>MIT</id>
+          <url>https://github.com/niklasvh/base64-arraybuffer/blob/master/LICENSE-MIT</url>
         </license>
       </licenses>
-      <purl>pkg:npm/ms@2.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fvercel%2Fms.git</purl>
+      <purl>pkg:npm/base64-arraybuffer@0.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fniklasvh%2Fbase64-arraybuffer.git</purl>
       <externalReferences>
         <reference type="vcs">
-          <url>git+https://github.com/vercel/ms.git</url>
+          <url>git+https://github.com/niklasvh/base64-arraybuffer.git</url>
           <comment>as detected from PackageJson property "repository.url"</comment>
         </reference>
         <reference type="website">
-          <url>https://github.com/vercel/ms#readme</url>
+          <url>https://github.com/niklasvh/base64-arraybuffer</url>
           <comment>as detected from PackageJson property "homepage"</comment>
         </reference>
         <reference type="issue-tracker">
-          <url>https://github.com/vercel/ms/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="engine.io-parser@4.0.3">
-      <name>engine.io-parser</name>
-      <version>4.0.3</version>
-      <description>Parser for the client for the realtime Engine</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/engine.io-parser@4.0.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fsocketio%2Fengine.io-parser.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+ssh://git@github.com/socketio/engine.io-parser.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/socketio/engine.io-parser</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/socketio/engine.io-parser/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="yeast@0.1.2">
-      <author>Arnout Kazemier</author>
-      <name>yeast</name>
-      <version>0.1.2</version>
-      <description>Tiny but linear growing unique id generator</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/yeast@0.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Funshiftio%2Fyeast.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/unshiftio/yeast.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/unshiftio/yeast</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/unshiftio/yeast/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="has-cors@1.1.0">
-      <author>Nathan Rajlich</author>
-      <name>has-cors</name>
-      <version>1.1.0</version>
-      <description>Detects support for Cross-Origin Resource Sharing</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/has-cors@1.1.0?vcs_url=git%3A%2F%2Fgithub.com%2Fcomponent%2Fhas-cors.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git://github.com/component/has-cors.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/component/has-cors#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/component/has-cors/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="parseqs@0.0.6">
-      <author>Gal Koren</author>
-      <name>parseqs</name>
-      <version>0.0.6</version>
-      <description>Provides methods for parsing a query string into an object, and vice versa.</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/parseqs@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fquerystring.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git+https://github.com/get/querystring.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/get/querystring</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/get/querystring/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="BomRef.rs6o0vpqfro.u562ktracao">
-      <author>Josh Junon</author>
-      <name>debug</name>
-      <version>4.3.7</version>
-      <description>Lightweight debugging utility for Node.js and the browser</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>MIT</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/debug@4.3.7?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git://github.com/debug-js/debug.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/debug-js/debug#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/debug-js/debug/issues</url>
-          <comment>as detected from PackageJson property "bugs.url"</comment>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="inherits@2.0.4">
-      <name>inherits</name>
-      <version>2.0.4</version>
-      <description>Browser-friendly inheritance fully compatible with standard node.js inherits()</description>
-      <licenses>
-        <license acknowledgement="declared">
-          <id>ISC</id>
-        </license>
-      </licenses>
-      <purl>pkg:npm/inherits@2.0.4?vcs_url=git%3A%2F%2Fgithub.com%2Fisaacs%2Finherits.git</purl>
-      <externalReferences>
-        <reference type="vcs">
-          <url>git://github.com/isaacs/inherits.git</url>
-          <comment>as detected from PackageJson property "repository.url"</comment>
-        </reference>
-        <reference type="website">
-          <url>https://github.com/isaacs/inherits#readme</url>
-          <comment>as detected from PackageJson property "homepage"</comment>
-        </reference>
-        <reference type="issue-tracker">
-          <url>https://github.com/isaacs/inherits/issues</url>
+          <url>https://github.com/niklasvh/base64-arraybuffer/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -2604,29 +2606,27 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="base64-arraybuffer@0.1.4">
-      <author>Niklas von Hertzen</author>
-      <name>base64-arraybuffer</name>
-      <version>0.1.4</version>
-      <description>Encode/decode base64 data into ArrayBuffers</description>
+    <component type="library" bom-ref="inherits@2.0.4">
+      <name>inherits</name>
+      <version>2.0.4</version>
+      <description>Browser-friendly inheritance fully compatible with standard node.js inherits()</description>
       <licenses>
         <license acknowledgement="declared">
-          <id>MIT</id>
-          <url>https://github.com/niklasvh/base64-arraybuffer/blob/master/LICENSE-MIT</url>
+          <id>ISC</id>
         </license>
       </licenses>
-      <purl>pkg:npm/base64-arraybuffer@0.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fniklasvh%2Fbase64-arraybuffer.git</purl>
+      <purl>pkg:npm/inherits@2.0.4?vcs_url=git%3A%2F%2Fgithub.com%2Fisaacs%2Finherits.git</purl>
       <externalReferences>
         <reference type="vcs">
-          <url>git+https://github.com/niklasvh/base64-arraybuffer.git</url>
+          <url>git://github.com/isaacs/inherits.git</url>
           <comment>as detected from PackageJson property "repository.url"</comment>
         </reference>
         <reference type="website">
-          <url>https://github.com/niklasvh/base64-arraybuffer</url>
+          <url>https://github.com/isaacs/inherits#readme</url>
           <comment>as detected from PackageJson property "homepage"</comment>
         </reference>
         <reference type="issue-tracker">
-          <url>https://github.com/niklasvh/base64-arraybuffer/issues</url>
+          <url>https://github.com/isaacs/inherits/issues</url>
           <comment>as detected from PackageJson property "bugs.url"</comment>
         </reference>
       </externalReferences>
@@ -2660,6 +2660,7 @@
   </components>
   <dependencies>
     <dependency ref="frontend@19.1.1">
+      <dependency ref="css-loader@7.1.2"/>
       <dependency ref="@babel/runtime@7.28.3"/>
       <dependency ref="@angular/core@20.3.24"/>
       <dependency ref="@angular/material@20.2.14"/>
@@ -2675,31 +2676,33 @@
       <dependency ref="ngy-cookie@6.0.1000"/>
       <dependency ref="ngx-highlightjs@6.1.3"/>
       <dependency ref="@angular/common@20.3.24"/>
-      <dependency ref="css-loader@7.1.2"/>
       <dependency ref="@ngx-translate/http-loader@8.0.0"/>
+      <dependency ref="@fortawesome/fontawesome-svg-core@1.2.36"/>
       <dependency ref="@angular/router@20.3.24"/>
       <dependency ref="rxjs@7.8.2"/>
       <dependency ref="jwt-decode@2.2.0"/>
-      <dependency ref="@fortawesome/fontawesome-svg-core@1.2.36"/>
-      <dependency ref="@fortawesome/free-brands-svg-icons@5.15.4"/>
       <dependency ref="@fortawesome/free-solid-svg-icons@5.15.4"/>
       <dependency ref="@fortawesome/free-regular-svg-icons@5.15.4"/>
+      <dependency ref="@fortawesome/free-brands-svg-icons@5.15.4"/>
       <dependency ref="@ctrl/ngx-codemirror@6.1.0"/>
       <dependency ref="codemirror@5.65.21"/>
       <dependency ref="codemirror-solidity@0.2.5"/>
+      <dependency ref="socket.io-client@3.1.3"/>
+      <dependency ref="@angular/animations@20.3.24"/>
+      <dependency ref="snarkdown@1.2.2"/>
+      <dependency ref="canvas-confetti@1.9.4"/>
       <dependency ref="ethers@5.8.0"/>
       <dependency ref="@ethersproject/providers@5.8.0"/>
       <dependency ref="@ethersproject/contracts@5.8.0"/>
-      <dependency ref="@ethersproject/constants@5.8.0"/>
       <dependency ref="@ethersproject/units@5.8.0"/>
       <dependency ref="@wagmi/core@0.5.8"/>
       <dependency ref="solidity-browser-compiler@1.1.0"/>
       <dependency ref="lodash-es@4.18.1"/>
-      <dependency ref="socket.io-client@3.1.3"/>
-      <dependency ref="canvas-confetti@1.9.4"/>
-      <dependency ref="snarkdown@1.2.2"/>
-      <dependency ref="@angular/animations@20.3.24"/>
+      <dependency ref="@ethersproject/constants@5.8.0"/>
       <dependency ref="file-saver@2.0.5"/>
+    </dependency>
+    <dependency ref="material-icons@0.3.1">
+      <dependency ref="frontend@19.1.1"/>
     </dependency>
     <dependency ref="flag-icons@6.15.0">
       <dependency ref="frontend@19.1.1"/>
@@ -2711,9 +2714,6 @@
       <dependency ref="frontend@19.1.1"/>
     </dependency>
     <dependency ref="codemirror@5.65.21">
-      <dependency ref="frontend@19.1.1"/>
-    </dependency>
-    <dependency ref="material-icons@0.3.1">
       <dependency ref="frontend@19.1.1"/>
     </dependency>
     <dependency ref="zone.js@0.15.1"/>
@@ -2740,13 +2740,13 @@
       <dependency ref="ngx-window-token@6.0.0"/>
       <dependency ref="rxjs@7.8.2"/>
     </dependency>
-    <dependency ref="ng2-file-upload@9.0.0">
-      <dependency ref="@angular/core@20.3.24"/>
-      <dependency ref="@angular/common@20.3.24"/>
-    </dependency>
     <dependency ref="@angular/platform-browser@20.3.24">
       <dependency ref="@angular/core@20.3.24"/>
       <dependency ref="@angular/animations@20.3.24"/>
+      <dependency ref="@angular/common@20.3.24"/>
+    </dependency>
+    <dependency ref="ng2-file-upload@9.0.0">
+      <dependency ref="@angular/core@20.3.24"/>
       <dependency ref="@angular/common@20.3.24"/>
     </dependency>
     <dependency ref="ng-qrcode@20.0.1">
@@ -2790,9 +2790,6 @@
       <dependency ref="rxjs@7.8.2"/>
       <dependency ref="@babel/runtime@7.28.3"/>
     </dependency>
-    <dependency ref="rxjs@7.8.2">
-      <dependency ref="tslib@2.8.1"/>
-    </dependency>
     <dependency ref="ngx-highlightjs@6.1.3">
       <dependency ref="@angular/core@20.3.24"/>
       <dependency ref="rxjs@7.8.2"/>
@@ -2800,14 +2797,22 @@
       <dependency ref="@angular/platform-browser@20.3.24"/>
     </dependency>
     <dependency ref="highlightjs-line-numbers.js@2.9.1"/>
+    <dependency ref="rxjs@7.8.2">
+      <dependency ref="tslib@2.8.1"/>
+    </dependency>
     <dependency ref="@babel/runtime@7.28.3"/>
-    <dependency ref="@ngx-translate/http-loader@8.0.0"/>
     <dependency ref="@angular/animations@20.3.24">
       <dependency ref="@angular/core@20.3.24"/>
     </dependency>
+    <dependency ref="@ngx-translate/http-loader@8.0.0"/>
     <dependency ref="ngx-window-token@6.0.0">
       <dependency ref="@angular/core@20.3.24"/>
     </dependency>
+    <dependency ref="qrcode@1.5.4">
+      <dependency ref="dijkstrajs@1.0.3"/>
+    </dependency>
+    <dependency ref="diff-match-patch@1.0.5"/>
+    <dependency ref="@fortawesome/fontawesome-svg-core@1.2.36"/>
     <dependency ref="@angular/router@20.3.24">
       <dependency ref="@angular/core@20.3.24"/>
       <dependency ref="@angular/common@20.3.24"/>
@@ -2815,22 +2820,29 @@
       <dependency ref="@angular/platform-browser@20.3.24"/>
       <dependency ref="@babel/runtime@7.28.3"/>
     </dependency>
-    <dependency ref="qrcode@1.5.4">
-      <dependency ref="dijkstrajs@1.0.3"/>
-    </dependency>
-    <dependency ref="diff-match-patch@1.0.5"/>
     <dependency ref="jwt-decode@2.2.0"/>
-    <dependency ref="@fortawesome/fontawesome-svg-core@1.2.36"/>
     <dependency ref="@fortawesome/free-solid-svg-icons@5.15.4"/>
-    <dependency ref="@fortawesome/free-brands-svg-icons@5.15.4"/>
     <dependency ref="@fortawesome/free-regular-svg-icons@5.15.4"/>
+    <dependency ref="@fortawesome/free-brands-svg-icons@5.15.4"/>
     <dependency ref="codemirror-solidity@0.2.5"/>
     <dependency ref="@ctrl/ngx-codemirror@6.1.0">
       <dependency ref="@babel/runtime@7.28.3"/>
       <dependency ref="@angular/core@20.3.24"/>
       <dependency ref="@angular/forms@20.3.24"/>
     </dependency>
+    <dependency ref="snarkdown@1.2.2"/>
+    <dependency ref="socket.io-client@3.1.3">
+      <dependency ref="debug@4.3.7"/>
+      <dependency ref="socket.io-parser@4.0.5"/>
+      <dependency ref="parseuri@0.0.6"/>
+      <dependency ref="engine.io-client@4.1.4"/>
+      <dependency ref="component-emitter@1.3.1"/>
+      <dependency ref="backo2@1.0.2"/>
+    </dependency>
     <dependency ref="tslib@2.8.1"/>
+    <dependency ref="canvas-confetti@1.9.4"/>
+    <dependency ref="lodash-es@4.18.1"/>
+    <dependency ref="dijkstrajs@1.0.3"/>
     <dependency ref="ethers@5.8.0">
       <dependency ref="@ethersproject/contracts@5.8.0"/>
       <dependency ref="@ethersproject/bignumber@5.8.0"/>
@@ -2868,21 +2880,29 @@
       <dependency ref="zustand@4.5.7"/>
       <dependency ref="eventemitter3@4.0.7"/>
     </dependency>
-    <dependency ref="lodash-es@4.18.1"/>
-    <dependency ref="canvas-confetti@1.9.4"/>
-    <dependency ref="socket.io-client@3.1.3">
-      <dependency ref="debug@4.3.7"/>
-      <dependency ref="socket.io-parser@4.0.5"/>
-      <dependency ref="parseuri@0.0.6"/>
-      <dependency ref="engine.io-client@4.1.4"/>
-      <dependency ref="component-emitter@1.3.1"/>
-      <dependency ref="backo2@1.0.2"/>
-    </dependency>
-    <dependency ref="dijkstrajs@1.0.3"/>
     <dependency ref="solidity-browser-compiler@1.1.0">
       <dependency ref="@babel/runtime@7.28.3"/>
     </dependency>
-    <dependency ref="snarkdown@1.2.2"/>
+    <dependency ref="socket.io-parser@4.0.5">
+      <dependency ref="component-emitter@1.3.1"/>
+      <dependency ref="debug@4.3.7"/>
+    </dependency>
+    <dependency ref="component-emitter@1.3.1"/>
+    <dependency ref="parseuri@0.0.6"/>
+    <dependency ref="engine.io-client@4.1.4">
+      <dependency ref="engine.io-parser@4.0.3"/>
+      <dependency ref="component-emitter@1.3.1"/>
+      <dependency ref="BomRef.u2u97di82t.h3o0g2iun6o"/>
+      <dependency ref="parseuri@0.0.6"/>
+      <dependency ref="parseqs@0.0.6"/>
+      <dependency ref="has-cors@1.1.0"/>
+      <dependency ref="yeast@0.1.2"/>
+    </dependency>
+    <dependency ref="backo2@1.0.2"/>
+    <dependency ref="debug@4.3.7">
+      <dependency ref="ms@2.1.3"/>
+    </dependency>
+    <dependency ref="file-saver@2.0.5"/>
     <dependency ref="zustand@4.5.7"/>
     <dependency ref="eventemitter3@4.0.7"/>
     <dependency ref="@ethersproject/contracts@5.8.0">
@@ -2949,10 +2969,6 @@
       <dependency ref="@ethersproject/logger@5.8.0"/>
     </dependency>
     <dependency ref="@ethersproject/logger@5.8.0"/>
-    <dependency ref="socket.io-parser@4.0.5">
-      <dependency ref="component-emitter@1.3.1"/>
-      <dependency ref="debug@4.3.7"/>
-    </dependency>
     <dependency ref="@ethersproject/abi@5.8.0">
       <dependency ref="@ethersproject/bignumber@5.8.0"/>
       <dependency ref="@ethersproject/properties@5.8.0"/>
@@ -3080,57 +3096,41 @@
       <dependency ref="@ethersproject/strings@5.8.0"/>
       <dependency ref="@ethersproject/logger@5.8.0"/>
     </dependency>
-    <dependency ref="component-emitter@1.3.1"/>
-    <dependency ref="debug@4.3.7">
+    <dependency ref="engine.io-parser@4.0.3">
+      <dependency ref="base64-arraybuffer@0.1.4"/>
+    </dependency>
+    <dependency ref="parseqs@0.0.6"/>
+    <dependency ref="BomRef.u2u97di82t.h3o0g2iun6o">
       <dependency ref="ms@2.1.3"/>
     </dependency>
-    <dependency ref="file-saver@2.0.5"/>
     <dependency ref="@ethersproject/abstract-provider@5.8.0">
       <dependency ref="@ethersproject/bignumber@5.8.0"/>
       <dependency ref="@ethersproject/bytes@5.8.0"/>
       <dependency ref="@ethersproject/properties@5.8.0"/>
       <dependency ref="@ethersproject/logger@5.8.0"/>
     </dependency>
+    <dependency ref="ms@2.1.3"/>
+    <dependency ref="yeast@0.1.2"/>
+    <dependency ref="has-cors@1.1.0"/>
     <dependency ref="@ethersproject/networks@5.8.0">
       <dependency ref="@ethersproject/logger@5.8.0"/>
     </dependency>
-    <dependency ref="parseuri@0.0.6"/>
-    <dependency ref="backo2@1.0.2"/>
-    <dependency ref="engine.io-client@4.1.4">
-      <dependency ref="engine.io-parser@4.0.3"/>
-      <dependency ref="component-emitter@1.3.1"/>
-      <dependency ref="BomRef.rs6o0vpqfro.u562ktracao"/>
-      <dependency ref="parseuri@0.0.6"/>
-      <dependency ref="parseqs@0.0.6"/>
-      <dependency ref="has-cors@1.1.0"/>
-      <dependency ref="yeast@0.1.2"/>
-    </dependency>
-    <dependency ref="bn.js@5.2.3"/>
-    <dependency ref="bech32@1.1.4"/>
     <dependency ref="@ethersproject/pbkdf2@5.8.0">
       <dependency ref="@ethersproject/bytes@5.8.0"/>
       <dependency ref="@ethersproject/sha2@5.8.0"/>
     </dependency>
     <dependency ref="js-sha3@0.8.0"/>
-    <dependency ref="aes-js@3.0.0"/>
+    <dependency ref="bn.js@5.2.3"/>
+    <dependency ref="bech32@1.1.4"/>
     <dependency ref="scrypt-js@3.0.1"/>
+    <dependency ref="aes-js@3.0.0"/>
     <dependency ref="hash.js@1.1.7">
       <dependency ref="minimalistic-assert@1.0.1"/>
       <dependency ref="inherits@2.0.4"/>
     </dependency>
-    <dependency ref="ms@2.1.3"/>
-    <dependency ref="engine.io-parser@4.0.3">
-      <dependency ref="base64-arraybuffer@0.1.4"/>
-    </dependency>
-    <dependency ref="yeast@0.1.2"/>
-    <dependency ref="has-cors@1.1.0"/>
-    <dependency ref="parseqs@0.0.6"/>
-    <dependency ref="BomRef.rs6o0vpqfro.u562ktracao">
-      <dependency ref="ms@2.1.3"/>
-    </dependency>
-    <dependency ref="inherits@2.0.4"/>
-    <dependency ref="minimalistic-assert@1.0.1"/>
     <dependency ref="base64-arraybuffer@0.1.4"/>
+    <dependency ref="minimalistic-assert@1.0.1"/>
+    <dependency ref="inherits@2.0.4"/>
     <dependency ref="css-loader@7.1.2"/>
   </dependencies>
 </bom>

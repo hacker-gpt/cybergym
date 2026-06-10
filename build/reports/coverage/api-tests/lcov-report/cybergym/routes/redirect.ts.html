@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">68.42% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>13/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">28.57% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>2/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>2/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">76.47% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>17/17</span>
+                <span class='fraction'>13/17</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -123,11 +123,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
  * Copyright (c) 2014-2026 Bjoern Kimminich &amp; the OWASP Juice Shop contributors.
@@ -145,8 +145,8 @@ export function performRedirect () {
   return ({ query }: Request, res: Response, next: NextFunction) =&gt; {
     const toUrl: string = query.to as string
     if (security.isRedirectAllowed(toUrl)) {
-      challengeUtils.solveIf(challenges.redirectCryptoCurrencyChallenge, () =&gt; { return toUrl === 'https://explorer.dash.org/address/Xr556RzuwX6hg5EGpkybbv5RanJoZN17kW' || toUrl === 'https://blockchain.info/address/1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm' || toUrl === 'https://etherscan.io/address/0x0f933ab9fcaaa782d0279c300d73750e1311eae6' })
-      challengeUtils.solveIf(challenges.redirectChallenge, () =&gt; { return isUnintendedRedirect(toUrl) })
+      challengeUtils.solveIf(challenges.redirectCryptoCurrencyChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return toUrl === 'https://explorer.dash.org/address/Xr556RzuwX6hg5EGpkybbv5RanJoZN17kW' || toUrl === 'https://blockchain.info/address/1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm' || toUrl === 'https://etherscan.io/address/0x0f933ab9fcaaa782d0279c300d73750e1311eae6' }</span>)
+      challengeUtils.solveIf(challenges.redirectChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return isUnintendedRedirect(toUrl) }</span>)
       res.redirect(toUrl)
     } else {
       res.status(406)
@@ -155,12 +155,12 @@ export function performRedirect () {
   }
 }
 &nbsp;
-function isUnintendedRedirect (toUrl: string) {
-  let unintended = true
-  for (const allowedUrl of security.redirectAllowlist) {
-    unintended = unintended &amp;&amp; !utils.startsWith(toUrl, allowedUrl)
+function <span class="fstat-no" title="function not covered" >isUnintendedRedirect </span>(toUrl: string) {
+  let unintended = <span class="cstat-no" title="statement not covered" >true</span>
+<span class="cstat-no" title="statement not covered" >  for (const allowedUrl of security.redirectAllowlist) {</span>
+<span class="cstat-no" title="statement not covered" >    unintended = unintended &amp;&amp; !utils.startsWith(toUrl, allowedUrl)</span>
   }
-  return unintended
+<span class="cstat-no" title="statement not covered" >  return unintended</span>
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -169,7 +169,7 @@ function isUnintendedRedirect (toUrl: string) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-06-08T19:41:02.540Z
+                at 2026-06-10T18:56:51.067Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

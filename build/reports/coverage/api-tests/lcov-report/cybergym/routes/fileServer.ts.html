@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">80.64% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>31/31</span>
+                <span class='fraction'>25/31</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">64.28% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>9/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">45.45% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>5/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">96.15% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>26/26</span>
+                <span class='fraction'>25/26</span>
             </div>
         
             
@@ -164,7 +164,7 @@
 <span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -202,7 +202,7 @@ export function servePublicFiles () {
     if (file &amp;&amp; (endsWithAllowlistedFileType(file) || (file === 'incident-support.kdbx'))) {
       file = security.cutOffPoisonNullByte(file)
 &nbsp;
-      challengeUtils.solveIf(challenges.directoryListingChallenge, () =&gt; { return file.toLowerCase() === 'acquisitions.md' })
+      challengeUtils.solveIf(challenges.directoryListingChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return file.toLowerCase() === 'acquisitions.md' }</span>)
       verifySuccessfulPoisonNullByteExploit(file)
 &nbsp;
       res.sendFile(path.resolve('ftp/', file))
@@ -213,13 +213,13 @@ export function servePublicFiles () {
   }
 &nbsp;
   function verifySuccessfulPoisonNullByteExploit (file: string) {
-    challengeUtils.solveIf(challenges.easterEggLevelOneChallenge, () =&gt; { return file.toLowerCase() === 'eastere.gg' })
-    challengeUtils.solveIf(challenges.forgottenDevBackupChallenge, () =&gt; { return file.toLowerCase() === 'package.json.bak' })
-    challengeUtils.solveIf(challenges.forgottenBackupChallenge, () =&gt; { return file.toLowerCase() === 'coupons_2013.md.bak' })
-    challengeUtils.solveIf(challenges.misplacedSignatureFileChallenge, () =&gt; { return file.toLowerCase() === 'suspicious_errors.yml' })
+    challengeUtils.solveIf(challenges.easterEggLevelOneChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return file.toLowerCase() === 'eastere.gg' }</span>)
+    challengeUtils.solveIf(challenges.forgottenDevBackupChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return file.toLowerCase() === 'package.json.bak' }</span>)
+    challengeUtils.solveIf(challenges.forgottenBackupChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return file.toLowerCase() === 'coupons_2013.md.bak' }</span>)
+    challengeUtils.solveIf(challenges.misplacedSignatureFileChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return file.toLowerCase() === 'suspicious_errors.yml' }</span>)
 &nbsp;
-    challengeUtils.solveIf(challenges.nullByteChallenge, () =&gt; {
-      return challenges.easterEggLevelOneChallenge.solved || challenges.forgottenDevBackupChallenge.solved || challenges.forgottenBackupChallenge.solved ||
+    challengeUtils.solveIf(challenges.nullByteChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; {
+<span class="cstat-no" title="statement not covered" >      return challenges.easterEggLevelOneChallenge.solved || challenges.forgottenDevBackupChallenge.solved || challenges.forgottenBackupChallenge.solved ||</span>
         challenges.misplacedSignatureFileChallenge.solved || file.toLowerCase() === 'encrypt.pyc'
     })
   }
@@ -235,7 +235,7 @@ export function servePublicFiles () {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-06-08T19:41:02.540Z
+                at 2026-06-10T18:56:51.067Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

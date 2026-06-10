@@ -3,9 +3,9 @@
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
   "version": 1,
-  "serialNumber": "urn:uuid:6fc6ca8b-625c-4014-acf6-edd0f56315f5",
+  "serialNumber": "urn:uuid:19641634-ff99-4e0e-a7be-f02956fb7d63",
   "metadata": {
-    "timestamp": "2026-06-09T22:22:47.555Z",
+    "timestamp": "2026-06-10T19:26:50.854Z",
     "lifecycles": [
       {
         "phase": "build"
@@ -93,6 +93,39 @@
     }
   },
   "components": [
+    {
+      "type": "library",
+      "name": "material-icons",
+      "version": "0.3.1",
+      "bom-ref": "material-icons@0.3.1",
+      "description": "Material design icon font and CSS framework for self hosting the icons.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/material-icons@0.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmarella%2Fmaterial-icons.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/marella/material-icons.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://marella.github.io/material-icons/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/marella/material-icons/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
     {
       "type": "library",
       "name": "flag-icons",
@@ -223,39 +256,6 @@
         },
         {
           "url": "http://github.com/codemirror/CodeMirror/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "material-icons",
-      "version": "0.3.1",
-      "bom-ref": "material-icons@0.3.1",
-      "description": "Material design icon font and CSS framework for self hosting the icons.",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/material-icons@0.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmarella%2Fmaterial-icons.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/marella/material-icons.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://marella.github.io/material-icons/",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/marella/material-icons/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -434,40 +434,6 @@
     },
     {
       "type": "library",
-      "name": "ng2-file-upload",
-      "version": "9.0.0",
-      "bom-ref": "ng2-file-upload@9.0.0",
-      "author": "Dmitriy Shekhovtsov",
-      "description": "Angular file uploader",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/ng2-file-upload@9.0.0?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fvalor-software%2Fng2-file-upload.git",
-      "externalReferences": [
-        {
-          "url": "git+ssh://git@github.com/valor-software/ng2-file-upload.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/valor-software/ng2-file-upload#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/valor-software/ng2-file-upload/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "platform-browser",
       "group": "@angular",
       "version": "20.3.24",
@@ -496,6 +462,40 @@
         },
         {
           "url": "https://github.com/angular/angular/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ng2-file-upload",
+      "version": "9.0.0",
+      "bom-ref": "ng2-file-upload@9.0.0",
+      "author": "Dmitriy Shekhovtsov",
+      "description": "Angular file uploader",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ng2-file-upload@9.0.0?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fvalor-software%2Fng2-file-upload.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/valor-software/ng2-file-upload.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/valor-software/ng2-file-upload#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/valor-software/ng2-file-upload/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -725,40 +725,6 @@
     },
     {
       "type": "library",
-      "name": "rxjs",
-      "version": "7.8.2",
-      "bom-ref": "rxjs@7.8.2",
-      "author": "Ben Lesh",
-      "description": "Reactive Extensions for modern JavaScript",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rxjs@7.8.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Freactivex%2Frxjs.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/reactivex/rxjs.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://rxjs.dev",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/ReactiveX/RxJS/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "ngx-highlightjs",
       "version": "6.1.3",
       "bom-ref": "ngx-highlightjs@6.1.3",
@@ -827,6 +793,40 @@
     },
     {
       "type": "library",
+      "name": "rxjs",
+      "version": "7.8.2",
+      "bom-ref": "rxjs@7.8.2",
+      "author": "Ben Lesh",
+      "description": "Reactive Extensions for modern JavaScript",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/rxjs@7.8.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Freactivex%2Frxjs.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/reactivex/rxjs.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://rxjs.dev",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/ReactiveX/RxJS/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "runtime",
       "group": "@babel",
       "version": "7.28.3",
@@ -859,22 +859,6 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
       ]
-    },
-    {
-      "type": "library",
-      "name": "http-loader",
-      "group": "@ngx-translate",
-      "version": "8.0.0",
-      "bom-ref": "@ngx-translate/http-loader@8.0.0",
-      "licenses": [
-        {
-          "license": {
-            "name": "SEE LICENSE IN LICENSE",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40ngx-translate/http-loader@8.0.0"
     },
     {
       "type": "library",
@@ -913,6 +897,22 @@
     },
     {
       "type": "library",
+      "name": "http-loader",
+      "group": "@ngx-translate",
+      "version": "8.0.0",
+      "bom-ref": "@ngx-translate/http-loader@8.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "SEE LICENSE IN LICENSE",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40ngx-translate/http-loader@8.0.0"
+    },
+    {
+      "type": "library",
       "name": "ngx-window-token",
       "version": "6.0.0",
       "bom-ref": "ngx-window-token@6.0.0",
@@ -940,41 +940,6 @@
         },
         {
           "url": "https://github.com/maxisam/ngx-window-token/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "router",
-      "group": "@angular",
-      "version": "20.3.24",
-      "bom-ref": "@angular/router@20.3.24",
-      "author": "angular",
-      "description": "Angular - the routing library",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40angular/router@20.3.24?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fangular.git%23packages%2Frouter",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/angular/angular.git#packages/router",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
-        },
-        {
-          "url": "https://github.com/angular/angular/tree/main/packages/router",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/angular/angular/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -1049,40 +1014,6 @@
     },
     {
       "type": "library",
-      "name": "jwt-decode",
-      "version": "2.2.0",
-      "bom-ref": "jwt-decode@2.2.0",
-      "author": "Jose F. Romaniello",
-      "description": "Decode JWT tokens, mostly useful for browser applications.",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/jwt-decode@2.2.0?vcs_url=git%3A%2F%2Fgithub.com%2Fauth0%2Fjwt-decode.git",
-      "externalReferences": [
-        {
-          "url": "git://github.com/auth0/jwt-decode.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/auth0/jwt-decode#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/auth0/jwt-decode/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "fontawesome-svg-core",
       "group": "@fortawesome",
       "version": "1.2.36",
@@ -1111,6 +1042,75 @@
         },
         {
           "url": "http://github.com/FortAwesome/Font-Awesome/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "router",
+      "group": "@angular",
+      "version": "20.3.24",
+      "bom-ref": "@angular/router@20.3.24",
+      "author": "angular",
+      "description": "Angular - the routing library",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40angular/router@20.3.24?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fangular.git%23packages%2Frouter",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/angular/angular.git#packages/router",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/angular/angular/tree/main/packages/router",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/angular/angular/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "jwt-decode",
+      "version": "2.2.0",
+      "bom-ref": "jwt-decode@2.2.0",
+      "author": "Jose F. Romaniello",
+      "description": "Decode JWT tokens, mostly useful for browser applications.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jwt-decode@2.2.0?vcs_url=git%3A%2F%2Fgithub.com%2Fauth0%2Fjwt-decode.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/auth0/jwt-decode.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/auth0/jwt-decode#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/auth0/jwt-decode/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -1151,10 +1151,10 @@
     },
     {
       "type": "library",
-      "name": "free-brands-svg-icons",
+      "name": "free-regular-svg-icons",
       "group": "@fortawesome",
       "version": "5.15.4",
-      "bom-ref": "@fortawesome/free-brands-svg-icons@5.15.4",
+      "bom-ref": "@fortawesome/free-regular-svg-icons@5.15.4",
       "author": "Dave Gandy",
       "description": "The iconic font, CSS, and SVG framework",
       "licenses": [
@@ -1163,7 +1163,7 @@
           "acknowledgement": "declared"
         }
       ],
-      "purl": "pkg:npm/%40fortawesome/free-brands-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git",
+      "purl": "pkg:npm/%40fortawesome/free-regular-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git",
       "externalReferences": [
         {
           "url": "git+https://github.com/FortAwesome/Font-Awesome.git",
@@ -1184,10 +1184,10 @@
     },
     {
       "type": "library",
-      "name": "free-regular-svg-icons",
+      "name": "free-brands-svg-icons",
       "group": "@fortawesome",
       "version": "5.15.4",
-      "bom-ref": "@fortawesome/free-regular-svg-icons@5.15.4",
+      "bom-ref": "@fortawesome/free-brands-svg-icons@5.15.4",
       "author": "Dave Gandy",
       "description": "The iconic font, CSS, and SVG framework",
       "licenses": [
@@ -1196,7 +1196,7 @@
           "acknowledgement": "declared"
         }
       ],
-      "purl": "pkg:npm/%40fortawesome/free-regular-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git",
+      "purl": "pkg:npm/%40fortawesome/free-brands-svg-icons@5.15.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome.git",
       "externalReferences": [
         {
           "url": "git+https://github.com/FortAwesome/Font-Awesome.git",
@@ -1275,6 +1275,71 @@
     },
     {
       "type": "library",
+      "name": "snarkdown",
+      "version": "1.2.2",
+      "bom-ref": "snarkdown@1.2.2",
+      "description": "Transform Markdown into HTML.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/snarkdown@1.2.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fdevelopit%2Fsnarkdown.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/developit/snarkdown.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/developit/snarkdown",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/developit/snarkdown/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "socket.io-client",
+      "version": "3.1.3",
+      "bom-ref": "socket.io-client@3.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/socket.io-client@3.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-client.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/socketio/socket.io-client.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-client#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-client/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "tslib",
       "version": "2.8.1",
       "bom-ref": "tslib@2.8.1",
@@ -1302,6 +1367,107 @@
         },
         {
           "url": "https://github.com/Microsoft/TypeScript/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "canvas-confetti",
+      "version": "1.9.4",
+      "bom-ref": "canvas-confetti@1.9.4",
+      "author": "Kiril Vatev",
+      "description": "performant confetti animation in the browser",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/canvas-confetti@1.9.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fcatdad%2Fcanvas-confetti.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/catdad/canvas-confetti.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/catdad/canvas-confetti#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/catdad/canvas-confetti/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "lodash-es",
+      "version": "4.18.1",
+      "bom-ref": "lodash-es@4.18.1",
+      "author": "John-David Dalton",
+      "description": "Lodash exported as ES modules.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/lodash-es@4.18.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Flodash%2Flodash.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/lodash/lodash.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://lodash.com/custom-builds",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/lodash/lodash-cli/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dijkstrajs",
+      "version": "1.0.3",
+      "bom-ref": "dijkstrajs@1.0.3",
+      "description": "A simple JavaScript implementation of Dijkstra's single-source shortest-paths algorithm.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/dijkstrajs@1.0.3?vcs_url=git%3A%2F%2Fgithub.com%2Ftcort%2Fdijkstrajs.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/tcort/dijkstrajs.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/tcort/dijkstrajs",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/tcort/dijkstrajs/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -1378,139 +1544,6 @@
     },
     {
       "type": "library",
-      "name": "lodash-es",
-      "version": "4.18.1",
-      "bom-ref": "lodash-es@4.18.1",
-      "author": "John-David Dalton",
-      "description": "Lodash exported as ES modules.",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/lodash-es@4.18.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Flodash%2Flodash.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/lodash/lodash.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://lodash.com/custom-builds",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/lodash/lodash-cli/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "canvas-confetti",
-      "version": "1.9.4",
-      "bom-ref": "canvas-confetti@1.9.4",
-      "author": "Kiril Vatev",
-      "description": "performant confetti animation in the browser",
-      "licenses": [
-        {
-          "license": {
-            "id": "ISC",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/canvas-confetti@1.9.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fcatdad%2Fcanvas-confetti.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/catdad/canvas-confetti.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/catdad/canvas-confetti#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/catdad/canvas-confetti/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "socket.io-client",
-      "version": "3.1.3",
-      "bom-ref": "socket.io-client@3.1.3",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/socket.io-client@3.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-client.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/socketio/socket.io-client.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/socketio/socket.io-client#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/socketio/socket.io-client/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "dijkstrajs",
-      "version": "1.0.3",
-      "bom-ref": "dijkstrajs@1.0.3",
-      "description": "A simple JavaScript implementation of Dijkstra's single-source shortest-paths algorithm.",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/dijkstrajs@1.0.3?vcs_url=git%3A%2F%2Fgithub.com%2Ftcort%2Fdijkstrajs.git",
-      "externalReferences": [
-        {
-          "url": "git://github.com/tcort/dijkstrajs.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/tcort/dijkstrajs",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/tcort/dijkstrajs/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "solidity-browser-compiler",
       "version": "1.1.0",
       "bom-ref": "solidity-browser-compiler@1.1.0",
@@ -1545,10 +1578,10 @@
     },
     {
       "type": "library",
-      "name": "snarkdown",
-      "version": "1.2.2",
-      "bom-ref": "snarkdown@1.2.2",
-      "description": "Transform Markdown into HTML.",
+      "name": "socket.io-parser",
+      "version": "4.0.5",
+      "bom-ref": "socket.io-parser@4.0.5",
+      "description": "socket.io protocol parser",
       "licenses": [
         {
           "license": {
@@ -1557,20 +1590,221 @@
           }
         }
       ],
-      "purl": "pkg:npm/snarkdown@1.2.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fdevelopit%2Fsnarkdown.git",
+      "purl": "pkg:npm/socket.io-parser@4.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-parser.git",
       "externalReferences": [
         {
-          "url": "git+https://github.com/developit/snarkdown.git",
+          "url": "git+https://github.com/socketio/socket.io-parser.git",
           "type": "vcs",
           "comment": "as detected from PackageJson property \"repository.url\""
         },
         {
-          "url": "https://github.com/developit/snarkdown",
+          "url": "https://github.com/socketio/socket.io-parser#readme",
           "type": "website",
           "comment": "as detected from PackageJson property \"homepage\""
         },
         {
-          "url": "https://github.com/developit/snarkdown/issues",
+          "url": "https://github.com/socketio/socket.io-parser/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "component-emitter",
+      "version": "1.3.1",
+      "bom-ref": "component-emitter@1.3.1",
+      "description": "Event emitter",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/component-emitter@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fcomponent-emitter.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/component-emitter.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/component-emitter#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/component-emitter/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "parseuri",
+      "version": "0.0.6",
+      "bom-ref": "parseuri@0.0.6",
+      "author": "Gal Koren",
+      "description": "Method that parses a URI and returns an array of its components",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/parseuri@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fparseuri.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/get/parseuri.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/get/parseuri",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/get/parseuri/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "engine.io-client",
+      "version": "4.1.4",
+      "bom-ref": "engine.io-client@4.1.4",
+      "description": "Client for the realtime Engine",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/engine.io-client@4.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fengine.io-client.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/socketio/engine.io-client.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/socketio/engine.io-client",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/socketio/engine.io-client/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "backo2",
+      "version": "1.0.2",
+      "bom-ref": "backo2@1.0.2",
+      "description": "simple backoff based on segmentio/backo",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/backo2@1.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmokesmokes%2Fbacko.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/mokesmokes/backo.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/mokesmokes/backo#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/mokesmokes/backo/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "debug",
+      "version": "4.3.7",
+      "bom-ref": "debug@4.3.7",
+      "author": "Josh Junon",
+      "description": "Lightweight debugging utility for Node.js and the browser",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/debug@4.3.7?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/debug-js/debug.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/debug-js/debug#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/debug-js/debug/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "file-saver",
+      "version": "2.0.5",
+      "bom-ref": "file-saver@2.0.5",
+      "author": "Eli Grey",
+      "description": "An HTML5 saveAs() FileSaver implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/file-saver@2.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feligrey%2FFileSaver.js.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eligrey/FileSaver.js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eligrey/FileSaver.js#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eligrey/FileSaver.js/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -1919,39 +2153,6 @@
         },
         {
           "url": "https://github.com/ethers-io/ethers.js/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "socket.io-parser",
-      "version": "4.0.5",
-      "bom-ref": "socket.io-parser@4.0.5",
-      "description": "socket.io protocol parser",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/socket.io-parser@4.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fsocket.io-parser.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/socketio/socket.io-parser.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/socketio/socket.io-parser#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/socketio/socket.io-parser/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -2624,10 +2825,10 @@
     },
     {
       "type": "library",
-      "name": "component-emitter",
-      "version": "1.3.1",
-      "bom-ref": "component-emitter@1.3.1",
-      "description": "Event emitter",
+      "name": "engine.io-parser",
+      "version": "4.0.3",
+      "bom-ref": "engine.io-parser@4.0.3",
+      "description": "Parser for the client for the realtime Engine",
       "licenses": [
         {
           "license": {
@@ -2636,20 +2837,54 @@
           }
         }
       ],
-      "purl": "pkg:npm/component-emitter@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fcomponent-emitter.git",
+      "purl": "pkg:npm/engine.io-parser@4.0.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fsocketio%2Fengine.io-parser.git",
       "externalReferences": [
         {
-          "url": "git+https://github.com/sindresorhus/component-emitter.git",
+          "url": "git+ssh://git@github.com/socketio/engine.io-parser.git",
           "type": "vcs",
           "comment": "as detected from PackageJson property \"repository.url\""
         },
         {
-          "url": "https://github.com/sindresorhus/component-emitter#readme",
+          "url": "https://github.com/socketio/engine.io-parser",
           "type": "website",
           "comment": "as detected from PackageJson property \"homepage\""
         },
         {
-          "url": "https://github.com/sindresorhus/component-emitter/issues",
+          "url": "https://github.com/socketio/engine.io-parser/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "parseqs",
+      "version": "0.0.6",
+      "bom-ref": "parseqs@0.0.6",
+      "author": "Gal Koren",
+      "description": "Provides methods for parsing a query string into an object, and vice versa.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/parseqs@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fquerystring.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/get/querystring.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/get/querystring",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/get/querystring/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -2659,7 +2894,7 @@
       "type": "library",
       "name": "debug",
       "version": "4.3.7",
-      "bom-ref": "debug@4.3.7",
+      "bom-ref": "BomRef.iqqtvnfiu3.p3tr7bbsqro",
       "author": "Josh Junon",
       "description": "Lightweight debugging utility for Node.js and the browser",
       "licenses": [
@@ -2684,40 +2919,6 @@
         },
         {
           "url": "https://github.com/debug-js/debug/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "file-saver",
-      "version": "2.0.5",
-      "bom-ref": "file-saver@2.0.5",
-      "author": "Eli Grey",
-      "description": "An HTML5 saveAs() FileSaver implementation",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/file-saver@2.0.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feligrey%2FFileSaver.js.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/eligrey/FileSaver.js.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/eligrey/FileSaver.js#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/eligrey/FileSaver.js/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -2760,6 +2961,107 @@
     },
     {
       "type": "library",
+      "name": "ms",
+      "version": "2.1.3",
+      "bom-ref": "ms@2.1.3",
+      "description": "Tiny millisecond conversion utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ms@2.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fvercel%2Fms.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/vercel/ms.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/vercel/ms#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/vercel/ms/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "yeast",
+      "version": "0.1.2",
+      "bom-ref": "yeast@0.1.2",
+      "author": "Arnout Kazemier",
+      "description": "Tiny but linear growing unique id generator",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/yeast@0.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Funshiftio%2Fyeast.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/unshiftio/yeast.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/unshiftio/yeast",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/unshiftio/yeast/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "has-cors",
+      "version": "1.1.0",
+      "bom-ref": "has-cors@1.1.0",
+      "author": "Nathan Rajlich",
+      "description": "Detects support for Cross-Origin Resource Sharing",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/has-cors@1.1.0?vcs_url=git%3A%2F%2Fgithub.com%2Fcomponent%2Fhas-cors.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/component/has-cors.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/component/has-cors#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/component/has-cors/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "networks",
       "group": "@ethersproject",
       "version": "5.8.0",
@@ -2788,173 +3090,6 @@
         },
         {
           "url": "https://github.com/ethers-io/ethers.js/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "parseuri",
-      "version": "0.0.6",
-      "bom-ref": "parseuri@0.0.6",
-      "author": "Gal Koren",
-      "description": "Method that parses a URI and returns an array of its components",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/parseuri@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fparseuri.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/get/parseuri.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/get/parseuri",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/get/parseuri/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "backo2",
-      "version": "1.0.2",
-      "bom-ref": "backo2@1.0.2",
-      "description": "simple backoff based on segmentio/backo",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/backo2@1.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmokesmokes%2Fbacko.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/mokesmokes/backo.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/mokesmokes/backo#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/mokesmokes/backo/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "engine.io-client",
-      "version": "4.1.4",
-      "bom-ref": "engine.io-client@4.1.4",
-      "description": "Client for the realtime Engine",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/engine.io-client@4.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsocketio%2Fengine.io-client.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/socketio/engine.io-client.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/socketio/engine.io-client",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/socketio/engine.io-client/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "bn.js",
-      "version": "5.2.3",
-      "bom-ref": "bn.js@5.2.3",
-      "author": "Fedor Indutny",
-      "description": "Big number implementation in pure javascript",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/bn.js@5.2.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Findutny%2Fbn.js.git",
-      "externalReferences": [
-        {
-          "url": "git+ssh://git@github.com/indutny/bn.js.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/indutny/bn.js",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/indutny/bn.js/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "bech32",
-      "version": "1.1.4",
-      "bom-ref": "bech32@1.1.4",
-      "description": "Bech32 encoding / decoding",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/bech32@1.1.4?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fbitcoinjs%2Fbech32.git",
-      "externalReferences": [
-        {
-          "url": "git+ssh://git@github.com/bitcoinjs/bech32.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/bitcoinjs/bech32#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/bitcoinjs/bech32/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -3031,11 +3166,11 @@
     },
     {
       "type": "library",
-      "name": "aes-js",
-      "version": "3.0.0",
-      "bom-ref": "aes-js@3.0.0",
-      "author": "Richard Moore",
-      "description": "A pure JavaScript implementation of the AES block cipher and all common modes of operation.",
+      "name": "bn.js",
+      "version": "5.2.3",
+      "bom-ref": "bn.js@5.2.3",
+      "author": "Fedor Indutny",
+      "description": "Big number implementation in pure javascript",
       "licenses": [
         {
           "license": {
@@ -3044,20 +3179,53 @@
           }
         }
       ],
-      "purl": "pkg:npm/aes-js@3.0.0?vcs_url=git%3A%2F%2Fgithub.com%2Fricmoo%2Faes-js.git",
+      "purl": "pkg:npm/bn.js@5.2.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Findutny%2Fbn.js.git",
       "externalReferences": [
         {
-          "url": "git://github.com/ricmoo/aes-js.git",
+          "url": "git+ssh://git@github.com/indutny/bn.js.git",
           "type": "vcs",
           "comment": "as detected from PackageJson property \"repository.url\""
         },
         {
-          "url": "https://github.com/ricmoo/aes-js#readme",
+          "url": "https://github.com/indutny/bn.js",
           "type": "website",
           "comment": "as detected from PackageJson property \"homepage\""
         },
         {
-          "url": "http://github.com/ricmoo/aes-js/issues",
+          "url": "https://github.com/indutny/bn.js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "bech32",
+      "version": "1.1.4",
+      "bom-ref": "bech32@1.1.4",
+      "description": "Bech32 encoding / decoding",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/bech32@1.1.4?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fbitcoinjs%2Fbech32.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/bitcoinjs/bech32.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/bitcoinjs/bech32#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/bitcoinjs/bech32/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -3099,6 +3267,40 @@
     },
     {
       "type": "library",
+      "name": "aes-js",
+      "version": "3.0.0",
+      "bom-ref": "aes-js@3.0.0",
+      "author": "Richard Moore",
+      "description": "A pure JavaScript implementation of the AES block cipher and all common modes of operation.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/aes-js@3.0.0?vcs_url=git%3A%2F%2Fgithub.com%2Fricmoo%2Faes-js.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/ricmoo/aes-js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/ricmoo/aes-js#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "http://github.com/ricmoo/aes-js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "hash.js",
       "version": "1.1.7",
       "bom-ref": "hash.js@1.1.7",
@@ -3133,234 +3335,34 @@
     },
     {
       "type": "library",
-      "name": "ms",
-      "version": "2.1.3",
-      "bom-ref": "ms@2.1.3",
-      "description": "Tiny millisecond conversion utility",
+      "name": "base64-arraybuffer",
+      "version": "0.1.4",
+      "bom-ref": "base64-arraybuffer@0.1.4",
+      "author": "Niklas von Hertzen",
+      "description": "Encode/decode base64 data into ArrayBuffers",
       "licenses": [
         {
           "license": {
             "id": "MIT",
-            "acknowledgement": "declared"
+            "acknowledgement": "declared",
+            "url": "https://github.com/niklasvh/base64-arraybuffer/blob/master/LICENSE-MIT"
           }
         }
       ],
-      "purl": "pkg:npm/ms@2.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fvercel%2Fms.git",
+      "purl": "pkg:npm/base64-arraybuffer@0.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fniklasvh%2Fbase64-arraybuffer.git",
       "externalReferences": [
         {
-          "url": "git+https://github.com/vercel/ms.git",
+          "url": "git+https://github.com/niklasvh/base64-arraybuffer.git",
           "type": "vcs",
           "comment": "as detected from PackageJson property \"repository.url\""
         },
         {
-          "url": "https://github.com/vercel/ms#readme",
+          "url": "https://github.com/niklasvh/base64-arraybuffer",
           "type": "website",
           "comment": "as detected from PackageJson property \"homepage\""
         },
         {
-          "url": "https://github.com/vercel/ms/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "engine.io-parser",
-      "version": "4.0.3",
-      "bom-ref": "engine.io-parser@4.0.3",
-      "description": "Parser for the client for the realtime Engine",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/engine.io-parser@4.0.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fsocketio%2Fengine.io-parser.git",
-      "externalReferences": [
-        {
-          "url": "git+ssh://git@github.com/socketio/engine.io-parser.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/socketio/engine.io-parser",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/socketio/engine.io-parser/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "yeast",
-      "version": "0.1.2",
-      "bom-ref": "yeast@0.1.2",
-      "author": "Arnout Kazemier",
-      "description": "Tiny but linear growing unique id generator",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/yeast@0.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Funshiftio%2Fyeast.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/unshiftio/yeast.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/unshiftio/yeast",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/unshiftio/yeast/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "has-cors",
-      "version": "1.1.0",
-      "bom-ref": "has-cors@1.1.0",
-      "author": "Nathan Rajlich",
-      "description": "Detects support for Cross-Origin Resource Sharing",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/has-cors@1.1.0?vcs_url=git%3A%2F%2Fgithub.com%2Fcomponent%2Fhas-cors.git",
-      "externalReferences": [
-        {
-          "url": "git://github.com/component/has-cors.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/component/has-cors#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/component/has-cors/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "parseqs",
-      "version": "0.0.6",
-      "bom-ref": "parseqs@0.0.6",
-      "author": "Gal Koren",
-      "description": "Provides methods for parsing a query string into an object, and vice versa.",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/parseqs@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fget%2Fquerystring.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/get/querystring.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/get/querystring",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/get/querystring/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "debug",
-      "version": "4.3.7",
-      "bom-ref": "BomRef.hc376ikfjio.ib0tnk8nfv8",
-      "author": "Josh Junon",
-      "description": "Lightweight debugging utility for Node.js and the browser",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/debug@4.3.7?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git",
-      "externalReferences": [
-        {
-          "url": "git://github.com/debug-js/debug.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/debug-js/debug#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/debug-js/debug/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "inherits",
-      "version": "2.0.4",
-      "bom-ref": "inherits@2.0.4",
-      "description": "Browser-friendly inheritance fully compatible with standard node.js inherits()",
-      "licenses": [
-        {
-          "license": {
-            "id": "ISC",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/inherits@2.0.4?vcs_url=git%3A%2F%2Fgithub.com%2Fisaacs%2Finherits.git",
-      "externalReferences": [
-        {
-          "url": "git://github.com/isaacs/inherits.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/isaacs/inherits#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/isaacs/inherits/issues",
+          "url": "https://github.com/niklasvh/base64-arraybuffer/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -3401,34 +3403,32 @@
     },
     {
       "type": "library",
-      "name": "base64-arraybuffer",
-      "version": "0.1.4",
-      "bom-ref": "base64-arraybuffer@0.1.4",
-      "author": "Niklas von Hertzen",
-      "description": "Encode/decode base64 data into ArrayBuffers",
+      "name": "inherits",
+      "version": "2.0.4",
+      "bom-ref": "inherits@2.0.4",
+      "description": "Browser-friendly inheritance fully compatible with standard node.js inherits()",
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "acknowledgement": "declared",
-            "url": "https://github.com/niklasvh/base64-arraybuffer/blob/master/LICENSE-MIT"
+            "id": "ISC",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/base64-arraybuffer@0.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fniklasvh%2Fbase64-arraybuffer.git",
+      "purl": "pkg:npm/inherits@2.0.4?vcs_url=git%3A%2F%2Fgithub.com%2Fisaacs%2Finherits.git",
       "externalReferences": [
         {
-          "url": "git+https://github.com/niklasvh/base64-arraybuffer.git",
+          "url": "git://github.com/isaacs/inherits.git",
           "type": "vcs",
           "comment": "as detected from PackageJson property \"repository.url\""
         },
         {
-          "url": "https://github.com/niklasvh/base64-arraybuffer",
+          "url": "https://github.com/isaacs/inherits#readme",
           "type": "website",
           "comment": "as detected from PackageJson property \"homepage\""
         },
         {
-          "url": "https://github.com/niklasvh/base64-arraybuffer/issues",
+          "url": "https://github.com/isaacs/inherits/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
         }
@@ -3473,6 +3473,7 @@
     {
       "ref": "frontend@19.1.1",
       "dependsOn": [
+        "css-loader@7.1.2",
         "@babel/runtime@7.28.3",
         "@angular/core@20.3.24",
         "@angular/material@20.2.14",
@@ -3488,31 +3489,36 @@
         "ngy-cookie@6.0.1000",
         "ngx-highlightjs@6.1.3",
         "@angular/common@20.3.24",
-        "css-loader@7.1.2",
         "@ngx-translate/http-loader@8.0.0",
+        "@fortawesome/fontawesome-svg-core@1.2.36",
         "@angular/router@20.3.24",
         "rxjs@7.8.2",
         "jwt-decode@2.2.0",
-        "@fortawesome/fontawesome-svg-core@1.2.36",
-        "@fortawesome/free-brands-svg-icons@5.15.4",
         "@fortawesome/free-solid-svg-icons@5.15.4",
         "@fortawesome/free-regular-svg-icons@5.15.4",
+        "@fortawesome/free-brands-svg-icons@5.15.4",
         "@ctrl/ngx-codemirror@6.1.0",
         "codemirror@5.65.21",
         "codemirror-solidity@0.2.5",
+        "socket.io-client@3.1.3",
+        "@angular/animations@20.3.24",
+        "snarkdown@1.2.2",
+        "canvas-confetti@1.9.4",
         "ethers@5.8.0",
         "@ethersproject/providers@5.8.0",
         "@ethersproject/contracts@5.8.0",
-        "@ethersproject/constants@5.8.0",
         "@ethersproject/units@5.8.0",
         "@wagmi/core@0.5.8",
         "solidity-browser-compiler@1.1.0",
         "lodash-es@4.18.1",
-        "socket.io-client@3.1.3",
-        "canvas-confetti@1.9.4",
-        "snarkdown@1.2.2",
-        "@angular/animations@20.3.24",
+        "@ethersproject/constants@5.8.0",
         "file-saver@2.0.5"
+      ]
+    },
+    {
+      "ref": "material-icons@0.3.1",
+      "dependsOn": [
+        "frontend@19.1.1"
       ]
     },
     {
@@ -3535,12 +3541,6 @@
     },
     {
       "ref": "codemirror@5.65.21",
-      "dependsOn": [
-        "frontend@19.1.1"
-      ]
-    },
-    {
-      "ref": "material-icons@0.3.1",
       "dependsOn": [
         "frontend@19.1.1"
       ]
@@ -3584,17 +3584,17 @@
       ]
     },
     {
-      "ref": "ng2-file-upload@9.0.0",
-      "dependsOn": [
-        "@angular/core@20.3.24",
-        "@angular/common@20.3.24"
-      ]
-    },
-    {
       "ref": "@angular/platform-browser@20.3.24",
       "dependsOn": [
         "@angular/core@20.3.24",
         "@angular/animations@20.3.24",
+        "@angular/common@20.3.24"
+      ]
+    },
+    {
+      "ref": "ng2-file-upload@9.0.0",
+      "dependsOn": [
+        "@angular/core@20.3.24",
         "@angular/common@20.3.24"
       ]
     },
@@ -3661,12 +3661,6 @@
       ]
     },
     {
-      "ref": "rxjs@7.8.2",
-      "dependsOn": [
-        "tslib@2.8.1"
-      ]
-    },
-    {
       "ref": "ngx-highlightjs@6.1.3",
       "dependsOn": [
         "@angular/core@20.3.24",
@@ -3679,10 +3673,13 @@
       "ref": "highlightjs-line-numbers.js@2.9.1"
     },
     {
-      "ref": "@babel/runtime@7.28.3"
+      "ref": "rxjs@7.8.2",
+      "dependsOn": [
+        "tslib@2.8.1"
+      ]
     },
     {
-      "ref": "@ngx-translate/http-loader@8.0.0"
+      "ref": "@babel/runtime@7.28.3"
     },
     {
       "ref": "@angular/animations@20.3.24",
@@ -3691,19 +3688,12 @@
       ]
     },
     {
+      "ref": "@ngx-translate/http-loader@8.0.0"
+    },
+    {
       "ref": "ngx-window-token@6.0.0",
       "dependsOn": [
         "@angular/core@20.3.24"
-      ]
-    },
-    {
-      "ref": "@angular/router@20.3.24",
-      "dependsOn": [
-        "@angular/core@20.3.24",
-        "@angular/common@20.3.24",
-        "rxjs@7.8.2",
-        "@angular/platform-browser@20.3.24",
-        "@babel/runtime@7.28.3"
       ]
     },
     {
@@ -3716,19 +3706,29 @@
       "ref": "diff-match-patch@1.0.5"
     },
     {
-      "ref": "jwt-decode@2.2.0"
+      "ref": "@fortawesome/fontawesome-svg-core@1.2.36"
     },
     {
-      "ref": "@fortawesome/fontawesome-svg-core@1.2.36"
+      "ref": "@angular/router@20.3.24",
+      "dependsOn": [
+        "@angular/core@20.3.24",
+        "@angular/common@20.3.24",
+        "rxjs@7.8.2",
+        "@angular/platform-browser@20.3.24",
+        "@babel/runtime@7.28.3"
+      ]
+    },
+    {
+      "ref": "jwt-decode@2.2.0"
     },
     {
       "ref": "@fortawesome/free-solid-svg-icons@5.15.4"
     },
     {
-      "ref": "@fortawesome/free-brands-svg-icons@5.15.4"
+      "ref": "@fortawesome/free-regular-svg-icons@5.15.4"
     },
     {
-      "ref": "@fortawesome/free-regular-svg-icons@5.15.4"
+      "ref": "@fortawesome/free-brands-svg-icons@5.15.4"
     },
     {
       "ref": "codemirror-solidity@0.2.5"
@@ -3742,7 +3742,30 @@
       ]
     },
     {
+      "ref": "snarkdown@1.2.2"
+    },
+    {
+      "ref": "socket.io-client@3.1.3",
+      "dependsOn": [
+        "debug@4.3.7",
+        "socket.io-parser@4.0.5",
+        "parseuri@0.0.6",
+        "engine.io-client@4.1.4",
+        "component-emitter@1.3.1",
+        "backo2@1.0.2"
+      ]
+    },
+    {
       "ref": "tslib@2.8.1"
+    },
+    {
+      "ref": "canvas-confetti@1.9.4"
+    },
+    {
+      "ref": "lodash-es@4.18.1"
+    },
+    {
+      "ref": "dijkstrajs@1.0.3"
     },
     {
       "ref": "ethers@5.8.0",
@@ -3788,33 +3811,47 @@
       ]
     },
     {
-      "ref": "lodash-es@4.18.1"
-    },
-    {
-      "ref": "canvas-confetti@1.9.4"
-    },
-    {
-      "ref": "socket.io-client@3.1.3",
-      "dependsOn": [
-        "debug@4.3.7",
-        "socket.io-parser@4.0.5",
-        "parseuri@0.0.6",
-        "engine.io-client@4.1.4",
-        "component-emitter@1.3.1",
-        "backo2@1.0.2"
-      ]
-    },
-    {
-      "ref": "dijkstrajs@1.0.3"
-    },
-    {
       "ref": "solidity-browser-compiler@1.1.0",
       "dependsOn": [
         "@babel/runtime@7.28.3"
       ]
     },
     {
-      "ref": "snarkdown@1.2.2"
+      "ref": "socket.io-parser@4.0.5",
+      "dependsOn": [
+        "component-emitter@1.3.1",
+        "debug@4.3.7"
+      ]
+    },
+    {
+      "ref": "component-emitter@1.3.1"
+    },
+    {
+      "ref": "parseuri@0.0.6"
+    },
+    {
+      "ref": "engine.io-client@4.1.4",
+      "dependsOn": [
+        "engine.io-parser@4.0.3",
+        "component-emitter@1.3.1",
+        "BomRef.iqqtvnfiu3.p3tr7bbsqro",
+        "parseuri@0.0.6",
+        "parseqs@0.0.6",
+        "has-cors@1.1.0",
+        "yeast@0.1.2"
+      ]
+    },
+    {
+      "ref": "backo2@1.0.2"
+    },
+    {
+      "ref": "debug@4.3.7",
+      "dependsOn": [
+        "ms@2.1.3"
+      ]
+    },
+    {
+      "ref": "file-saver@2.0.5"
     },
     {
       "ref": "zustand@4.5.7"
@@ -3908,13 +3945,6 @@
     },
     {
       "ref": "@ethersproject/logger@5.8.0"
-    },
-    {
-      "ref": "socket.io-parser@4.0.5",
-      "dependsOn": [
-        "component-emitter@1.3.1",
-        "debug@4.3.7"
-      ]
     },
     {
       "ref": "@ethersproject/abi@5.8.0",
@@ -4101,16 +4131,19 @@
       ]
     },
     {
-      "ref": "component-emitter@1.3.1"
-    },
-    {
-      "ref": "debug@4.3.7",
+      "ref": "engine.io-parser@4.0.3",
       "dependsOn": [
-        "ms@2.1.3"
+        "base64-arraybuffer@0.1.4"
       ]
     },
     {
-      "ref": "file-saver@2.0.5"
+      "ref": "parseqs@0.0.6"
+    },
+    {
+      "ref": "BomRef.iqqtvnfiu3.p3tr7bbsqro",
+      "dependsOn": [
+        "ms@2.1.3"
+      ]
     },
     {
       "ref": "@ethersproject/abstract-provider@5.8.0",
@@ -4122,34 +4155,19 @@
       ]
     },
     {
+      "ref": "ms@2.1.3"
+    },
+    {
+      "ref": "yeast@0.1.2"
+    },
+    {
+      "ref": "has-cors@1.1.0"
+    },
+    {
       "ref": "@ethersproject/networks@5.8.0",
       "dependsOn": [
         "@ethersproject/logger@5.8.0"
       ]
-    },
-    {
-      "ref": "parseuri@0.0.6"
-    },
-    {
-      "ref": "backo2@1.0.2"
-    },
-    {
-      "ref": "engine.io-client@4.1.4",
-      "dependsOn": [
-        "engine.io-parser@4.0.3",
-        "component-emitter@1.3.1",
-        "BomRef.hc376ikfjio.ib0tnk8nfv8",
-        "parseuri@0.0.6",
-        "parseqs@0.0.6",
-        "has-cors@1.1.0",
-        "yeast@0.1.2"
-      ]
-    },
-    {
-      "ref": "bn.js@5.2.3"
-    },
-    {
-      "ref": "bech32@1.1.4"
     },
     {
       "ref": "@ethersproject/pbkdf2@5.8.0",
@@ -4162,10 +4180,16 @@
       "ref": "js-sha3@0.8.0"
     },
     {
-      "ref": "aes-js@3.0.0"
+      "ref": "bn.js@5.2.3"
+    },
+    {
+      "ref": "bech32@1.1.4"
     },
     {
       "ref": "scrypt-js@3.0.1"
+    },
+    {
+      "ref": "aes-js@3.0.0"
     },
     {
       "ref": "hash.js@1.1.7",
@@ -4175,37 +4199,13 @@
       ]
     },
     {
-      "ref": "ms@2.1.3"
-    },
-    {
-      "ref": "engine.io-parser@4.0.3",
-      "dependsOn": [
-        "base64-arraybuffer@0.1.4"
-      ]
-    },
-    {
-      "ref": "yeast@0.1.2"
-    },
-    {
-      "ref": "has-cors@1.1.0"
-    },
-    {
-      "ref": "parseqs@0.0.6"
-    },
-    {
-      "ref": "BomRef.hc376ikfjio.ib0tnk8nfv8",
-      "dependsOn": [
-        "ms@2.1.3"
-      ]
-    },
-    {
-      "ref": "inherits@2.0.4"
+      "ref": "base64-arraybuffer@0.1.4"
     },
     {
       "ref": "minimalistic-assert@1.0.1"
     },
     {
-      "ref": "base64-arraybuffer@0.1.4"
+      "ref": "inherits@2.0.4"
     },
     {
       "ref": "css-loader@7.1.2"

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.33% </span>
+                <span class="strong">71.69% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>50/53</span>
+                <span class='fraction'>38/53</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.54% </span>
+                <span class="strong">41.93% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>29/31</span>
+                <span class='fraction'>13/31</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">86.36% </span>
+                <span class="strong">40.9% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>19/22</span>
+                <span class='fraction'>9/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.85% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>39/42</span>
+                <span class='fraction'>36/42</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -221,9 +221,9 @@
 <span class="cline-any cline-yes">103x</span>
 <span class="cline-any cline-yes">103x</span>
 <span class="cline-any cline-yes">103x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -290,24 +290,24 @@ export function login () {
   // vuln-code-snippet end loginAdminChallenge loginBenderChallenge loginJimChallenge
 &nbsp;
   function verifyPreLoginChallenges (req: Request) {
-    challengeUtils.solveIf(challenges.weakPasswordChallenge, () =&gt; { return req.body.email === 'admin@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'admin123' })
-    challengeUtils.solveIf(challenges.loginSupportChallenge, () =&gt; { return req.body.email === 'support@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'J6aVjTgOpRs@?5l!Zkq2AYnCE@RF$P' })
-    challengeUtils.solveIf(challenges.loginRapperChallenge, () =&gt; { return req.body.email === 'mc.safesearch@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'Mr. N00dles' })
-    challengeUtils.solveIf(challenges.loginAmyChallenge, () =&gt; { return req.body.email === 'amy@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'K1f.....................' })
-    challengeUtils.solveIf(challenges.dlpPasswordSprayingChallenge, () =&gt; { return req.body.email === 'J12934@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === '0Y8rMnww$*9VFYE§59-!Fg1L6t&amp;6lB' })
-    challengeUtils.solveIf(challenges.oauthUserPasswordChallenge, () =&gt; { return req.body.email === 'bjoern.kimminich@gmail.com' &amp;&amp; req.body.password === 'bW9jLmxpYW1nQGhjaW5pbW1pay5ucmVvamI=' })
+    challengeUtils.solveIf(challenges.weakPasswordChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return req.body.email === 'admin@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'admin123' }</span>)
+    challengeUtils.solveIf(challenges.loginSupportChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return req.body.email === 'support@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'J6aVjTgOpRs@?5l!Zkq2AYnCE@RF$P' }</span>)
+    challengeUtils.solveIf(challenges.loginRapperChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return req.body.email === 'mc.safesearch@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'Mr. N00dles' }</span>)
+    challengeUtils.solveIf(challenges.loginAmyChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return req.body.email === 'amy@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === 'K1f.....................' }</span>)
+    challengeUtils.solveIf(challenges.dlpPasswordSprayingChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return req.body.email === 'J12934@' + config.get&lt;string&gt;('application.domain') &amp;&amp; req.body.password === '0Y8rMnww$*9VFYE§59-!Fg1L6t&amp;6lB' }</span>)
+    challengeUtils.solveIf(challenges.oauthUserPasswordChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return req.body.email === 'bjoern.kimminich@gmail.com' &amp;&amp; req.body.password === 'bW9jLmxpYW1nQGhjaW5pbW1pay5ucmVvamI=' }</span>)
     challengeUtils.solveIf(challenges.exposedCredentialsChallenge, () =&gt; { return req.body.email === 'testing@' + config.get&lt;string&gt;('application.domain') &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >req.body.password === 'IamUsedForTesting' </span>})
   }
 &nbsp;
   function verifyPostLoginChallenges (user: { data: User }) {
-    challengeUtils.solveIf(challenges.loginAdminChallenge, () =&gt; { return user.data.id === users.admin.id })
-    challengeUtils.solveIf(challenges.loginJimChallenge, () =&gt; { return user.data.id === users.jim.id })
-    challengeUtils.solveIf(challenges.loginBenderChallenge, () =&gt; { return user.data.id === users.bender.id })
+    challengeUtils.solveIf(challenges.loginAdminChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return user.data.id === users.admin.id }</span>)
+    challengeUtils.solveIf(challenges.loginJimChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return user.data.id === users.jim.id }</span>)
+    challengeUtils.solveIf(challenges.loginBenderChallenge, <span class="fstat-no" title="function not covered" >() =</span>&gt; { <span class="cstat-no" title="statement not covered" >return user.data.id === users.bender.id }</span>)
     challengeUtils.solveIf(challenges.ghostLoginChallenge, () =&gt; { return user.data.id === users.chris.id })
-    if (challengeUtils.notSolved(challenges.ephemeralAccountantChallenge) &amp;&amp; user.data.email === 'acc0unt4nt@' + config.get&lt;string&gt;('application.domain') &amp;&amp; user.data.role === 'accounting') {
-      UserModel.count({ where: { email: 'acc0unt4nt@' + config.get&lt;string&gt;('application.domain') } }).then((count: number) =&gt; {
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (count === 0) {
-          challengeUtils.solve(challenges.ephemeralAccountantChallenge)
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (challengeUtils.notSolved(challenges.ephemeralAccountantChallenge) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >user.data.email === 'acc0unt4nt@' + config.get&lt;string&gt;('application.domain') </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >user.data.role === 'accounting')</span> {
+<span class="cstat-no" title="statement not covered" >      UserModel.count({ where: { email: 'acc0unt4nt@' + config.get&lt;string&gt;('application.domain') } }).then(<span class="fstat-no" title="function not covered" >(c</span>ount: number) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        if (count === 0) {</span>
+<span class="cstat-no" title="statement not covered" >          challengeUtils.solve(challenges.ephemeralAccountantChallenge)</span>
         }
       }).catch(<span class="fstat-no" title="function not covered" >() =</span>&gt; {
 <span class="cstat-no" title="statement not covered" >        throw new Error('Unable to verify challenges! Try again')</span>
@@ -322,7 +322,7 @@ export function login () {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-06-08T19:41:02.540Z
+                at 2026-06-10T18:56:51.067Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
