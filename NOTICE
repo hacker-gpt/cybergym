@@ -1,0 +1,52 @@
+CyberGym
+========
+
+CyberGym is a modified, re-branded derivative of OWASP Juice Shop.
+It is distributed under the MIT License. See the LICENSE file for the full
+license text and copyright notices.
+
+
+--------------------------------------------------------------------------------
+Original work
+--------------------------------------------------------------------------------
+
+OWASP Juice Shop
+Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors
+License:  MIT
+Project:  https://owasp.org/www-project-juice-shop/
+Source:   https://github.com/juice-shop/juice-shop
+
+The original MIT copyright notice and permission notice are retained, as
+required by the MIT License, in:
+  - the LICENSE file at the root of this repository, and
+  - the per-file "Copyright (c) ... Bjoern Kimminich & the OWASP Juice Shop
+    contributors" / "SPDX-License-Identifier: MIT" headers that remain in the
+    source files throughout this repository.
+
+A list of OWASP Juice Shop contributors is also retained in the "contributors"
+field of package.json.
+
+
+--------------------------------------------------------------------------------
+Modifications
+--------------------------------------------------------------------------------
+
+CyberGym branding, theme, content, and related changes
+Copyright (c) 2026 HackerGPT
+License:  MIT
+
+
+--------------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------------
+
+This software bundles third-party open-source packages (installed via npm and
+included in the compiled frontend). Each such package remains the property of
+its respective copyright holders and is licensed under its own terms (most
+commonly MIT, BSD, ISC, or Apache-2.0).
+
+Those licenses and copyright notices are retained within the corresponding
+packages (see each package's own LICENSE file under node_modules/). When
+redistributing CyberGym in compiled or packaged form, retain the applicable
+third-party license notices together with this NOTICE file and the LICENSE
+file.

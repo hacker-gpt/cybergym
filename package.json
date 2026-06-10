@@ -1,8 +1,8 @@
 {
-  "name": "juice-shop",
+  "name": "cybergym",
   "version": "19.1.1",
   "private": true,
-  "description": "Probably the most modern and sophisticated insecure web application",
+  "description": "CyberGym - a modern, deliberately insecure web application for hands-on security training and Capture-the-Flag practice (a re-branded fork of OWASP Juice Shop)",
   "keywords": [
     "web security",
     "web application security",
@@ -19,16 +19,16 @@
     "capture the flag",
     "awareness"
   ],
-  "homepage": "https://owasp-juice.shop",
+  "homepage": "https://bitbucket.org/whl-static/cybergym",
   "bugs": {
-    "url": "https://github.com/juice-shop/juice-shop/issues"
+    "url": "https://bitbucket.org/whl-static/cybergym/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/juice-shop/juice-shop.git"
+    "url": "https://bitbucket.org/whl-static/cybergym.git"
   },
   "license": "MIT",
-  "author": "Björn Kimminich <bjoern.kimminich@owasp.org> (https://kimminich.de)",
+  "author": "HackerGPT (CyberGym), based on OWASP Juice Shop by Bjoern Kimminich",
   "contributors": [
     "Björn Kimminich",
     "Jannik Hollenbach",

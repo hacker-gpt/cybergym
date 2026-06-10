@@ -1,53 +1,41 @@
 # Legal Information
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-est Lorem ipsum dolor sit amet.
+CyberGym is a deliberately insecure web application created for security
+training, education, and Capture-the-Flag (CTF) practice. It is provided free
+of charge and **for demonstration and educational purposes only**.
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
-dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+CyberGym is a re-branded fork of [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
+and is distributed under the [MIT License](LICENSE). The original software is
+Copyright © 2014–2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
+CyberGym modifications and branding are Copyright © 2026 HackerGPT. The original
+copyright notice is retained as required by the MIT License.
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-delenit augue duis dolore te feugait nulla facilisi.
+This application intentionally contains security vulnerabilities. It is meant to
+be run inside an isolated training environment. Do not deploy it on a production
+network and do not store any real or sensitive data in it.
 
 ## Terms of Use
 
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
-doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit
-amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-nisl ut aliquip ex ea commodo consequat.
+By accessing or using CyberGym you agree to the following:
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+- **Educational use only.** CyberGym exists to help you learn about web
+  application security in a safe, legal, sandboxed environment.
+- **Use what you learn responsibly and legally.** Only test systems that you own
+  or for which you have explicit written permission. Unauthorized access to
+  computer systems is illegal in most jurisdictions.
+- **Provided "as is".** The software is provided without warranty of any kind,
+  express or implied, as set out in the MIT License. You use it at your own risk.
+- **No liability.** In no event shall the authors or copyright holders be liable
+  for any claim, damages, or other liability arising from the use of this
+  software.
+- **No real data.** Any accounts, products, prices, reviews, and personal data
+  shown in CyberGym are fictional and exist solely to support training
+  scenarios.
 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At
-accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy
-sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd
-magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem
-ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+## Open Source & Attribution
+
+CyberGym is open source under the MIT License. You are free to use, copy, modify,
+and distribute it, provided the above copyright notices and the MIT permission
+notice are retained in all copies or substantial portions of the software.
+CyberGym gratefully builds on the work of the OWASP Juice Shop project and its
+contributors.

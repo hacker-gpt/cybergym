@@ -232,10 +232,12 @@ For a list of all contributors to the OWASP Juice Shop please visit our
 
 ## Licensing
 
-[![license](https://img.shields.io/github/license/juice-shop/juice-shop.svg)](LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the [MIT license](LICENSE).
-OWASP Juice Shop and any contributions are Copyright © by Bjoern Kimminich & the OWASP Juice Shop contributors
-2014-2026.
+
+CyberGym is a re-branded derivative of OWASP Juice Shop. CyberGym modifications and branding are Copyright © 2026 HackerGPT.
+OWASP Juice Shop and any contributions are Copyright © 2014-2026 by Bjoern Kimminich & the OWASP Juice Shop contributors.
+The original copyright notice is retained as required by the MIT license. See the [NOTICE](NOTICE) file for full attribution.
 
 ![Juice Shop Logo](https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_400px.png)

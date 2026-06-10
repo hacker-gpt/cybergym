@@ -1,4 +1,18 @@
+MIT License
+
+CyberGym is a modified, re-branded derivative of OWASP Juice Shop. Both the
+original work and the CyberGym modifications are licensed under the MIT License.
+
 Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors
+    (original work - "OWASP Juice Shop";
+     https://owasp.org/www-project-juice-shop/ ;
+     https://github.com/juice-shop/juice-shop)
+Copyright (c) 2026 HackerGPT
+    (CyberGym modifications and branding)
+
+The original copyright notice above is retained as required by the MIT License,
+together with the per-file copyright and SPDX-License-Identifier headers found
+throughout this repository.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
