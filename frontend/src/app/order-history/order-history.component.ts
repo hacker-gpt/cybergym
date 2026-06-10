@@ -98,7 +98,8 @@ export class OrderHistoryComponent implements OnInit {
           points: Math.round(product.price / 10)
         }
         this.dialog.open(ProductDetailsComponent, {
-          width: '500px',
+          width: '700px',
+          maxWidth: '95vw',
           height: 'max-content',
           data: {
             productData: element
