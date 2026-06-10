@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: min-content min-content auto min-content;
 
-  max-height: 144px;
+  max-height: 200px;
   overflow: hidden;
   padding: 12px 16px;
 
@@ -130,7 +130,6 @@
   display: flex;
 }
 
-
 $badge-size: 24px;
 
 .badge {
@@ -139,7 +138,6 @@ $badge-size: 24px;
   border: 0;
 
   border-radius: calc($badge-size / 2);
-  color: var(--theme-text) !important;
   color: var(--theme-text);
   cursor: pointer;
 
@@ -151,7 +149,7 @@ $badge-size: 24px;
   padding: 0;
 
   position: relative;
-  
+
   mat-icon {
     font-size: 16px;
     height: 16px;
@@ -171,6 +169,7 @@ $badge-size: 24px;
 
 .badge.completed {
   background-color: var(--theme-accent);
+  color: rgba(0, 0, 0, 0.87);
 
   .badge-status {
     color: var(--theme-accent);
@@ -179,6 +178,7 @@ $badge-size: 24px;
 
 .badge.partially-completed {
   background-color: var(--theme-accent-dark);
+  color: rgba(0, 0, 0, 0.87);
 
   .badge-status {
     color: var(--theme-accent-dark);
@@ -187,6 +187,7 @@ $badge-size: 24px;
 
 .badge.not-completable {
   background-color: var(--theme-accent);
+  color: rgba(0, 0, 0, 0.87);
 
   .badge-status {
     color: var(--theme-accent);
