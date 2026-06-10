@@ -248,6 +248,12 @@
       {{"TITLE_ABOUT" | translate}}
     </span>
   </a>
+  <a mat-list-item routerLink="/faq" (click)="onToggleSidenav()" aria-label="Go to FAQ page">
+    <mat-icon>help_outline</mat-icon>
+    <span class="menu-text truncate">
+      FAQ
+    </span>
+  </a>
   <a mat-list-item routerLink="/photo-wall" (click)="onToggleSidenav()" aria-label="Go to photo wall">
     <mat-icon>camera</mat-icon>
     <span class="menu-text truncate">
@@ -287,8 +293,8 @@
   }
 
   @if (showGitHubLink) {
-    <a mat-list-item href="./redirect?to=https://github.com/juice-shop/juice-shop"
-      aria-label="Go to OWASP Juice Shop GitHub page">
+    <a mat-list-item href="https://github.com/hacker-gpt/cybergym" target="_blank" rel="noopener noreferrer"
+      aria-label="Go to CyberGym GitHub page">
       <mat-icon matListIcon class="fab fa-github fa-lg"></mat-icon>
       <span class="menu-text truncate">
         GitHub

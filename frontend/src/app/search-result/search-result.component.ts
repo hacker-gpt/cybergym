@@ -107,14 +107,14 @@ export class SearchResultComponent implements OnDestroy, AfterViewInit {
   public emptyState = false;
 
   // vuln-code-snippet start restfulXssChallenge
-  ngAfterViewInit() {
-    const products = this.productService.search("");
-    const quantities = this.quantityService.getAll();
+  ngAfterViewInit () {
+    const products = this.productService.search('')
+    const quantities = this.quantityService.getAll()
     forkJoin([quantities, products]).subscribe({
       next: ([quantities, products]) => {
-        const dataTable: TableEntry[] = [];
-        this.tableData = products;
-        this.trustProductDescription(products); // vuln-code-snippet neutral-line restfulXssChallenge
+        const dataTable: TableEntry[] = []
+        this.tableData = products
+        this.trustProductDescription(products) // vuln-code-snippet neutral-line restfulXssChallenge
         for (const product of products) {
           dataTable.push({
             name: product.name,
@@ -122,66 +122,57 @@ export class SearchResultComponent implements OnDestroy, AfterViewInit {
             deluxePrice: product.deluxePrice,
             id: product.id,
             image: product.image,
-            description: product.description,
-          });
+            description: product.description
+          })
         }
         for (const quantity of quantities) {
           const entry = dataTable.find((dataTableEntry) => {
-            return dataTableEntry.id === quantity.ProductId;
-          });
+            return dataTableEntry.id === quantity.ProductId
+          })
           if (entry === undefined) {
-            continue;
+            continue
           }
-          entry.quantity = quantity.quantity;
+          entry.quantity = quantity.quantity
         }
-        this.dataSource = new MatTableDataSource<TableEntry>(dataTable);
+        this.dataSource = new MatTableDataSource<TableEntry>(dataTable)
         for (let i = 1; i <= Math.ceil(this.dataSource.data.length / 12); i++) {
-          this.pageSizeOptions.push(i * 12);
+          this.pageSizeOptions.push(i * 12)
         }
-        this.paginator.pageSizeOptions = this.pageSizeOptions;
-        this.dataSource.paginator = this.paginator;
-        this.gridDataSource = this.dataSource.connect();
-        this.resultsLength = this.dataSource.data.length;
-        this.filterTable();
+        this.paginator.pageSizeOptions = this.pageSizeOptions
+        this.dataSource.paginator = this.paginator
+        this.gridDataSource = this.dataSource.connect()
+        this.resultsLength = this.dataSource.data.length
+        this.filterTable()
         this.routerSubscription = this.router.events.subscribe(() => {
-          this.filterTable();
-        });
-        const challenge: string = this.route.snapshot.queryParams.challenge; // vuln-code-snippet hide-start
-        if (
-          challenge &&
-          this.route.snapshot.url.join("").match(/hacking-instructor/)
-        ) {
-          this.startHackingInstructor(decodeURIComponent(challenge));
+          this.filterTable()
+        })
+        const challenge: string = this.route.snapshot.queryParams.challenge // vuln-code-snippet hide-start
+        if (challenge && this.route.snapshot.url.join('').match(/hacking-instructor/)) {
+          this.startHackingInstructor(decodeURIComponent(challenge))
         } // vuln-code-snippet hide-end
         if (window.innerWidth < 2600) {
-          this.breakpoint = 4;
+          this.breakpoint = 4
           if (window.innerWidth < 1740) {
-            this.breakpoint = 3;
+            this.breakpoint = 3
             if (window.innerWidth < 1280) {
-              this.breakpoint = 2;
+              this.breakpoint = 2
               if (window.innerWidth < 850) {
-                this.breakpoint = 1;
+                this.breakpoint = 1
               }
             }
           }
         } else {
-          this.breakpoint = 6;
+          this.breakpoint = 6
         }
-        this.cdRef.detectChanges();
+        this.cdRef.detectChanges()
       },
-      error: (err) => {
-        console.log(err);
-      },
-    });
+      error: (err) => { console.log(err) }
+    })
   }
 
-  trustProductDescription(tableData: any[]) {
-    // vuln-code-snippet neutral-line restfulXssChallenge
-    for (let i = 0; i < tableData.length; i++) {
-      // vuln-code-snippet neutral-line restfulXssChallenge
-      tableData[i].description = this.sanitizer.bypassSecurityTrustHtml(
-        tableData[i].description,
-      ); // vuln-code-snippet vuln-line restfulXssChallenge
+  trustProductDescription (tableData: any[]) { // vuln-code-snippet neutral-line restfulXssChallenge
+    for (let i = 0; i < tableData.length; i++) { // vuln-code-snippet neutral-line restfulXssChallenge
+      tableData[i].description = this.sanitizer.bypassSecurityTrustHtml(tableData[i].description) // vuln-code-snippet vuln-line restfulXssChallenge
     } // vuln-code-snippet neutral-line restfulXssChallenge
   } // vuln-code-snippet neutral-line restfulXssChallenge
   // vuln-code-snippet end restfulXssChallenge
@@ -199,27 +190,26 @@ export class SearchResultComponent implements OnDestroy, AfterViewInit {
   }
 
   // vuln-code-snippet start localXssChallenge xssBonusChallenge
-  filterTable() {
-    let queryParam: string = this.route.snapshot.queryParams.q;
+  filterTable () {
+    let queryParam: string = this.route.snapshot.queryParams.q
     if (queryParam) {
-      queryParam = queryParam.trim();
-      this.ngZone.runOutsideAngular(() => {
-        // vuln-code-snippet hide-start
-        this.io.socket().emit("verifyLocalXssChallenge", queryParam);
-      }); // vuln-code-snippet hide-end
-      this.dataSource.filter = queryParam.toLowerCase();
-      this.searchValue = this.sanitizer.bypassSecurityTrustHtml(queryParam); // vuln-code-snippet vuln-line localXssChallenge xssBonusChallenge
+      queryParam = queryParam.trim()
+      this.ngZone.runOutsideAngular(() => { // vuln-code-snippet hide-start
+        this.io.socket().emit('verifyLocalXssChallenge', queryParam)
+      }) // vuln-code-snippet hide-end
+      this.dataSource.filter = queryParam.toLowerCase()
+      this.searchValue = this.sanitizer.bypassSecurityTrustHtml(queryParam) // vuln-code-snippet vuln-line localXssChallenge xssBonusChallenge
       this.gridDataSource.subscribe((result: any) => {
         if (result.length === 0) {
-          this.emptyState = true;
+          this.emptyState = true
         } else {
-          this.emptyState = false;
+          this.emptyState = false
         }
-      });
+      })
     } else {
-      this.dataSource.filter = "";
-      this.searchValue = undefined;
-      this.emptyState = false;
+      this.dataSource.filter = ''
+      this.searchValue = undefined
+      this.emptyState = false
     }
   }
   // vuln-code-snippet end localXssChallenge xssBonusChallenge

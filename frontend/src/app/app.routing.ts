@@ -10,6 +10,7 @@ import { BasketComponent } from './basket/basket.component'
 import { TrackResultComponent } from './track-result/track-result.component'
 import { ContactComponent } from './contact/contact.component'
 import { AboutComponent } from './about/about.component'
+import { FaqComponent } from './faq/faq.component'
 import { RegisterComponent } from './register/register.component'
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component'
 import { SearchResultComponent } from './search-result/search-result.component'
@@ -296,3 +297,13 @@ export function token2 (...args: number[]) { // vuln-code-snippet neutral-line t
   }).join('') // vuln-code-snippet neutral-line tokenSaleChallenge
 } // vuln-code-snippet neutral-line tokenSaleChallenge
 // vuln-code-snippet end tokenSaleChallenge
+
+// FAQ route registered AFTER both vuln-code-snippet regions above so the
+// coding-challenge snippets (npm run rsn) stay byte-identical to upstream. The
+// routes array is mutated here at module-load time — before Angular bootstraps
+// the Router and reads ROUTES — and inserted before the '**' wildcard so '/faq'
+// resolves correctly.
+routes.splice(routes.length - 1, 0, {
+  path: 'faq',
+  component: FaqComponent
+})

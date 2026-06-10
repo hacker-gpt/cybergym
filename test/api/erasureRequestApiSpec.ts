@@ -149,7 +149,7 @@ describe('/dataerasure', () => {
           }
         })
           .expect('status', 200)
-          .expect('bodyContains', 'juice-shop')
+          .expect('bodyContains', 'cybergym')
           .expect('bodyContains', '......')
       })
   })
