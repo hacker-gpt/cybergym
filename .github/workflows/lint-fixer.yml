@@ -24,6 +24,6 @@ jobs:
         commit_message: "Auto-fix linting issues"
         branch: ${{ github.head_ref }}
         commit_options: '--signoff'
-        commit_user_name: JuiceShopBot
-        commit_user_email: 61591748+JuiceShopBot@users.noreply.github.com
-        commit_author: JuiceShopBot <61591748+JuiceShopBot@users.noreply.github.com>
+        commit_user_name: CyberGymBot
+        commit_user_email: cybergymbot@users.noreply.github.com
+        commit_author: CyberGymBot <cybergymbot@users.noreply.github.com>

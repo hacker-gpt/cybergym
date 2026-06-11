@@ -21,7 +21,7 @@ export const CodingChallengesInstruction: ChallengeInstruction = {
     },
     {
       text:
-        'Many Juice Shop hacking challenges come with an associated _Coding Challenge_ which will teach you more about the underlying vulnerability on source code level.',
+        'Many CyberGym hacking challenges come with an associated _Coding Challenge_ which will teach you more about the underlying vulnerability on source code level.',
       fixture: '#Score\\ Board\\.solved',
       resolved: waitInMs(15000)
     },

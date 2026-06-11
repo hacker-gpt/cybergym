@@ -1,4 +1,4 @@
-# AI Agent Guidelines for OWASP Juice Shop
+# AI Agent Guidelines for CyberGym
 
 ## ⚠️ STOP: Using a Supported AI Tool?
 
@@ -15,16 +15,16 @@
 
 This file provides guidelines for AI agents and automated code assistants that do not have dedicated context files above. 
 
-**Important**: All guidelines ultimately refer to [CLAUDE.md](./.claude/CLAUDE.md), which is the **primary authoritative source** for AI contributions to OWASP Juice Shop. This document provides a quick reference and overview; for comprehensive details, always consult CLAUDE.md.
+**Important**: All guidelines ultimately refer to [CLAUDE.md](./.claude/CLAUDE.md), which is the **primary authoritative source** for AI contributions to CyberGym. This document provides a quick reference and overview; for comprehensive details, always consult CLAUDE.md.
 
 ## Project Overview
 
-- **Project**: OWASP Juice Shop - an intentionally insecure web application for security training
+- **Project**: CyberGym - an intentionally insecure web application for security training
 - **Primary Languages**: TypeScript, JavaScript, Angular (frontend)
 - **Key Technologies**: Node.js, Express, SQLite/MongoDB, Angular
 - **Testing**: Jest (unit tests), Frisby (API integration), Cypress (E2E tests)
 - **Code Style**: JS Standard Style (enforced via ESLint)
-- **Repository**: [OWASP/juice-shop](https://github.com/OWASP/juice-shop)
+- **Repository**: [hacker-gpt/cybergym](https://github.com/hacker-gpt/cybergym)
 
 ## Important Constraints
 
@@ -34,7 +34,7 @@ See [CLAUDE.md](./.claude/CLAUDE.md#important-constraints) for the full context.
 2. **Challenge Development**: Consult maintainers before creating new challenges.
 3. **Code Changes and RSN**: When modifying challenge-related code, the Refactoring Safety Net must pass.
 4. **Dependency Updates**: Verify compatibility with `package.json` and `frontend/package.json`.
-5. **Translation Modifications**: Use [Crowdin](https://crowdin.com/project/owasp-juice-shop), not direct file editing.
+5. **Translation Modifications**: Edit the JSON files under `frontend/src/assets/i18n/` and `data/static/i18n/` deliberately and keep keys consistent across locales.
 
 ## Key Files and Directories
 
@@ -101,7 +101,7 @@ See [CLAUDE.md](./.claude/CLAUDE.md#anti-patterns-to-avoid) for detailed explana
 
 ❌ Don't accept AI suggestions blindly, skip testing, use AI for trivial changes, modify translations directly, or create vulnerabilities without approval
 
-✅ Do review code critically, test thoroughly, make meaningful contributions, use Crowdin for translations, and discuss security changes with maintainers
+✅ Do review code critically, test thoroughly, make meaningful contributions, edit translations deliberately, and discuss security changes with maintainers
 
 ## Quality Checklist
 
@@ -150,7 +150,7 @@ See [CLAUDE.md](./.claude/CLAUDE.md#branch-and-pr-strategy) and [CONTRIBUTING.md
 
 - **Authoritative Guide**: [CLAUDE.md](./.claude/CLAUDE.md)
 - **Contribution Guidelines**: [CONTRIBUTING.md](./CONTRIBUTING.md)
-- **Project Documentation**: [pwning.owasp-juice.shop](https://pwning.owasp-juice.shop/)
+- **Project Documentation**: [github.com/hacker-gpt/cybergym](https://github.com/hacker-gpt/cybergym)
 - **Community**: GitHub issues and discussions
 
 ## Remember

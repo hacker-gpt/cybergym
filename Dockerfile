@@ -22,15 +22,15 @@ RUN npm run sbom
 FROM gcr.io/distroless/nodejs22-debian12
 ARG BUILD_DATE
 ARG VCS_REF
-LABEL maintainer="HackerGPT <support@hackergpt.app>" \
-    org.opencontainers.image.title="CyberGYM" \
-    org.opencontainers.image.description="Probably the most modern and sophisticated insecure web application" \
-    org.opencontainers.image.authors="HackerGPT <support@hackergpt.app>" \
-    org.opencontainers.image.vendor="HackerGPT Inc." \
-    org.opencontainers.image.documentation="https://hackergpt.app" \
+LABEL maintainer="HackerGPT" \
+    org.opencontainers.image.title="CyberGym" \
+    org.opencontainers.image.description="An intentionally insecure web application for security training and CTFs" \
+    org.opencontainers.image.authors="HackerGPT, based on OWASP Juice Shop by Bjoern Kimminich" \
+    org.opencontainers.image.vendor="HackerGPT" \
+    org.opencontainers.image.documentation="https://github.com/hacker-gpt/cybergym" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.version="19.1.1" \
-    org.opencontainers.image.url="https://" \
+    org.opencontainers.image.url="https://github.com/hacker-gpt/cybergym" \
     org.opencontainers.image.source="https://github.com/hacker-gpt/cybergym" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE

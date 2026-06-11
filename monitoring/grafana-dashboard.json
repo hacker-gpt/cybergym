@@ -111,7 +111,7 @@
       "repeatDirection": "h",
       "targets": [
         {
-          "expr": "sum without (category)(juiceshop_challenges_solved{difficulty=\"$difficulties\"}) / sum without (category)(juiceshop_challenges_total{difficulty=\"$difficulties\"}) * 100",
+          "expr": "sum without (category)(cybergym_challenges_solved{difficulty=\"$difficulties\"}) / sum without (category)(cybergym_challenges_total{difficulty=\"$difficulties\"}) * 100",
           "legendFormat": "",
           "refId": "A"
         }
@@ -132,7 +132,7 @@
       },
       "id": 129,
       "options": {
-        "content": "![](https://raw.githubusercontent.com/OWASP/owasp-swag/master/projects/juice-shop/wallpapers/JuiceShop_Wallpaper_900x300.jpg)",
+        "content": "![](https://raw.githubusercontent.com/hacker-gpt/cybergym/master/frontend/src/assets/public/images/CyberGym_Logo.png)",
         "mode": "markdown"
       },
       "pluginVersion": "8.1.5",
@@ -209,7 +209,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "juiceshop_cheat_score",
+          "expr": "cybergym_cheat_score",
           "instant": false,
           "interval": "1m",
           "intervalFactor": 1,
@@ -277,7 +277,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "juiceshop_coding_challenges_accuracy{phase=\"find it\"}",
+          "expr": "cybergym_coding_challenges_accuracy{phase=\"find it\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -344,7 +344,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "sum by (category)(juiceshop_challenges_solved{}) / sum by (category)(juiceshop_challenges_total{}) * 100 != 0",
+          "expr": "sum by (category)(cybergym_challenges_solved{}) / sum by (category)(cybergym_challenges_total{}) * 100 != 0",
           "instant": false,
           "interval": "",
           "legendFormat": "{{category}}",
@@ -455,7 +455,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "juiceshop_coding_challenges_progress",
+          "expr": "cybergym_coding_challenges_progress",
           "interval": "",
           "legendFormat": "{{phase}}",
           "refId": "A"
@@ -519,7 +519,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "juiceshop_coding_challenges_accuracy{phase=\"fix it\"}",
+          "expr": "cybergym_coding_challenges_accuracy{phase=\"fix it\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -587,7 +587,7 @@
           "steppedLine": false,
           "targets": [
             {
-              "expr": "juiceshop_user_social_interactions{}",
+              "expr": "cybergym_user_social_interactions{}",
               "interval": "1m",
               "legendFormat": "{{type}}",
               "refId": "A"
@@ -683,7 +683,7 @@
           "steppedLine": false,
           "targets": [
             {
-              "expr": "increase(juiceshop_users_registered{}[1m])",
+              "expr": "increase(cybergym_users_registered{}[1m])",
               "legendFormat": "{{type}}",
               "refId": "A"
             }
@@ -798,7 +798,7 @@
           "pluginVersion": "8.1.5",
           "targets": [
             {
-              "expr": "juiceshop_orders_placed_total",
+              "expr": "cybergym_orders_placed_total",
               "instant": false,
               "interval": "1m",
               "intervalFactor": 1,
@@ -880,7 +880,7 @@
           "pluginVersion": "8.1.5",
           "targets": [
             {
-              "expr": "juiceshop_wallet_balance_total",
+              "expr": "cybergym_wallet_balance_total",
               "instant": false,
               "interval": "1m",
               "intervalFactor": 1,
@@ -959,7 +959,7 @@
           "pluginVersion": "8.1.5",
           "targets": [
             {
-              "expr": "juiceshop_users_registered{type=\"standard\"}",
+              "expr": "cybergym_users_registered{type=\"standard\"}",
               "refId": "A"
             }
           ],
@@ -1034,7 +1034,7 @@
           "pluginVersion": "8.1.5",
           "targets": [
             {
-              "expr": "juiceshop_users_registered{type=\"deluxe\"}",
+              "expr": "cybergym_users_registered{type=\"deluxe\"}",
               "refId": "A"
             }
           ],
@@ -1126,7 +1126,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "increase(http_requests_count{app=\"juiceshop\"}[1m])",
+          "expr": "increase(http_requests_count{app=\"cybergym\"}[1m])",
           "interval": "1m",
           "legendFormat": "{{status_code}}",
           "refId": "A"
@@ -1339,7 +1339,7 @@
       "pluginVersion": "8.1.5",
       "targets": [
         {
-          "expr": "sort_desc(avg by (task)(juiceshop_startup_duration_seconds))",
+          "expr": "sort_desc(avg by (task)(cybergym_startup_duration_seconds))",
           "format": "time_series",
           "instant": true,
           "interval": "",
@@ -1699,7 +1699,7 @@
       "pluginVersion": "8.1.5",
       "targets": [
         {
-          "expr": "sum(juiceshop_version_info{}) by (version)",
+          "expr": "sum(cybergym_version_info{}) by (version)",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1710,7 +1710,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Juice Shop Version",
+      "title": "CyberGym Version",
       "type": "stat"
     },
     {
@@ -2042,7 +2042,7 @@
         "error": null,
         "hide": 2,
         "includeAll": true,
-        "label": "Difficulty Levels supported by JuiceShop",
+        "label": "Difficulty Levels supported by CyberGym",
         "multi": true,
         "name": "difficulties",
         "options": [
@@ -2107,7 +2107,7 @@
     ]
   },
   "timezone": "",
-  "title": "Juice Shop Instance Status",
+  "title": "CyberGym Instance Status",
   "uid": "Sj-cIdwZk",
   "version": 18
 }

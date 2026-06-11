@@ -1,6 +1,6 @@
 # App
 node_modules/
-juiceshop.sqlite
+cybergym.sqlite
 order_*.pdf
 app/
 !frontend/src/app
@@ -14,14 +14,13 @@ i18n/*.invalid
 !data/static/i18n/*.json
 data/chatbot/*.*
 !data/chatbot/.gitkeep
-/data/juiceshop.sqlite-journal
+/data/cybergym.sqlite-journal
 
 # Build
 .nyc_output/
 .sass-cache/
 cache/
 logs/
-vagrant/.vagrant/
 *.orig
 *.out
 *.log

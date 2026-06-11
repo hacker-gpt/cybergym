@@ -23,7 +23,7 @@ export class LocalBackupService {
 
   private readonly VERSION = 1
 
-  save (fileName = 'owasp_juice_shop') {
+  save (fileName = 'cybergym') {
     const backup: Backup = { version: this.VERSION }
 
     backup.banners = {

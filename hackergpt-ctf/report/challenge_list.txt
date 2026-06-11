@@ -1,0 +1,110 @@
+1★ [Broken Access Control] web3SandboxChallenge :: Web3 Sandbox
+1★ [Improper Input Validation] passwordRepeatChallenge :: Repetitive Registration
+1★ [Improper Input Validation] zeroStarsChallenge :: Zero Stars
+1★ [Improper Input Validation] missingEncodingChallenge :: Missing Encoding
+1★ [Miscellaneous] privacyPolicyChallenge :: Privacy Policy
+1★ [Miscellaneous] scoreBoardChallenge :: Score Board
+1★ [Miscellaneous] bullyChatbotChallenge :: Bully Chatbot
+1★ [Miscellaneous] closeNotificationsChallenge :: Mass Dispel
+1★ [Observability Failures] exposedMetricsChallenge :: Exposed Metrics
+1★ [Security Misconfiguration] errorHandlingChallenge :: Error Handling
+1★ [Sensitive Data Exposure] directoryListingChallenge :: Confidential Document
+1★ [Unvalidated Redirects] redirectCryptoCurrencyChallenge :: Outdated Allowlist
+1★ [XSS] localXssChallenge :: DOM XSS
+1★ [XSS] xssBonusChallenge :: Bonus Payload
+2★ [Broken Access Control] adminSectionChallenge :: Admin Section
+2★ [Broken Access Control] feedbackChallenge :: Five-Star Feedback
+2★ [Broken Access Control] basketAccessChallenge :: View Basket
+2★ [Broken Authentication] weakPasswordChallenge :: Password Strength
+2★ [Cryptographic Issues] weirdCryptoChallenge :: Weird Crypto
+2★ [Improper Input Validation] emptyUserRegistration :: Empty User Registration
+2★ [Injection] loginAdminChallenge :: Login Admin
+2★ [Miscellaneous] securityPolicyChallenge :: Security Policy
+2★ [Security Misconfiguration] deprecatedInterfaceChallenge :: Deprecated Interface
+2★ [Sensitive Data Exposure] nftUnlockChallenge :: NFT Takeover
+2★ [Sensitive Data Exposure] loginRapperChallenge :: Login MC SafeSearch
+2★ [Sensitive Data Exposure] geoStalkingMetaChallenge :: Meta Geo Stalking
+2★ [Sensitive Data Exposure] geoStalkingVisualChallenge :: Visual Geo Stalking
+2★ [Sensitive Data Exposure] exposedCredentialsChallenge :: Exposed credentials
+2★ [XSS] reflectedXssChallenge :: Reflected XSS
+3★ [Broken Access Control] forgedFeedbackChallenge :: Forged Feedback
+3★ [Broken Access Control] forgedReviewChallenge :: Forged Review
+3★ [Broken Access Control] basketManipulateChallenge :: Manipulate Basket
+3★ [Broken Access Control] changeProductChallenge :: Product Tampering
+3★ [Broken Access Control] csrfChallenge :: CSRF
+3★ [Broken Anti Automation] captchaBypassChallenge :: CAPTCHA Bypass
+3★ [Broken Authentication] resetPasswordBjoernOwaspChallenge :: Bjoern's Favorite Pet
+3★ [Broken Authentication] ghostLoginChallenge :: GDPR Data Erasure
+3★ [Broken Authentication] resetPasswordJimChallenge :: Reset Jim's Password
+3★ [Improper Input Validation] registerAdminChallenge :: Admin Registration
+3★ [Improper Input Validation] nftMintChallenge :: Mint the Honey Pot
+3★ [Improper Input Validation] negativeOrderChallenge :: Payback Time
+3★ [Improper Input Validation] uploadSizeChallenge :: Upload Size
+3★ [Improper Input Validation] uploadTypeChallenge :: Upload Type
+3★ [Improper Input Validation] freeDeluxeChallenge :: Deluxe Fraud
+3★ [Injection] dbSchemaChallenge :: Database Schema
+3★ [Injection] loginBenderChallenge :: Login Bender
+3★ [Injection] loginJimChallenge :: Login Jim
+3★ [Miscellaneous] csafChallenge :: Security Advisory
+3★ [Security through Obscurity] privacyPolicyProofChallenge :: Privacy Policy Inspection
+3★ [Sensitive Data Exposure] loginAmyChallenge :: Login Amy
+3★ [XSS] restfulXssChallenge :: API-only XSS
+3★ [XSS] persistedXssUserChallenge :: Client-side XSS Protection
+3★ [XXE] xxeFileDisclosureChallenge :: XXE Data Access
+4★ [Broken Access Control] easterEggLevelOneChallenge :: Easter Egg
+4★ [Broken Authentication] oauthUserPasswordChallenge :: Login Bjoern
+4★ [Broken Authentication] resetPasswordBenderChallenge :: Reset Bender's Password
+4★ [Cryptographic Issues] easterEggLevelTwoChallenge :: Nested Easter Egg
+4★ [Improper Input Validation] manipulateClockChallenge :: Expired Coupon
+4★ [Improper Input Validation] nullByteChallenge :: Poison Null Byte
+4★ [Injection] christmasSpecialChallenge :: Christmas Special
+4★ [Injection] ephemeralAccountantChallenge :: Ephemeral Accountant
+4★ [Injection] noSqlCommandChallenge :: NoSQL DoS
+4★ [Injection] noSqlReviewsChallenge :: NoSQL Manipulation
+4★ [Injection] unionSqlInjectionChallenge :: User Credentials
+4★ [Observability Failures] accessLogDisclosureChallenge :: Access Log
+4★ [Observability Failures] misplacedSignatureFileChallenge :: Misplaced Signature File
+4★ [Security through Obscurity] hiddenImageChallenge :: Steganography
+4★ [Sensitive Data Exposure] forgottenDevBackupChallenge :: Forgotten Developer Backup
+4★ [Sensitive Data Exposure] forgottenBackupChallenge :: Forgotten Sales Backup
+4★ [Sensitive Data Exposure] dataExportChallenge :: GDPR Data Theft
+4★ [Sensitive Data Exposure] dlpPastebinDataLeakChallenge :: Leaked Unsafe Product
+4★ [Sensitive Data Exposure] resetPasswordUvoginChallenge :: Reset Uvogin's Password
+4★ [Unvalidated Redirects] redirectChallenge :: Allowlist Bypass
+4★ [Vulnerable Components] typosquattingNpmChallenge :: Legacy Typosquatting
+4★ [Vulnerable Components] knownVulnerableComponentChallenge :: Vulnerable Library
+4★ [XSS] usernameXssChallenge :: CSP Bypass
+4★ [XSS] httpHeaderXssChallenge :: HTTP-Header XSS
+4★ [XSS] persistedXssFeedbackChallenge :: Server-side XSS Protection
+5★ [Broken Anti Automation] extraLanguageChallenge :: Extra Language
+5★ [Broken Anti Automation] resetPasswordMortyChallenge :: Reset Morty's Password
+5★ [Broken Authentication] changePasswordBenderChallenge :: Change Bender's Password
+5★ [Broken Authentication] resetPasswordBjoernChallenge :: Reset Bjoern's Password
+5★ [Broken Authentication] twoFactorAuthUnsafeSecretStorageChallenge :: Two Factor Authentication
+5★ [Injection] noSqlOrdersChallenge :: NoSQL Exfiltration
+5★ [Insecure Deserialization] rceChallenge :: Blocked RCE DoS
+5★ [Insecure Deserialization] yamlBombChallenge :: Memory Bomb
+5★ [Observability Failures] dlpPasswordSprayingChallenge :: Leaked Access Logs
+5★ [Security Misconfiguration] svgInjectionChallenge :: Cross-Site Imaging
+5★ [Security through Obscurity] tokenSaleChallenge :: Blockchain Hype
+5★ [Sensitive Data Exposure] emailLeakChallenge :: Email Leak
+5★ [Sensitive Data Exposure] retrieveBlueprintChallenge :: Retrieve Blueprint
+5★ [Sensitive Data Exposure] leakedApiKeyChallenge :: Leaked API Key
+5★ [Vulnerable Components] typosquattingAngularChallenge :: Frontend Typosquatting
+5★ [Vulnerable Components] supplyChainAttackChallenge :: Supply Chain Attack
+5★ [Vulnerable Components] jwtUnsignedChallenge :: Unsigned JWT
+5★ [Vulnerable Components] killChatbotChallenge :: Kill Chatbot
+5★ [Vulnerable Components] lfrChallenge :: Local File Read
+5★ [XXE] xxeDosChallenge :: XXE DoS
+6★ [Broken Access Control] ssrfChallenge :: SSRF
+6★ [Broken Anti Automation] timingAttackChallenge :: Multiple Likes
+6★ [Cryptographic Issues] forgedCouponChallenge :: Forged Coupon
+6★ [Cryptographic Issues] continueCodeChallenge :: Imaginary Challenge
+6★ [Cryptographic Issues] premiumPaywallChallenge :: Premium Paywall
+6★ [Injection] sstiChallenge :: SSTi
+6★ [Insecure Deserialization] rceOccupyChallenge :: Successful RCE DoS
+6★ [Miscellaneous] web3WalletChallenge :: Wallet Depletion
+6★ [Security Misconfiguration] loginSupportChallenge :: Login Support Team
+6★ [Vulnerable Components] fileWriteChallenge :: Arbitrary File Write
+6★ [Vulnerable Components] jwtForgedChallenge :: Forged Signed JWT
+6★ [XSS] videoXssChallenge :: Video XSS

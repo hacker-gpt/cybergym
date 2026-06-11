@@ -36,7 +36,7 @@ const sequelize = new sequelize_1.Sequelize('database', 'username', 'password', 
         max: 5
     },
     transactionType: sequelize_1.Transaction.TYPES.IMMEDIATE,
-    storage: 'data/juiceshop.sqlite',
+    storage: 'data/cybergym.sqlite',
     logging: false
 });
 exports.sequelize = sequelize;

@@ -1,6 +1,6 @@
 {
-  "name": "OWASP Juice Shop",
-  "description": "Probably the most modern and sophisticated insecure web application",
+  "name": "CyberGym",
+  "description": "An intentionally insecure web application for security training and CTFs",
   "keywords": [
     "web security",
     "web application security",
@@ -17,9 +17,9 @@
     "capture the flag",
     "awareness"
   ],
-  "website": "https://owasp-juice.shop",
-  "repository": "https://github.com/juice-shop/juice-shop",
-  "logo": "https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo.png",
+  "website": "https://github.com/hacker-gpt/cybergym",
+  "repository": "https://github.com/hacker-gpt/cybergym",
+  "logo": "https://raw.githubusercontent.com/hacker-gpt/cybergym/master/frontend/src/assets/public/images/CyberGym_Logo.png",
   "engines": {
     "node": "20.x"
   }

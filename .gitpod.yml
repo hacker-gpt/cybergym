@@ -3,7 +3,7 @@ tasks:
     command: npm start
 
 ports:
-  - name: OWASP Juice Shop
-    description: The Juice Shop web server
+  - name: CyberGym
+    description: The CyberGym web server
     port: 3000
     onOpen: open-preview
