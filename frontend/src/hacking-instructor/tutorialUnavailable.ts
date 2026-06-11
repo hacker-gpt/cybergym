@@ -19,7 +19,7 @@ export const TutorialUnavailableInstruction: ChallengeInstruction = {
     },
     {
       text:
-        '✍️ Do you want to contribute a tutorial for this challenge? [Check out our documentation](https://pwning.owasp-juice.shop/companion-guide/latest/part5/tutorials.html) to learn how! 🏫',
+        '✍️ Do you want to contribute a tutorial for this challenge? [Open an issue on GitHub](https://github.com/hacker-gpt/cybergym/issues) to let us know! 🏫',
       fixture: 'app-navbar',
       resolved: waitInMs(15000)
     },

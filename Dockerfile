@@ -1,6 +1,6 @@
 FROM node:22 AS installer
-COPY . /juice-shop
-WORKDIR /juice-shop
+COPY . /cybergym
+WORKDIR /cybergym
 RUN npm i -g typescript ts-node
 RUN npm install --omit=dev --unsafe-perm
 RUN npm dedupe --omit=dev
@@ -22,20 +22,20 @@ RUN npm run sbom
 FROM gcr.io/distroless/nodejs22-debian12
 ARG BUILD_DATE
 ARG VCS_REF
-LABEL maintainer="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
-    org.opencontainers.image.title="OWASP Juice Shop" \
-    org.opencontainers.image.description="Probably the most modern and sophisticated insecure web application" \
-    org.opencontainers.image.authors="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
-    org.opencontainers.image.vendor="Open Worldwide Application Security Project" \
-    org.opencontainers.image.documentation="https://help.owasp-juice.shop" \
+LABEL maintainer="HackerGPT" \
+    org.opencontainers.image.title="CyberGym" \
+    org.opencontainers.image.description="An intentionally insecure web application for security training and CTFs" \
+    org.opencontainers.image.authors="HackerGPT, based on OWASP Juice Shop by Bjoern Kimminich" \
+    org.opencontainers.image.vendor="HackerGPT" \
+    org.opencontainers.image.documentation="https://github.com/hacker-gpt/cybergym" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.version="19.1.1" \
-    org.opencontainers.image.url="https://owasp-juice.shop" \
-    org.opencontainers.image.source="https://github.com/juice-shop/juice-shop" \
+    org.opencontainers.image.url="https://github.com/hacker-gpt/cybergym" \
+    org.opencontainers.image.source="https://github.com/hacker-gpt/cybergym" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
-WORKDIR /juice-shop
-COPY --from=installer --chown=65532:0 /juice-shop .
+WORKDIR /cybergym
+COPY --from=installer --chown=65532:0 /cybergym .
 USER 65532
 EXPOSE 3000
-CMD ["/juice-shop/build/app.js"]
+CMD ["/cybergym/build/app.js"]

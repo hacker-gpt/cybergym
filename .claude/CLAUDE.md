@@ -1,6 +1,6 @@
 # Contributing with Claude AI Assistant
 
-This guide helps contributors use Claude (AI assistant) effectively when working on OWASP Juice Shop while maintaining code quality and adhering to project standards.
+This guide helps contributors use Claude (AI assistant) effectively when working on CyberGym while maintaining code quality and adhering to project standards.
 
 > This document is supposed to be the primary source of context for **all** AI tools. Context files of tools other than Claude should refer to [this `CLAUDE.md` file](CLAUDE.md) for detailed guidelines. This is already the case for:
 > * GitHub CoPilot ([`.github/copilot-instructions.md`](../.github/copilot-instructions.md))
@@ -133,7 +133,7 @@ Ask Claude to:
 ✅ **Do**: Make meaningful contributions that add value
 
 ❌ **Don't**: Let AI modify translations directly
-✅ **Do**: Use [Crowdin](https://crowdin.com/project/owasp-juice-shop) for translations
+✅ **Do**: Edit translation JSON files deliberately and keep keys consistent across locales
 
 ## Example: Fixing a Bug
 
@@ -200,14 +200,14 @@ npm run rsn
   ```
 - If changes are unintentional, fix the affected files
 
-Learn more: [Code Snippets Documentation](https://pwning.owasp-juice.shop/companion-guide/latest/part5/code-snippets.html)
+Learn more: see the `rsn/` folder and `data/static/codefixes/` in this repository.
 
 ## Getting Help
 
-- Review the [detailed contribution guidelines](https://pwning.owasp-juice.shop/companion-guide/latest/part3/contribution.html)
+- Review the contribution guidelines in [CONTRIBUTING.md](../CONTRIBUTING.md)
 - Check existing issues and PRs for examples
-- Join the community on Slack or Gitter
-- Ask questions via Slack or comment on the GitHub issue you are working on
+- Open a GitHub issue for questions
+- Comment on the GitHub issue you are working on
 
 ## Remember
 

@@ -1,6 +1,6 @@
-# GitHub Copilot Instructions for OWASP Juice Shop
+# GitHub Copilot Instructions for CyberGym
 
-This file provides guidelines for using GitHub Copilot when contributing to OWASP Juice Shop.
+This file provides guidelines for using GitHub Copilot when contributing to CyberGym.
 
 ## Primary Reference
 
@@ -21,7 +21,7 @@ The following context is provided to help Copilot better assist with contributio
 
 ### Project Overview
 
-- **Project**: OWASP Juice Shop - an intentionally insecure web application for security training
+- **Project**: CyberGym - an intentionally insecure web application for security training
 - **Primary Languages**: TypeScript, JavaScript, Angular (frontend)
 - **Key Technologies**: Node.js, Express, SQLite/MongoDB, Angular
 - **Testing**: Jest (unit tests), Frisby (API integration), Cypress (E2E tests)
@@ -92,8 +92,8 @@ Before suggesting code or accepting Copilot suggestions, ensure:
 
 - Review [CLAUDE.md](../.claude/CLAUDE.mdLAUDE.md) for detailed guidance
 - Check the [Contribution Guide](../CONTRIBUTING.md)
-- Refer to the [project documentation](https://pwning.owasp-juice.shop/)
-- Connect with the community via Slack or GitHub issues
+- Refer to the [project repository](https://github.com/hacker-gpt/cybergym)
+- Connect with the community via GitHub issues
 
 ---
 

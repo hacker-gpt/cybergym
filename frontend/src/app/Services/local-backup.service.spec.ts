@@ -55,7 +55,7 @@ describe('LocalBackupService', () => {
     service.save()
 
     const blob = new Blob([JSON.stringify({ version: 1, language: 'de' })], { type: 'text/plain;charset=utf-8' })
-    expect(FileSaver.saveAs).toHaveBeenCalledWith(blob, `owasp_juice_shop-${new Date().toISOString().split('T')[0]}.json`)
+    expect(FileSaver.saveAs).toHaveBeenCalledWith(blob, `cybergym-${new Date().toISOString().split('T')[0]}.json`)
   }))
 
   it('should restore language from backup file', waitForAsync(inject([LocalBackupService], (service: LocalBackupService) => {

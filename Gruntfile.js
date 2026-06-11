@@ -62,7 +62,7 @@ module.exports = function (grunt) {
               'uploads/complaints/.gitkeep',
               'views/**'
             ],
-            dest: 'juice-shop_<%= pkg.version %>/'
+            dest: 'cybergym_<%= pkg.version %>/'
           }
         ]
       }
