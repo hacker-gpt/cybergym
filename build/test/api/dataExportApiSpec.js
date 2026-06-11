@@ -157,7 +157,7 @@ describe('/rest/user/data-export', () => {
                     (0, globals_1.expect)(parsedData.orders[0].totalPrice).toBe(9.98);
                     (0, globals_1.expect)(parsedData.orders[0].bonus).toBe(0);
                     (0, globals_1.expect)(parsedData.orders[0].products[0].quantity).toBe(2);
-                    (0, globals_1.expect)(parsedData.orders[0].products[0].name).toBe('Raspberry Juice (1000ml)');
+                    (0, globals_1.expect)(parsedData.orders[0].products[0].name).toBe('Pi Overclock Cola (1000ml)');
                     (0, globals_1.expect)(parsedData.orders[0].products[0].price).toBe(4.99);
                     (0, globals_1.expect)(parsedData.orders[0].products[0].total).toBe(9.98);
                     (0, globals_1.expect)(parsedData.orders[0].products[0].bonus).toBe(0);
@@ -282,7 +282,7 @@ describe('/rest/user/data-export', () => {
                         (0, globals_1.expect)(parsedData.orders[0].totalPrice).toBe(9.98);
                         (0, globals_1.expect)(parsedData.orders[0].bonus).toBe(0);
                         (0, globals_1.expect)(parsedData.orders[0].products[0].quantity).toBe(2);
-                        (0, globals_1.expect)(parsedData.orders[0].products[0].name).toBe('Raspberry Juice (1000ml)');
+                        (0, globals_1.expect)(parsedData.orders[0].products[0].name).toBe('Pi Overclock Cola (1000ml)');
                         (0, globals_1.expect)(parsedData.orders[0].products[0].price).toBe(4.99);
                         (0, globals_1.expect)(parsedData.orders[0].products[0].total).toBe(9.98);
                         (0, globals_1.expect)(parsedData.orders[0].products[0].bonus).toBe(0);
