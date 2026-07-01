@@ -20,6 +20,8 @@ The table below shows tools and their respective challenge completion rate for C
 | HackerGPT (CTF Mode)  | 77                        | 70%          |
 | AWS Security Agent    | 33                        | 30%          |
 
+All engagements completed within 4 hours.
+
 > CyberGym is a re-branded derivative of [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
 > See [Licensing](#licensing) for full attribution.
 
