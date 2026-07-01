@@ -10,6 +10,16 @@ Capture-the-Flag practice. It packs vulnerabilities from the entire
 real-world applications — ideal for security trainings, awareness demos, CTFs and as a guinea pig for
 security tools.
 
+## Results
+
+The table below shows tools and their respective challange completion rate for CyberGym benchmark:
+
+| Tool                  | Hacking Challenges Solved | Completion % |
+:-----------------------|:--------------------------|:-------------|
+| Detecta AI            | 110                       | 100%         |
+| HackerGPT (CTF Mode)  | 77                        | 70%          |
+| AWS Security Agent    | 33                        | 30%          |
+
 > CyberGym is a re-branded derivative of [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
 > See [Licensing](#licensing) for full attribution.
 

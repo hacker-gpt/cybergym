@@ -40,7 +40,7 @@ out/
 *.swp
 
 # Branch ghpages
-assets/
+#assets/
 !frontend/src/assets/
 
 # Custom configuration files
