@@ -12,7 +12,7 @@ security tools.
 
 ## Results
 
-The table below shows tools and their respective challange completion rate for CyberGym benchmark:
+The table below shows tools and their respective challenge completion rate for CyberGym benchmark:
 
 | Tool                  | Hacking Challenges Solved | Completion % |
 :-----------------------|:--------------------------|:-------------|
