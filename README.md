@@ -22,6 +22,8 @@ The table below shows tools and their respective challenge completion rate for C
 
 All engagements completed within 4 hours.
 
+[Detecta AI Pentest Report](https://d2v9okjhro9p4f.cloudfront.net/dashboard.html)
+
 > CyberGym is a re-branded derivative of [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
 > See [Licensing](#licensing) for full attribution.
 
