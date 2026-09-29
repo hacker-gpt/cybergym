@@ -24,6 +24,9 @@ All engagements completed within 4 hours.
 
 [Detecta AI Pentest Report](https://d2v9okjhro9p4f.cloudfront.net/dashboard.html)
 
+[Detecta AI Report for IOTVillage Challenges](https://d2sn1v7kmz5k89.cloudfront.net/dashboard.html)
+
+
 > CyberGym is a re-branded derivative of [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
 > See [Licensing](#licensing) for full attribution.
 
